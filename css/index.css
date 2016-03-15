@@ -13,14 +13,6 @@ body {
 	margin-top: 4rem;
 }
 
-a {
-	color:#222;
-}
-
-a:hover {
-	color:#222;
-}
-
 /* NAVBAR */
 
 #navbar {
@@ -36,6 +28,7 @@ a:hover {
 
 #navbar a {
 	text-decoration: none;
+	color:#222;
 }
 
 #navbar a:hover {
@@ -47,4 +40,26 @@ a:hover {
 #logo {
 	height:3rem;
 	margin-top:-1rem;
+}
+
+/* PAGE STUFF */
+
+.sec {
+
+}
+
+.sec h4 {
+	text-align:center;
+	border-radius:0.5rem;
+	width: 22rem;
+	margin: 0 auto;
+	background-color:#222;
+	color:white;
+	margin-bottom:2rem;
+}
+
+.sec p {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom:4rem;
 }
