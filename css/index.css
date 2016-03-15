@@ -1,0 +1,50 @@
+/* FONTS */
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+
+/* GENERAL PAGE RULES */
+
+body {
+	color:#222;
+	font-family:'Droid Serif', serif;
+}
+
+.container {
+	margin-top: 4rem;
+}
+
+a {
+	color:#222;
+}
+
+a:hover {
+	color:#222;
+}
+
+/* NAVBAR */
+
+#navbar {
+	margin: 10px 0 0 0;
+	text-align:right;
+}
+
+#navbar ul li {
+	display: inline;
+	margin: 0 20px 0 0;
+	margin-bottom: 130px;
+}
+
+#navbar a {
+	text-decoration: none;
+}
+
+#navbar a:hover {
+	text-decoration: underline;
+}
+
+/* HEADER */
+
+#logo {
+	height:4rem;
+	margin-top:-1rem;
+}
