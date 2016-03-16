@@ -4,6 +4,10 @@
 
 /* GENERAL PAGE RULES */
 
+html {
+	font-size:11px;
+}
+
 body {
 	color:#222;
 	font-family:'Droid Serif', serif;
@@ -48,7 +52,7 @@ a:hover {
 /* HEADER */
 
 #logo {
-	height:3rem;
+	height:2.1rem;
 	margin-top:-1rem;
 }
 
@@ -70,10 +74,13 @@ a:hover {
 }
 
 .sec p {
-	text-align:left;
 	text-indent: 4rem;
 	width: 80%;
 	margin: 0 auto;
 	margin-top:1rem;
-	text-align:justify;
+	
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
