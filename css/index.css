@@ -11,6 +11,16 @@ body {
 
 .container {
 	margin-top: 4rem;
+	margin-bottom:4rem;
+}
+
+a {
+	color:#222;
+}
+
+a:hover {
+	color:#ff6666;
+
 }
 
 /* NAVBAR */
@@ -28,10 +38,10 @@ body {
 
 #navbar a {
 	text-decoration: none;
-	color:#222;
 }
 
 #navbar a:hover {
+
 	text-decoration: underline;
 }
 
@@ -45,21 +55,25 @@ body {
 /* PAGE STUFF */
 
 .sec {
-
+	text-align:center;
 }
 
 .sec h4 {
-	text-align:center;
 	border-radius:0.5rem;
 	width: 22rem;
 	margin: 0 auto;
 	background-color:#222;
 	color:white;
 	margin-bottom:2rem;
+	margin-top:4rem;
+	padding:0.3rem;
 }
 
 .sec p {
+	text-align:left;
+	text-indent: 4rem;
 	width: 80%;
 	margin: 0 auto;
-	margin-bottom:4rem;
+	margin-top:1rem;
+	text-align:justify;
 }
