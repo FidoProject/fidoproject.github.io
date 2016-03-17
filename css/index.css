@@ -1,0 +1,90 @@
+/* FONTS */
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+
+/* GENERAL PAGE RULES */
+
+html {
+	font-size:11px;
+}
+
+body {
+	color:#222;
+	font-family:'Droid Serif', serif;
+}
+
+.container {
+	margin-top: 4rem;
+	margin-bottom:4rem;
+}
+
+a {
+	color:#222;
+}
+
+a:hover {
+	color:#ff6666;
+
+}
+
+/* NAVBAR */
+
+#navbar {
+	margin: 10px 0 0 0;
+	text-align:right;
+}
+
+#navbar ul li {
+	display: inline;
+	margin: 0 20px 0 0;
+	margin-bottom: 130px;
+}
+
+#navbar a {
+	text-decoration: none;
+}
+
+#navbar a:hover {
+
+	text-decoration: underline;
+}
+
+/* HEADER */
+
+#logo {
+	height:2.1rem;
+	margin-top:-1rem;
+}
+
+/* PAGE STUFF */
+
+.sec {
+	text-align:center;
+}
+
+.sec iframe {
+	margin-top:2rem;
+}
+
+.sec h4 {
+	border-radius:0.5rem;
+	width: 24rem;
+	margin: 0 auto;
+	background-color:#222;
+	color:white;
+	margin-bottom:2rem;
+	margin-top:4rem;
+	padding:0.3rem;
+}
+
+.sec p, .sec ul {
+	text-indent: 4rem;
+	width: 80%;
+	margin: 0 auto;
+	margin-top:1rem;
+
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}

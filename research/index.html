@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>The Fido Project - Research</title>
+
+	<meta charset="UTF-8"> 
+	<meta name="description" content="A universal robot control system using limited feedback, implemented using the Fido library.">
+	<meta name="author" content="Joshua Gruenstein and Michael Truell">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="../css/normalize.css" />
+	<link rel="stylesheet" href="../css/skeleton.css" />
+	<link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row" id="navbar">
+			<ul>
+				<li><a href="/">home</a></li>
+				<li><a data-scroll href="#concept">concept</a></li>
+				<li><a data-scroll href="#experimentation">experimentation</a></li>
+				<li><a data-scroll href="#paper">paper</a></li>
+				<li><a href="/docs">docs</a></li>
+				<li><a href="https://github.com/FidoProject">github</a></li>
+			</ul>
+		</div>
+
+		<h2>Fido Research</h2>
+		<p>The development of a universal robot control system using limited feedback, implemented using the Fido library.</p>
+		<hr>
+
+		<div class="sec" id="concept">
+			<h4>project concept</h4>
+
+			<p>The Fido project originally started as a universal robot control system, created as part of a Science Research class to address the following goals:</p>
+			
+			<ul>
+				<li><strong>Trainability:</strong> Allow both human and autonomous training rather than reprogramming</li>
+				<li><strong>Universality:</strong> Run on any robot, even without prior knowledge of the host</li>
+			</ul>
+
+			<p>These goals were achieved through the training of artificial neural networks with a wire-fitted moving least squares interpolator following the Q-learning reinforcement algorithm and an action selection policy that utilizes a Boltzmann distribution of probability, all implemented using the Fido library.</p>
+		</div>
+
+		<div class="sec" id="experimentation">
+			<h4>experimentation</h4>
+			<p>The control system was initially tested using the Fido simulator, allowing rapid prototyping and iteration.  Next, a small <a href="https://github.com/FidoProject/Hardware">robot</a> using the Intel Edison compute module was constructed for physical testing. The robot was successfully trained to do a variety of tasks with limited feedback, such as staying put, moving only in the dark, and driving to a point.  Reward was given to the robot over wifi through an <a href="https://github.com/FidoProject/RewardApp">app</a> developed in the Ionic framework.</p>
+
+			<iframe src="https://player.vimeo.com/video/159226380?autoplay=1&loop=1" width="500" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+			<p>Another hardware implementation, this time implemented on a Raspberry Pi Zero, is currently in development.</p>
+		</div>
+
+		<div class="sec" id="paper">
+			<h4>paper</h4>
+			<p>The paper, research poster and other multimedia can be found in the linked <a href="https://github.com/FidoProject/Research">Github repository</a>.</p>
+		</div>
+	</div>
+	<script src="../js/smooth-scroll.min.js"></script>
+	<script src="../js/index.js"></script>
+</body>
+</html>
