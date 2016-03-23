@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['setderivedhiddenactivationfunction',['setDerivedHiddenActivationFunction',['../classnet_1_1_backpropagation.html#ae88fa8b371c7dac877b568c003ea7c3e',1,'net::Backpropagation']]],
-  ['setderivedoutputactivationfunction',['setDerivedOutputActivationFunction',['../classnet_1_1_backpropagation.html#a6c7f065be066a38a8946d222c0e230f3',1,'net::Backpropagation']]],
-  ['setmotors',['setMotors',['../class_driver.html#a30389fa60508135af6b4068d0bc1d5ec',1,'Driver']]],
-  ['storebackpropagation',['storeBackpropagation',['../classnet_1_1_backpropagation.html#ab33279948cf38660679fb3474908f2eb',1,'net::Backpropagation']]],
-  ['storebackpropagationwithstream',['storeBackpropagationWithStream',['../classnet_1_1_backpropagation.html#a08352f1a74216240b2bd9d2531038bc8',1,'net::Backpropagation']]]
+  ['initfromfile',['initFromFile',['../classrl_1_1_interpolator.html#aec80cac4897e8caebbb47ff769bf0d4c',1,'rl::Interpolator::initFromFile()'],['../classrl_1_1_l_s_interpolator.html#a70ee94fc18d05705b6357dfa4c67d42d',1,'rl::LSInterpolator::initFromFile()']]],
+  ['integer',['integer',['../namespacenet.html#a5126f887e4805fc207206511a43f5b26',1,'net']]],
+  ['istaskdone',['isTaskDone',['../classrl_1_1_task.html#acf79c0b99a51f3bee08f17afae8c993f',1,'rl::Task']]]
 ];

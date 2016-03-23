@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -61,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Neuron.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef NEURON_H</span></div>
+<a href="_neuron_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef NEURON_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NEURON_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
@@ -95,46 +97,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>net {</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="comment">/* Class representing a single neuron.</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">     * Each neuron takes a variable number of inputs each assigned a weight and returns one output. Each neuron has a threshold value used to detemine if an output is produced (or to determine the magnitude of the neuron&#39;s output). A quality class by all accounts.</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classnet_1_1_neuron.html">   13</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classnet_1_1_neuron.html">Neuron</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="comment">/* Create a neuron with randomly assigned weights.</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">         *</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">         * Each weight is a random double between 0 and 1 </span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classnet_1_1_neuron.html">Neuron</a>(<span class="keywordtype">int</span> numInputs);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="comment">// Create a neuron with given weights.</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classnet_1_1_neuron.html">Neuron</a>(std::vector&lt;double&gt; w);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="comment">/* Get outputs of neuron from given inputs. </span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">         *</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">         * The last weight is the threshold, as documented [here](http://www.ai-junkie.com/ann/evolved/nnt6.html).</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">double</span> getOutput(std::vector&lt;double&gt; inputs);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="comment">// Set of weights for the Neuron object.</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        std::vector&lt;double&gt; weights;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="comment">// Randomizes the weights of the neuron</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">void</span> randomizeWeights();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="comment">// Return a random weight between zero and one.</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">double</span> randomWeight() {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">return</span> ((<span class="keywordtype">double</span>)rand() / ((<span class="keywordtype">double</span>)RAND_MAX / 2.0)) - 1.0;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        } </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    };</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classnet_1_1_neuron_html"><div class="ttname"><a href="classnet_1_1_neuron.html">net::Neuron</a></div><div class="ttdef"><b>Definition:</b> Neuron.h:13</div></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classnet_1_1_neuron.html">   18</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classnet_1_1_neuron.html">Neuron</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classnet_1_1_neuron.html#aec978b00351eed6c0b290940e56ca8d8">   23</a></span>&#160;        std::vector&lt;double&gt; <a class="code" href="classnet_1_1_neuron.html#aec978b00351eed6c0b290940e56ca8d8">weights</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classnet_1_1_neuron.html#ad7f1ceca26b314e197c775d0e2ca913a">Neuron</a>(<span class="keywordtype">int</span> numInputs);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classnet_1_1_neuron.html#ad7f1ceca26b314e197c775d0e2ca913a">Neuron</a>(std::vector&lt;double&gt; w);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classnet_1_1_neuron.html#aa250fbfafeb1cde4706a347867d3b444">getOutput</a>(std::vector&lt;double&gt; inputs);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classnet_1_1_neuron.html#ae08ecbb16b4de970c532abbb65329445">randomizeWeights</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classnet_1_1_neuron.html#a096a531a32f0063bd75094f056994b9e">   58</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="classnet_1_1_neuron.html#a096a531a32f0063bd75094f056994b9e">randomWeight</a>() {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">return</span> ((<span class="keywordtype">double</span>)rand() / ((<span class="keywordtype">double</span>)RAND_MAX / 2.0)) - 1.0;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        } </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    };</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classnet_1_1_neuron_html_ad7f1ceca26b314e197c775d0e2ca913a"><div class="ttname"><a href="classnet_1_1_neuron.html#ad7f1ceca26b314e197c775d0e2ca913a">net::Neuron::Neuron</a></div><div class="ttdeci">Neuron(int numInputs)</div><div class="ttdoc">Constructs a neuron with randomly assigned weights. </div><div class="ttdef"><b>Definition:</b> Neuron.cpp:8</div></div>
+<div class="ttc" id="classnet_1_1_neuron_html_aa250fbfafeb1cde4706a347867d3b444"><div class="ttname"><a href="classnet_1_1_neuron.html#aa250fbfafeb1cde4706a347867d3b444">net::Neuron::getOutput</a></div><div class="ttdeci">double getOutput(std::vector&lt; double &gt; inputs)</div><div class="ttdoc">Gets outputs of neuron from given inputs. </div><div class="ttdef"><b>Definition:</b> Neuron.cpp:20</div></div>
+<div class="ttc" id="classnet_1_1_neuron_html_a096a531a32f0063bd75094f056994b9e"><div class="ttname"><a href="classnet_1_1_neuron.html#a096a531a32f0063bd75094f056994b9e">net::Neuron::randomWeight</a></div><div class="ttdeci">static double randomWeight()</div><div class="ttdoc">Generates a random input weight. </div><div class="ttdef"><b>Definition:</b> Neuron.h:58</div></div>
+<div class="ttc" id="classnet_1_1_neuron_html_ae08ecbb16b4de970c532abbb65329445"><div class="ttname"><a href="classnet_1_1_neuron.html#ae08ecbb16b4de970c532abbb65329445">net::Neuron::randomizeWeights</a></div><div class="ttdeci">void randomizeWeights()</div><div class="ttdoc">Randomizes the weights of the neuron. </div><div class="ttdef"><b>Definition:</b> Neuron.cpp:16</div></div>
+<div class="ttc" id="classnet_1_1_neuron_html"><div class="ttname"><a href="classnet_1_1_neuron.html">net::Neuron</a></div><div class="ttdoc">Class representing a single neuron. </div><div class="ttdef"><b>Definition:</b> Neuron.h:18</div></div>
+<div class="ttc" id="classnet_1_1_neuron_html_aec978b00351eed6c0b290940e56ca8d8"><div class="ttname"><a href="classnet_1_1_neuron.html#aec978b00351eed6c0b290940e56ca8d8">net::Neuron::weights</a></div><div class="ttdeci">std::vector&lt; double &gt; weights</div><div class="ttdoc">Set of weights for the Neuron object. </div><div class="ttdef"><b>Definition:</b> Neuron.h:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 18 2016 19:42:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 23 2016 09:58:39 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

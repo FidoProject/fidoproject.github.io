@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,6 +71,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li class="current"><a href="functions.html"><span>All</span></a></li>
       <li><a href="functions_func.html"><span>Functions</span></a></li>
+      <li><a href="functions_vars.html"><span>Variables</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index_a"><span>a</span></a></li>
+      <li><a href="#index_b"><span>b</span></a></li>
+      <li><a href="#index_c"><span>c</span></a></li>
+      <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
+      <li><a href="#index_f"><span>f</span></a></li>
+      <li><a href="#index_g"><span>g</span></a></li>
+      <li><a href="#index_h"><span>h</span></a></li>
+      <li><a href="#index_i"><span>i</span></a></li>
+      <li><a href="#index_l"><span>l</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_n"><span>n</span></a></li>
+      <li><a href="#index_p"><span>p</span></a></li>
+      <li><a href="#index_q"><span>q</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
+      <li class="current"><a href="#index_w"><span>w</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -78,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,49 +112,318 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div><ul>
+<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
+
+<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+<li>action
+: <a class="el" href="structrl_1_1_model.html#a21d64c048921cbcd7e2cc6e1b7f06f2a">rl::Model</a>
+, <a class="el" href="structrl_1_1_wire.html#ac0fa1fa5cbb204484af03618cb9c9680">rl::Wire</a>
+</li>
+<li>actionDimensions
+: <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a2b3e25b086615737b632890f5b1efcfd">rl::WireFitQLearn</a>
+</li>
+<li>actionTermDerivative()
+: <a class="el" href="classrl_1_1_interpolator.html#a59a31f8f3f04e71f0130405dc8d83acc">rl::Interpolator</a>
+, <a class="el" href="classrl_1_1_l_s_interpolator.html#a5cf9c5aeeed786854e490762a00d85d0">rl::LSInterpolator</a>
+</li>
+<li>activationFunction
+: <a class="el" href="structnet_1_1_layer.html#a6120d127d7e39c9e159e3a3e2f2bfb1a">net::Layer</a>
+</li>
+<li>addToHistory()
+: <a class="el" href="structrl_1_1_model.html#a93865ef6199fe0f10c1d2f3fc0766963">rl::Model</a>
+</li>
+<li>applyReinforcementToLastAction()
+: <a class="el" href="classrl_1_1_learner.html#ac69ffdd45bfe4ceee924d490c6a7693f">rl::Learner</a>
+, <a class="el" href="classrl_1_1_q_learn.html#ad0617a36dab296a5d1d88fe1a4e27a3f">rl::QLearn</a>
+, <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a93ea784fbb2288aa52f2c23fa4cfd426">rl::WireFitQLearn</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>backprop
+: <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a80c9071827bd258e18f6c2c1b1d88146">rl::WireFitQLearn</a>
+</li>
 <li>Backpropagation()
 : <a class="el" href="classnet_1_1_backpropagation.html#a1380ed2d38446fb7c6263fc694123802">net::Backpropagation</a>
 </li>
+<li>baseOfDimensions
+: <a class="el" href="classrl_1_1_wire_fit_q_learn.html#ac83e41371684a945031e39af85370251">rl::WireFitQLearn</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>chooseBestAction()
+: <a class="el" href="classrl_1_1_learner.html#a0c0161ee9581f7ab456f13bbd69baec4">rl::Learner</a>
+, <a class="el" href="classrl_1_1_q_learn.html#a209db7840a51554c937dbce73d4b79d9">rl::QLearn</a>
+, <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a3959c0dfa6c0c0bb87453d938d81c01e">rl::WireFitQLearn</a>
+</li>
 <li>chooseBoltzmanAction()
-: <a class="el" href="classnet_1_1_q_learn.html#adb6e07fd14e98663e4560aa6fc00bf83">net::QLearn</a>
-, <a class="el" href="classnet_1_1_wire_fit_q_learn.html#afffd9666fe11ca43e664947be738e6d4">net::WireFitQLearn</a>
+: <a class="el" href="classrl_1_1_learner.html#a626cd6c6a05357ccb3d392f34688629c">rl::Learner</a>
+, <a class="el" href="classrl_1_1_q_learn.html#a7507815f38b376e53fa28802b0bfe1dd">rl::QLearn</a>
+, <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a9243e7e84bf3a9e295291ae8c50c2971">rl::WireFitQLearn</a>
 </li>
-<li>getDerivedActivationFunctionNames()
-: <a class="el" href="classnet_1_1_backpropagation.html#a6ab408a26fae7d69b056ea0d8626ea85">net::Backpropagation</a>
+<li>controlPointsGDErrorTarget
+: <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a4d579b6d73893100924b88ad3ff62440">rl::WireFitQLearn</a>
 </li>
-<li>getDerivedHiddenActivationFunctionName()
-: <a class="el" href="classnet_1_1_backpropagation.html#a79b3839ac981ff0f1b846b9ab43ac7ce">net::Backpropagation</a>
+<li>controlPointsGDLearningRate
+: <a class="el" href="classrl_1_1_wire_fit_q_learn.html#ae5c6282dec4f48dc93d2535272e1b871">rl::WireFitQLearn</a>
 </li>
-<li>getDerivedOutputActivationFunctionName()
-: <a class="el" href="classnet_1_1_backpropagation.html#a0c5bf774d0494dd1b26f24b7d99b61a2">net::Backpropagation</a>
+<li>controlPointsGDMaxIterations
+: <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a6087437727a3233474db4729d08c233b">rl::WireFitQLearn</a>
 </li>
-<li>getSetOfWires()
-: <a class="el" href="classnet_1_1_wire_fit_q_learn.html#ae849291edb14c45d16aaef7b872a7721">net::WireFitQLearn</a>
+</ul>
+
+
+<h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
+<li>devaluationFactor
+: <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a1d02928aec56672482a11c435e4c9006">rl::WireFitQLearn</a>
 </li>
-<li>getVis()
-: <a class="el" href="class_driver.html#a4d70de910237fe653b3dcd5276d77e73">Driver</a>
+</ul>
+
+
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>e
+: <a class="el" href="classrl_1_1_l_s_interpolator.html#a996cae8b8ceed8cc2fb0dc23090ca3a9">rl::LSInterpolator</a>
 </li>
-<li>hyperParameterTest()
-: <a class="el" href="class_wire_fit_robot.html#aed280d8bfcc80e3eb09fcf52769f0e0e">WireFitRobot</a>
+</ul>
+
+
+<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>feedForward()
+: <a class="el" href="classnet_1_1_neural_net.html#abc3ff99e5e187145ba00816bf2080fb1">net::NeuralNet</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
+<li>getActivationFunctionName()
+: <a class="el" href="structnet_1_1_layer.html#a4b7641180e81075ca7aa7f582417df67">net::Layer</a>
+</li>
+<li>getActivationFunctionNameMap()
+: <a class="el" href="structnet_1_1_layer.html#a4adf2f8fbe7fad75651d400a43abb1cc">net::Layer</a>
+</li>
+<li>getAnyInterpolatorFromFile()
+: <a class="el" href="classrl_1_1_interpolator.html#aa1a31d450a0a4824d50e897adf972bb1">rl::Interpolator</a>
+</li>
+<li>getHiddenActivationFunctionName()
+: <a class="el" href="classnet_1_1_neural_net.html#aab751a8009efd0775284deb85f498af7">net::NeuralNet</a>
+</li>
+<li>getOutput()
+: <a class="el" href="classnet_1_1_neural_net.html#a8788d154fa2cd7899bdb8b12d0b3b189">net::NeuralNet</a>
+, <a class="el" href="classnet_1_1_neuron.html#aa250fbfafeb1cde4706a347867d3b444">net::Neuron</a>
+</li>
+<li>getOutputActivationFunctionName()
+: <a class="el" href="classnet_1_1_neural_net.html#a68991e858588c216c9f6c451c79f0e2b">net::NeuralNet</a>
+</li>
+<li>getReward()
+: <a class="el" href="classrl_1_1_interpolator.html#a21e967a7dcf3e40adea22dd5da5df03a">rl::Interpolator</a>
+, <a class="el" href="classrl_1_1_l_s_interpolator.html#ab63667c318d17dc7330ad579cf739e28">rl::LSInterpolator</a>
+</li>
+<li>getRewardForLastStateAction()
+: <a class="el" href="classrl_1_1_task.html#ae9640e72742f35d60e2df1fcf6fdaaeb">rl::Task</a>
+</li>
+<li>getState()
+: <a class="el" href="classrl_1_1_task.html#a42e14ff19fa2ae2b79a4794716caa3c8">rl::Task</a>
+</li>
+<li>getWeights()
+: <a class="el" href="classnet_1_1_neural_net.html#a3cdcd419c43073094adbeccd5883e1c2">net::NeuralNet</a>
+</li>
+<li>getWeights3D()
+: <a class="el" href="classnet_1_1_neural_net.html#af732e3b8f12a8a8bf383d120f21a0132">net::NeuralNet</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
+<li>history
+: <a class="el" href="structrl_1_1_model.html#a960c76c5f48749bec0af605626bc638f">rl::Model</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>initFromFile()
+: <a class="el" href="classrl_1_1_interpolator.html#aec80cac4897e8caebbb47ff769bf0d4c">rl::Interpolator</a>
+, <a class="el" href="classrl_1_1_l_s_interpolator.html#a70ee94fc18d05705b6357dfa4c67d42d">rl::LSInterpolator</a>
+</li>
+<li>interpolator
+: <a class="el" href="classrl_1_1_wire_fit_q_learn.html#ab029916c40c6ce916c76b6530344de54">rl::WireFitQLearn</a>
+</li>
+<li>isTaskDone()
+: <a class="el" href="classrl_1_1_task.html#acf79c0b99a51f3bee08f17afae8c993f">rl::Task</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>lastAction
+: <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a0093ccef823d2e9156e8e9605028cb35">rl::WireFitQLearn</a>
+</li>
+<li>lastChangeInWeight
+: <a class="el" href="classnet_1_1_backpropagation.html#a0873c4053257eea79d1100bcecfa8703">net::Backpropagation</a>
+</li>
+<li>lastState
+: <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a7ee2af8bf671ac85fd01561531af8711">rl::WireFitQLearn</a>
+</li>
+<li>Layer()
+: <a class="el" href="structnet_1_1_layer.html#a7391347edde4265980cf5d18a17bcecf">net::Layer</a>
+</li>
+<li>learningRate
+: <a class="el" href="classnet_1_1_backpropagation.html#a9d8a5f299a8dbbd6f74ff4669e6bd50a">net::Backpropagation</a>
+, <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a2db57e7ca0c7235b20c8df615fa36a3b">rl::WireFitQLearn</a>
 </li>
 <li>LSInterpolator()
-: <a class="el" href="classnet_1_1_l_s_interpolator.html#aca950947cc011821df26f6259b001b74">net::LSInterpolator</a>
+: <a class="el" href="classrl_1_1_l_s_interpolator.html#aca950947cc011821df26f6259b001b74">rl::LSInterpolator</a>
 </li>
-<li>setDerivedHiddenActivationFunction()
-: <a class="el" href="classnet_1_1_backpropagation.html#ae88fa8b371c7dac877b568c003ea7c3e">net::Backpropagation</a>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>maxAction
+: <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a1cd65b4160d27635d227cbb204d218aa">rl::WireFitQLearn</a>
 </li>
-<li>setDerivedOutputActivationFunction()
-: <a class="el" href="classnet_1_1_backpropagation.html#a6c7f065be066a38a8946d222c0e230f3">net::Backpropagation</a>
+<li>maximumIterations
+: <a class="el" href="classnet_1_1_backpropagation.html#a2880349375de621da21181bf934750b9">net::Backpropagation</a>
 </li>
-<li>setMotors()
-: <a class="el" href="class_driver.html#a30389fa60508135af6b4068d0bc1d5ec">Driver</a>
+<li>minAction
+: <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a1c3b9d46e59cce0bf35e63d92bdbee43">rl::WireFitQLearn</a>
+</li>
+<li>Model()
+: <a class="el" href="structrl_1_1_model.html#a236c7bc971eaf5540adbd3cfedbbde66">rl::Model</a>
+</li>
+<li>momentumTerm
+: <a class="el" href="classnet_1_1_backpropagation.html#ac918ac40710812169c46bcf730928e6b">net::Backpropagation</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>net
+: <a class="el" href="classnet_1_1_neural_net.html#a32b37f5da84f5f398e816390fc96ce83">net::NeuralNet</a>
+</li>
+<li>network
+: <a class="el" href="structrl_1_1_model.html#a4bf8bd250bd6f9413e3b8476a476a95f">rl::Model</a>
+, <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a1eb41faa3b53d9675abb182e7c54b18d">rl::WireFitQLearn</a>
+</li>
+<li>NeuralNet()
+: <a class="el" href="classnet_1_1_neural_net.html#a66b1ddd47bc5b393cf184f02517e82d4">net::NeuralNet</a>
+</li>
+<li>Neuron()
+: <a class="el" href="classnet_1_1_neuron.html#ad7f1ceca26b314e197c775d0e2ca913a">net::Neuron</a>
+</li>
+<li>neurons
+: <a class="el" href="structnet_1_1_layer.html#af897a7ec273133801638abf4cc4fb502">net::Layer</a>
+</li>
+<li>numberOfHiddenLayers()
+: <a class="el" href="classnet_1_1_neural_net.html#ae2048729dafd7e1914706e20d4e67228">net::NeuralNet</a>
+</li>
+<li>numberOfInputs()
+: <a class="el" href="classnet_1_1_neural_net.html#a1434e08f12317deca0cbe9c4e05e362d">net::NeuralNet</a>
+</li>
+<li>numberOfOutputs()
+: <a class="el" href="classnet_1_1_neural_net.html#a60b4fdbf50e35d8ba539079ca39f5cfe">net::NeuralNet</a>
+</li>
+<li>numberOfWires
+: <a class="el" href="classrl_1_1_wire_fit_q_learn.html#acbff292d0f70672ba6e92ec418c7d290">rl::WireFitQLearn</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>performAction()
+: <a class="el" href="classrl_1_1_robot.html#a3ed9ef2edfcf0111090387def3ceb12b">rl::Robot</a>
+, <a class="el" href="classrl_1_1_task.html#aea3de5996cbe86ab3a3b588ab2a283a1">rl::Task</a>
+</li>
+<li>printWeights()
+: <a class="el" href="classnet_1_1_neural_net.html#a2b2ca3ea7afde8023721b1e036698711">net::NeuralNet</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
+<li>QLearn()
+: <a class="el" href="classrl_1_1_q_learn.html#ac83a21447898d1ad219a4f755e24520f">rl::QLearn</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>randomizeWeights()
+: <a class="el" href="classnet_1_1_neural_net.html#a9ebe34e81e9cae5ae7d9ccc1e4c429cc">net::NeuralNet</a>
+, <a class="el" href="classnet_1_1_neuron.html#ae08ecbb16b4de970c532abbb65329445">net::Neuron</a>
+</li>
+<li>randomWeight()
+: <a class="el" href="classnet_1_1_neuron.html#a096a531a32f0063bd75094f056994b9e">net::Neuron</a>
+</li>
+<li>reset()
+: <a class="el" href="classrl_1_1_learner.html#ad9b77c365288be0531fc7849fb3567a0">rl::Learner</a>
+, <a class="el" href="classrl_1_1_q_learn.html#ad66a87f3ec9c7466fc310520bcd9edfb">rl::QLearn</a>
+, <a class="el" href="classrl_1_1_task.html#a265ca41a40f9e62477a7e136bd4e8506">rl::Task</a>
+, <a class="el" href="classrl_1_1_wire_fit_q_learn.html#aa8006340fca918b5eeba856018bde2eb">rl::WireFitQLearn</a>
+</li>
+<li>reward
+: <a class="el" href="structrl_1_1_wire.html#ab8a165c515ad06cebd5f71acf1db0348">rl::Wire</a>
+</li>
+<li>rewardDerivative()
+: <a class="el" href="classrl_1_1_interpolator.html#aaa863e8e5be5d62cd355cbb6f61350a0">rl::Interpolator</a>
+, <a class="el" href="classrl_1_1_l_s_interpolator.html#a14d2d8a7860083930c2c7916d106fe3e">rl::LSInterpolator</a>
+</li>
+<li>Robot()
+: <a class="el" href="classrl_1_1_robot.html#a1b98ace7883a723c1923f92acd491357">rl::Robot</a>
+</li>
+<li>run()
+: <a class="el" href="classrl_1_1_robot.html#ab5b325b1fca9b3186f8c9b85682de919">rl::Robot</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>scalingFactorToMillis
+: <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a4e0bd0337539184d3db1b089c9be8abf">rl::WireFitQLearn</a>
+</li>
+<li>setActivationFunctionWithName()
+: <a class="el" href="structnet_1_1_layer.html#a32c3ee05ce075b98110ecea826d8338f">net::Layer</a>
+</li>
+<li>setOutputActivationFunction()
+: <a class="el" href="classnet_1_1_neural_net.html#a2b7790f0e1c83cc52bb109846c509858">net::NeuralNet</a>
+</li>
+<li>setWeights()
+: <a class="el" href="classnet_1_1_neural_net.html#af5db986fa1c1b835271ac29e9adad03f">net::NeuralNet</a>
+</li>
+<li>setWeights3D()
+: <a class="el" href="classnet_1_1_neural_net.html#a7e31985917afc5c735aa11af85085a40">net::NeuralNet</a>
+</li>
+<li>smoothingFactor
+: <a class="el" href="classrl_1_1_l_s_interpolator.html#a151ebceb9a8674a61ad40a1e5ee561df">rl::LSInterpolator</a>
 </li>
 <li>storeBackpropagation()
 : <a class="el" href="classnet_1_1_backpropagation.html#ab33279948cf38660679fb3474908f2eb">net::Backpropagation</a>
 </li>
 <li>storeBackpropagationWithStream()
 : <a class="el" href="classnet_1_1_backpropagation.html#a08352f1a74216240b2bd9d2531038bc8">net::Backpropagation</a>
+</li>
+<li>storeInterpolator()
+: <a class="el" href="classrl_1_1_interpolator.html#a803e9360ae5b13e7b4078159890dcc6b">rl::Interpolator</a>
+, <a class="el" href="classrl_1_1_l_s_interpolator.html#a10dcfba8d08aad8d4a1649ce2b1ef915">rl::LSInterpolator</a>
+</li>
+<li>storeNet()
+: <a class="el" href="classnet_1_1_neural_net.html#a86be573ee4ff3ac06d22e17a74486067">net::NeuralNet</a>
+</li>
+<li>storeNetWithStream()
+: <a class="el" href="structnet_1_1_layer.html#a4e4feecd5ca4c9fcd24ffd5adbe28eee">net::Layer</a>
+, <a class="el" href="classnet_1_1_neural_net.html#acc542636ea5495a5aaa5d8b702a0e4f9">net::NeuralNet</a>
+</li>
+<li>storeWireFitQLearn()
+: <a class="el" href="classrl_1_1_wire_fit_q_learn.html#adc3aa2bca09a0060bea6b74d0ee02654">rl::WireFitQLearn</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>targetErrorLevel
+: <a class="el" href="classnet_1_1_backpropagation.html#a4244cf1e73577909b485bcefe41ac07a">net::Backpropagation</a>
 </li>
 <li>trainOnData()
 : <a class="el" href="classnet_1_1_backpropagation.html#a3005bd4ba5ef48306e2b77cad3f2a22c">net::Backpropagation</a>
@@ -139,10 +432,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classnet_1_1_backpropagation.html#a56d4a23f6c623f03a4a9db0773a58df8">net::Backpropagation</a>
 </li>
 </ul>
+
+
+<h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
+<li>weights
+: <a class="el" href="classnet_1_1_neuron.html#aec978b00351eed6c0b290940e56ca8d8">net::Neuron</a>
+</li>
+<li>WireFitQLearn()
+: <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a0168bdf608bfcc29ae05fa87e68979ea">rl::WireFitQLearn</a>
+</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 18 2016 19:42:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 23 2016 09:58:39 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

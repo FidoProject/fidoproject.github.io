@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -61,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,51 +89,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Interpolator.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INTERPOLATOR_H</span></div>
+<a href="_interpolator_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INTERPOLATOR_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define INTERPOLATOR_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>net {</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="comment">// A data point to be interpolated</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="comment">// Outputted by a neural network</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structnet_1_1_wire.html">   10</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structnet_1_1_wire.html">Wire</a> {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        std::vector&lt;double&gt; action;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keywordtype">double</span> reward;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    };</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">// Defines the functionality of a Wire Fitted Interpolator to be used by the WireFitQLearn class</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classnet_1_1_interpolator.html">   16</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classnet_1_1_interpolator.html">Interpolator</a> {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="comment">// Initializes the parameters of an interpolator from a file. Returns false if the interpolator stored in the file is not the correct type</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> initFromFile(std::ifstream *in) = 0;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="comment">// Stores the parameters of an interpolator in a file</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> storeInterpolator(std::ofstream *out) = 0;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="comment">// Uses the interpolator function to compute the reward of an action vector given a set of control wires</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">double</span> getReward(<span class="keyword">const</span> std::vector&lt;Wire&gt; &amp;controlWires, <span class="keyword">const</span> std::vector&lt;double&gt; &amp;action) = 0;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="comment">// The partial derivative of the interpolator function with respect to the reward of a control wire</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">double</span> rewardDerivative(<span class="keyword">const</span> std::vector&lt;double&gt; &amp;action, <span class="keyword">const</span> <a class="code" href="structnet_1_1_wire.html">Wire</a> &amp;wire, <span class="keyword">const</span> std::vector&lt;Wire&gt; &amp;controlWires) = 0;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">// The partial derivative of the interpolator function with respect to the value of one term of the action vector of a control wire</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">double</span> actionTermDerivative(<span class="keywordtype">double</span> actionTerm, <span class="keywordtype">double</span> wireActionTerm, <span class="keyword">const</span> std::vector&lt;double&gt; &amp;action, <span class="keyword">const</span> <a class="code" href="structnet_1_1_wire.html">Wire</a> &amp;wire, <span class="keyword">const</span> std::vector&lt;Wire&gt; &amp;controlWires) = 0;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="comment">// Gets an interpolator from a file. Tries out every interpolator and throws an error none of the interpolators successfully read from the file</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">static</span> <a class="code" href="classnet_1_1_interpolator.html">Interpolator</a> * getAnyInterpolatorFromFile(std::ifstream *in);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    };</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="structnet_1_1_wire_html"><div class="ttname"><a href="structnet_1_1_wire.html">net::Wire</a></div><div class="ttdef"><b>Definition:</b> Interpolator.h:10</div></div>
-<div class="ttc" id="classnet_1_1_interpolator_html"><div class="ttname"><a href="classnet_1_1_interpolator.html">net::Interpolator</a></div><div class="ttdef"><b>Definition:</b> Interpolator.h:16</div></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="namespacerl.html">    7</a></span>&#160;<span class="keyword">namespace </span>rl {</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structrl_1_1_wire.html">    9</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structrl_1_1_wire.html">Wire</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structrl_1_1_wire.html#ac0fa1fa5cbb204484af03618cb9c9680">   10</a></span>&#160;        std::vector&lt;double&gt; <a class="code" href="structrl_1_1_wire.html#ac0fa1fa5cbb204484af03618cb9c9680">action</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structrl_1_1_wire.html#ab8a165c515ad06cebd5f71acf1db0348">   11</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="structrl_1_1_wire.html#ab8a165c515ad06cebd5f71acf1db0348">reward</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    };</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classrl_1_1_interpolator.html">   15</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classrl_1_1_interpolator.html">Interpolator</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classrl_1_1_interpolator.html#aec80cac4897e8caebbb47ff769bf0d4c">initFromFile</a>(std::ifstream *in) = 0;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classrl_1_1_interpolator.html#a803e9360ae5b13e7b4078159890dcc6b">storeInterpolator</a>(std::ofstream *out) = 0;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classrl_1_1_interpolator.html#a21e967a7dcf3e40adea22dd5da5df03a">getReward</a>(<span class="keyword">const</span> std::vector&lt;Wire&gt; &amp;controlWires, <span class="keyword">const</span> std::vector&lt;double&gt; &amp;action) = 0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classrl_1_1_interpolator.html#aaa863e8e5be5d62cd355cbb6f61350a0">rewardDerivative</a>(<span class="keyword">const</span> std::vector&lt;double&gt; &amp;action, <span class="keyword">const</span> <a class="code" href="structrl_1_1_wire.html">Wire</a> &amp;wire, <span class="keyword">const</span> std::vector&lt;Wire&gt; &amp;controlWires) = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classrl_1_1_interpolator.html#a59a31f8f3f04e71f0130405dc8d83acc">actionTermDerivative</a>(<span class="keywordtype">double</span> actionTerm, <span class="keywordtype">double</span> wireActionTerm, <span class="keyword">const</span> std::vector&lt;double&gt; &amp;action, <span class="keyword">const</span> <a class="code" href="structrl_1_1_wire.html">Wire</a> &amp;wire, <span class="keyword">const</span> std::vector&lt;Wire&gt; &amp;controlWires) = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">static</span> <a class="code" href="classrl_1_1_interpolator.html">Interpolator</a> * <a class="code" href="classrl_1_1_interpolator.html#aa1a31d450a0a4824d50e897adf972bb1">getAnyInterpolatorFromFile</a>(std::ifstream *in);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    };</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classrl_1_1_interpolator_html_aaa863e8e5be5d62cd355cbb6f61350a0"><div class="ttname"><a href="classrl_1_1_interpolator.html#aaa863e8e5be5d62cd355cbb6f61350a0">rl::Interpolator::rewardDerivative</a></div><div class="ttdeci">virtual double rewardDerivative(const std::vector&lt; double &gt; &amp;action, const Wire &amp;wire, const std::vector&lt; Wire &gt; &amp;controlWires)=0</div><div class="ttdoc">The partial derivative of the interpolator function with respect to the reward of a control wire...</div></div>
+<div class="ttc" id="classrl_1_1_interpolator_html"><div class="ttname"><a href="classrl_1_1_interpolator.html">rl::Interpolator</a></div><div class="ttdoc">Defines the functionality of a Wire Fitted Interpolator to be used by the WireFitQLearn class...</div><div class="ttdef"><b>Definition:</b> Interpolator.h:15</div></div>
+<div class="ttc" id="structrl_1_1_wire_html_ac0fa1fa5cbb204484af03618cb9c9680"><div class="ttname"><a href="structrl_1_1_wire.html#ac0fa1fa5cbb204484af03618cb9c9680">rl::Wire::action</a></div><div class="ttdeci">std::vector&lt; double &gt; action</div><div class="ttdef"><b>Definition:</b> Interpolator.h:10</div></div>
+<div class="ttc" id="structrl_1_1_wire_html_ab8a165c515ad06cebd5f71acf1db0348"><div class="ttname"><a href="structrl_1_1_wire.html#ab8a165c515ad06cebd5f71acf1db0348">rl::Wire::reward</a></div><div class="ttdeci">double reward</div><div class="ttdef"><b>Definition:</b> Interpolator.h:11</div></div>
+<div class="ttc" id="classrl_1_1_interpolator_html_aa1a31d450a0a4824d50e897adf972bb1"><div class="ttname"><a href="classrl_1_1_interpolator.html#aa1a31d450a0a4824d50e897adf972bb1">rl::Interpolator::getAnyInterpolatorFromFile</a></div><div class="ttdeci">static Interpolator * getAnyInterpolatorFromFile(std::ifstream *in)</div><div class="ttdoc">Gets an interpolator from a file. </div><div class="ttdef"><b>Definition:</b> Interpolator.cpp:9</div></div>
+<div class="ttc" id="classrl_1_1_interpolator_html_a803e9360ae5b13e7b4078159890dcc6b"><div class="ttname"><a href="classrl_1_1_interpolator.html#a803e9360ae5b13e7b4078159890dcc6b">rl::Interpolator::storeInterpolator</a></div><div class="ttdeci">virtual void storeInterpolator(std::ofstream *out)=0</div><div class="ttdoc">Stores the parameters of an interpolator in a file. </div></div>
+<div class="ttc" id="classrl_1_1_interpolator_html_a21e967a7dcf3e40adea22dd5da5df03a"><div class="ttname"><a href="classrl_1_1_interpolator.html#a21e967a7dcf3e40adea22dd5da5df03a">rl::Interpolator::getReward</a></div><div class="ttdeci">virtual double getReward(const std::vector&lt; Wire &gt; &amp;controlWires, const std::vector&lt; double &gt; &amp;action)=0</div><div class="ttdoc">Uses the interpolator function to compute the reward of an action vector given a set of control wires...</div></div>
+<div class="ttc" id="classrl_1_1_interpolator_html_a59a31f8f3f04e71f0130405dc8d83acc"><div class="ttname"><a href="classrl_1_1_interpolator.html#a59a31f8f3f04e71f0130405dc8d83acc">rl::Interpolator::actionTermDerivative</a></div><div class="ttdeci">virtual double actionTermDerivative(double actionTerm, double wireActionTerm, const std::vector&lt; double &gt; &amp;action, const Wire &amp;wire, const std::vector&lt; Wire &gt; &amp;controlWires)=0</div><div class="ttdoc">The partial derivative of the interpolator function with respect to the value of one term of the acti...</div></div>
+<div class="ttc" id="classrl_1_1_interpolator_html_aec80cac4897e8caebbb47ff769bf0d4c"><div class="ttname"><a href="classrl_1_1_interpolator.html#aec80cac4897e8caebbb47ff769bf0d4c">rl::Interpolator::initFromFile</a></div><div class="ttdeci">virtual bool initFromFile(std::ifstream *in)=0</div><div class="ttdoc">Initializes the parameters of an interpolator from a file. </div></div>
+<div class="ttc" id="structrl_1_1_wire_html"><div class="ttname"><a href="structrl_1_1_wire.html">rl::Wire</a></div><div class="ttdoc">A data point to be interpolated. </div><div class="ttdef"><b>Definition:</b> Interpolator.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 18 2016 19:42:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 23 2016 09:58:39 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

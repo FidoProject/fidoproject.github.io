@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>net</b></li><li class="navelem"><a class="el" href="structnet_1_1_layer.html">Layer</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacenet.html">net</a></li><li class="navelem"><a class="el" href="structnet_1_1_layer.html">Layer</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -94,42 +95,257 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">net::Layer Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A layer in a <a class="el" href="classnet_1_1_neural_net.html" title="Class representing a neural network. ">NeuralNet</a>.  
+ <a href="structnet_1_1_layer.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_layer_8h_source.html">Layer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9abb1395d84c734c771e7e4b3ed87fb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9abb1395d84c734c771e7e4b3ed87fb8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Layer</b> (std::ifstream *input)</td></tr>
+<tr class="memitem:a7391347edde4265980cf5d18a17bcecf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet_1_1_layer.html#a7391347edde4265980cf5d18a17bcecf">Layer</a> ()</td></tr>
+<tr class="memdesc:a7391347edde4265980cf5d18a17bcecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a layer with the default sigmoid activation function.  <a href="#a7391347edde4265980cf5d18a17bcecf">More...</a><br/></td></tr>
+<tr class="separator:a7391347edde4265980cf5d18a17bcecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9abb1395d84c734c771e7e4b3ed87fb8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet_1_1_layer.html#a9abb1395d84c734c771e7e4b3ed87fb8">Layer</a> (std::ifstream *input)</td></tr>
+<tr class="memdesc:a9abb1395d84c734c771e7e4b3ed87fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a layer from a saved text file.  <a href="#a9abb1395d84c734c771e7e4b3ed87fb8">More...</a><br/></td></tr>
 <tr class="separator:a9abb1395d84c734c771e7e4b3ed87fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4adf2f8fbe7fad75651d400a43abb1cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4adf2f8fbe7fad75651d400a43abb1cc"></a>
-std::map&lt; std::string, <br class="typebreak"/>
-ActivationFunction &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getActivationFunctionNameMap</b> ()</td></tr>
+<tr class="memitem:a4adf2f8fbe7fad75651d400a43abb1cc"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <br class="typebreak"/>
+<a class="el" href="namespacenet.html#ade738ad0124dd9da52ac56301da74b97">ActivationFunction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet_1_1_layer.html#a4adf2f8fbe7fad75651d400a43abb1cc">getActivationFunctionNameMap</a> ()</td></tr>
+<tr class="memdesc:a4adf2f8fbe7fad75651d400a43abb1cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the map of activation function name to ActivationFunction.  <a href="#a4adf2f8fbe7fad75651d400a43abb1cc">More...</a><br/></td></tr>
 <tr class="separator:a4adf2f8fbe7fad75651d400a43abb1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32c3ee05ce075b98110ecea826d8338f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32c3ee05ce075b98110ecea826d8338f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setActivationFunctionWithName</b> (std::string name)</td></tr>
+<tr class="memitem:a32c3ee05ce075b98110ecea826d8338f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet_1_1_layer.html#a32c3ee05ce075b98110ecea826d8338f">setActivationFunctionWithName</a> (std::string name)</td></tr>
+<tr class="memdesc:a32c3ee05ce075b98110ecea826d8338f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the activation function to the given string.  <a href="#a32c3ee05ce075b98110ecea826d8338f">More...</a><br/></td></tr>
 <tr class="separator:a32c3ee05ce075b98110ecea826d8338f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b7641180e81075ca7aa7f582417df67"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b7641180e81075ca7aa7f582417df67"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getActivationFunctionName</b> ()</td></tr>
+<tr class="memitem:a4b7641180e81075ca7aa7f582417df67"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet_1_1_layer.html#a4b7641180e81075ca7aa7f582417df67">getActivationFunctionName</a> ()</td></tr>
+<tr class="memdesc:a4b7641180e81075ca7aa7f582417df67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the layer's activation function.  <a href="#a4b7641180e81075ca7aa7f582417df67">More...</a><br/></td></tr>
 <tr class="separator:a4b7641180e81075ca7aa7f582417df67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e4feecd5ca4c9fcd24ffd5adbe28eee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e4feecd5ca4c9fcd24ffd5adbe28eee"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>storeNetWithStream</b> (std::ofstream *output)</td></tr>
+<tr class="memitem:a4e4feecd5ca4c9fcd24ffd5adbe28eee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet_1_1_layer.html#a4e4feecd5ca4c9fcd24ffd5adbe28eee">storeNetWithStream</a> (std::ofstream *output)</td></tr>
+<tr class="memdesc:a4e4feecd5ca4c9fcd24ffd5adbe28eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store the layer to a text file.  <a href="#a4e4feecd5ca4c9fcd24ffd5adbe28eee">More...</a><br/></td></tr>
 <tr class="separator:a4e4feecd5ca4c9fcd24ffd5adbe28eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a6120d127d7e39c9e159e3a3e2f2bfb1a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6120d127d7e39c9e159e3a3e2f2bfb1a"></a>
-ActivationFunction&#160;</td><td class="memItemRight" valign="bottom"><b>activationFunction</b></td></tr>
+<tr class="memitem:a6120d127d7e39c9e159e3a3e2f2bfb1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacenet.html#ade738ad0124dd9da52ac56301da74b97">ActivationFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet_1_1_layer.html#a6120d127d7e39c9e159e3a3e2f2bfb1a">activationFunction</a></td></tr>
+<tr class="memdesc:a6120d127d7e39c9e159e3a3e2f2bfb1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The activation function for the neurons of this layer.  <a href="#a6120d127d7e39c9e159e3a3e2f2bfb1a">More...</a><br/></td></tr>
 <tr class="separator:a6120d127d7e39c9e159e3a3e2f2bfb1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af897a7ec273133801638abf4cc4fb502"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af897a7ec273133801638abf4cc4fb502"></a>
-std::vector&lt; <a class="el" href="classnet_1_1_neuron.html">Neuron</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>neurons</b></td></tr>
+<tr class="memitem:af897a7ec273133801638abf4cc4fb502"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classnet_1_1_neuron.html">Neuron</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet_1_1_layer.html#af897a7ec273133801638abf4cc4fb502">neurons</a></td></tr>
+<tr class="memdesc:af897a7ec273133801638abf4cc4fb502"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the neurons of this layer.  <a href="#af897a7ec273133801638abf4cc4fb502">More...</a><br/></td></tr>
 <tr class="separator:af897a7ec273133801638abf4cc4fb502"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A layer in a <a class="el" href="classnet_1_1_neural_net.html" title="Class representing a neural network. ">NeuralNet</a>. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a7391347edde4265980cf5d18a17bcecf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">net::Layer::Layer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialize a layer with the default sigmoid activation function. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9abb1395d84c734c771e7e4b3ed87fb8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">net::Layer::Layer </td>
+          <td>(</td>
+          <td class="paramtype">std::ifstream *&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialize a layer from a saved text file. </p>
+<p>The saved text file must be formatted as outputted by the <a class="el" href="structnet_1_1_layer.html#a4e4feecd5ca4c9fcd24ffd5adbe28eee" title="Store the layer to a text file. ">storeNetWithStream(std::ofstream *output)</a> function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>the text file for the <a class="el" href="structnet_1_1_layer.html" title="A layer in a NeuralNet. ">Layer</a> object to be initialized from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a4b7641180e81075ca7aa7f582417df67"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string net::Layer::getActivationFunctionName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the name of the layer's activation function. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4adf2f8fbe7fad75651d400a43abb1cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, <a class="el" href="namespacenet.html#ade738ad0124dd9da52ac56301da74b97">ActivationFunction</a>&gt; net::Layer::getActivationFunctionNameMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the map of activation function name to ActivationFunction. </p>
+
+</div>
+</div>
+<a class="anchor" id="a32c3ee05ce075b98110ecea826d8338f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void net::Layer::setActivationFunctionWithName </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the activation function to the given string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the activation function </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4e4feecd5ca4c9fcd24ffd5adbe28eee"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void net::Layer::storeNetWithStream </td>
+          <td>(</td>
+          <td class="paramtype">std::ofstream *&#160;</td>
+          <td class="paramname"><em>output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Store the layer to a text file. </p>
+<p>This can later be read by the <a class="el" href="structnet_1_1_layer.html#a9abb1395d84c734c771e7e4b3ed87fb8" title="Initialize a layer from a saved text file. ">Layer(std::ifstream *input)</a> constructor.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output</td><td>the text file for the layer object to be written to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a6120d127d7e39c9e159e3a3e2f2bfb1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacenet.html#ade738ad0124dd9da52ac56301da74b97">ActivationFunction</a> net::Layer::activationFunction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The activation function for the neurons of this layer. </p>
+<p>An activation function takes the summation of the inputs times the weights of a neuron and uses an activation value of 0 to filter the output </p>
+
+</div>
+</div>
+<a class="anchor" id="af897a7ec273133801638abf4cc4fb502"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classnet_1_1_neuron.html">Neuron</a>&gt; net::Layer::neurons</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Holds the neurons of this layer. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Software/<a class="el" href="_layer_8h_source.html">Layer.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 18 2016 19:42:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 23 2016 09:58:39 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

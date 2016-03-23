@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -61,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,88 +89,117 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">QLearn.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef QLEARN_H</span></div>
+<a href="_q_learn_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef QLEARN_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define QLEARN_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;Backpropagation.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>net {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_learner_8h.html">Learner.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_backpropagation_8h.html">Backpropagation.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>net{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">class </span>NeuralNet;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classnet_1_1_q_learn.html">   12</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classnet_1_1_q_learn.html">QLearn</a> {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        std::vector&lt;NeuralNet *&gt; networks;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="classnet_1_1_backpropagation.html">Backpropagation</a> backprop;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lastAction, numberOfActions;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">double</span> learningRate, devaluationFactor;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">double</span> lastReward;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        std::vector&lt;double&gt; lastState;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        std::vector&lt; std::vector&lt; std::pair&lt;std::vector&lt;double&gt;, <span class="keywordtype">double</span>&gt; &gt; &gt; history;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="comment">/* Initializes a QLearn object with a model network and the values of learning rate and devaluationFactor.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">         *</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">         * The model network is used as a model architecture for the networks that will rate the reward of each action.</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">         * Learning rate is a constant between 0 and 1 that dictates how fast the robot learns from reinforcement.</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">         * Devaluation factor is a constant between 0 and 1 that weighs future reward vs immediate reward. </span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">         * A value of 0 will make the network only value immediate reward, while a value of 1 will make it consider future reward with the same weight as immediate reward. </span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classnet_1_1_q_learn.html">QLearn</a>(<a class="code" href="classnet_1_1_neural_net.html">NeuralNet</a> *modelNetwork, <a class="code" href="classnet_1_1_backpropagation.html">Backpropagation</a> backprop_, <span class="keywordtype">double</span> learningRate_, <span class="keywordtype">double</span> devaluationFactor_, <span class="keywordtype">int</span> numberOfActions_);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">/* Initializes a QLearn object with an vector of networks and the values of learning rate and devaluationFactor.</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">        *</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">        * The vector of networks contains the networks that will rate the reward of each action</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">        * Learning rate is a constant between 0 and 1 that dictates how fast the robot learns from reinforcement.</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">        * Devaluation factor is a constant between 0 and 1 that weighs future reward vs immediate reward.</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">        * A value of 0 will make the network only value immediate reward, while a value of 1 will make it consider future reward with the same weight as immediate reward.</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">        */</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classnet_1_1_q_learn.html">QLearn</a>(std::vector&lt;NeuralNet *&gt; networks_, <a class="code" href="classnet_1_1_backpropagation.html">Backpropagation</a> backprop_, <span class="keywordtype">double</span> learningRate_, <span class="keywordtype">double</span> devaluationFactor_);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="comment">// Initializes a QLearn object with a file that contains a stored QLearn object</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classnet_1_1_q_learn.html">QLearn</a>(std::string filename);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">// Initialize empty QLearn object</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classnet_1_1_q_learn.html">QLearn</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">// Gets the action that the network deems most benificial for the currentState</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> chooseBestAction(std::vector&lt;double&gt; currentState);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="comment">/* Gets an action using the Boltzman softmax probability distribution</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">         *</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">         * Non-random search heuristic used so that the neural network explores actions despite their reward value. </span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">         * The lower the exploration constanstant, the more likely it is to pick the best action for the current state.</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classnet_1_1_q_learn.html#adb6e07fd14e98663e4560aa6fc00bf83">chooseBoltzmanAction</a>(std::vector&lt;double&gt; currentState, <span class="keywordtype">double</span> explorationConstant);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">/* Given the immediate reward from the last action taken and the new state, </span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">         * this function updates the correct value for the longterm reward of the lastAction and trains the network in charge of the lastAction to output the corect reward value</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> applyReinforcementToLastAction(<span class="keywordtype">double</span> reward, std::vector&lt;double&gt; newState);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">void</span> storeQLearn(std::string filename);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="comment">// Gets the action with the highest reward for a state and gets that action&#39;s reward</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">void</span> getBestActionAndReward(std::vector&lt;double&gt; state, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *bestAction, <span class="keywordtype">double</span> *bestReward);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">// Returns the reward value of the action with the greatest reward.</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">double</span> highestReward(std::vector&lt;double&gt; state);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="comment">// Returns the action with the highest reward</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordtype">int</span> bestAction(std::vector&lt;double&gt; state);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    };</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classnet_1_1_neural_net_html"><div class="ttname"><a href="classnet_1_1_neural_net.html">net::NeuralNet</a></div><div class="ttdef"><b>Definition:</b> NeuralNet.h:16</div></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>rl {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structrl_1_1_model.html">   15</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structrl_1_1_model.html">Model</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structrl_1_1_model.html#a4bf8bd250bd6f9413e3b8476a476a95f">   16</a></span>&#160;        <a class="code" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *<a class="code" href="structrl_1_1_model.html#a4bf8bd250bd6f9413e3b8476a476a95f">network</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structrl_1_1_model.html#a21d64c048921cbcd7e2cc6e1b7f06f2a">   17</a></span>&#160;        <a class="code" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> <a class="code" href="structrl_1_1_model.html#a21d64c048921cbcd7e2cc6e1b7f06f2a">action</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structrl_1_1_model.html#a960c76c5f48749bec0af605626bc638f">   18</a></span>&#160;        std::vector&lt;std::pair&lt;State, double&gt;&gt; <a class="code" href="structrl_1_1_model.html#a960c76c5f48749bec0af605626bc638f">history</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structrl_1_1_model.html#a236c7bc971eaf5540adbd3cfedbbde66">   20</a></span>&#160;        <a class="code" href="structrl_1_1_model.html#a236c7bc971eaf5540adbd3cfedbbde66">Model</a>(<a class="code" href="classnet_1_1_neural_net.html">net::NeuralNet</a> * network_, <a class="code" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> action_) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <a class="code" href="structrl_1_1_model.html#a4bf8bd250bd6f9413e3b8476a476a95f">network</a> = network_;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <a class="code" href="structrl_1_1_model.html#a21d64c048921cbcd7e2cc6e1b7f06f2a">action</a> = action_;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structrl_1_1_model.html#a1b576656dcf2dc5bb24cf04090110f2a">   25</a></span>&#160;        <a class="code" href="structrl_1_1_model.html#a1b576656dcf2dc5bb24cf04090110f2a">Model</a>() {}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structrl_1_1_model.html#a93865ef6199fe0f10c1d2f3fc0766963">   27</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="structrl_1_1_model.html#a93865ef6199fe0f10c1d2f3fc0766963">addToHistory</a>(std::pair&lt;State, double&gt; entry) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <a class="code" href="structrl_1_1_model.html#a960c76c5f48749bec0af605626bc638f">history</a>.push_back(entry);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="structrl_1_1_model.html#a960c76c5f48749bec0af605626bc638f">history</a>.size() &gt; 5) <a class="code" href="structrl_1_1_model.html#a960c76c5f48749bec0af605626bc638f">history</a>.erase(<a class="code" href="structrl_1_1_model.html#a960c76c5f48749bec0af605626bc638f">history</a>.begin());</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    };</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classrl_1_1_q_learn.html">   33</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classrl_1_1_q_learn.html">QLearn</a> : <span class="keyword">public</span> <a class="code" href="classrl_1_1_learner.html">Learner</a> {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="comment">/* Initializes a QLearn object with a model network and the values of learning rate and devaluationFactor.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">         *</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">         * The model network is used as a model architecture for the networks that will rate the reward of each action.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">         * Learning rate is a constant between 0 and 1 that dictates how fast the robot learns from reinforcement.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">         * Devaluation factor is a constant between 0 and 1 that weighs future reward vs immediate reward. </span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">         * A value of 0 will make the network only value immediate reward, while a value of 1 will make it consider future reward with the same weight as immediate reward. </span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classrl_1_1_q_learn.html#aecf618f5980d399fd60e935658035c81">QLearn</a>(<a class="code" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *modelNetwork, <a class="code" href="classnet_1_1_backpropagation.html">net::Backpropagation</a> backprop_, <span class="keywordtype">double</span> learningRate_, <span class="keywordtype">double</span> devaluationFactor_, std::vector&lt;Action&gt; possibleActions_);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="comment">/* Initializes a QLearn object with an vector of networks and the values of learning rate and devaluationFactor.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">        *</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">        * The vector of networks contains the networks that will rate the reward of each action</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">        * Learning rate is a constant between 0 and 1 that dictates how fast the robot learns from reinforcement.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">        * Devaluation factor is a constant between 0 and 1 that weighs future reward vs immediate reward.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">        * A value of 0 will make the network only value immediate reward, while a value of 1 will make it consider future reward with the same weight as immediate reward.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">        */</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classrl_1_1_q_learn.html#aecf618f5980d399fd60e935658035c81">QLearn</a>(std::vector&lt;Model&gt; models_, <a class="code" href="classnet_1_1_backpropagation.html">net::Backpropagation</a> backprop_, <span class="keywordtype">double</span> learningRate_, <span class="keywordtype">double</span> devaluationFactor_);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classrl_1_1_q_learn.html#aecf618f5980d399fd60e935658035c81">QLearn</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">// Gets the action that the network deems most benificial for the currentState</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> <a class="code" href="classrl_1_1_q_learn.html#a209db7840a51554c937dbce73d4b79d9">chooseBestAction</a>(<a class="code" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> currentState);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">/* Gets an action using the Boltzman softmax probability distribution</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">         *</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">         * Non-random search heuristic used so that the neural network explores actions despite their reward value. </span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">         * The lower the exploration constanstant, the more likely it is to pick the best action for the current state.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> <a class="code" href="classrl_1_1_q_learn.html#a7507815f38b376e53fa28802b0bfe1dd">chooseBoltzmanAction</a>(<a class="code" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> currentState, <span class="keywordtype">double</span> explorationConstant);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">/* Given the immediate reward from the last action taken and the new state, </span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">         * this function updates the correct value for the longterm reward of the lastAction and trains the network in charge of the lastAction to output the corect reward value</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classrl_1_1_q_learn.html#ad0617a36dab296a5d1d88fe1a4e27a3f">applyReinforcementToLastAction</a>(<span class="keywordtype">double</span> reward, <a class="code" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> newState);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classrl_1_1_q_learn.html#ad66a87f3ec9c7466fc310520bcd9edfb">reset</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="classnet_1_1_backpropagation.html">net::Backpropagation</a> backprop;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        std::vector&lt;Model&gt; models;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">double</span> learningRate, devaluationFactor;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> lastState;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="structrl_1_1_model.html">Model</a> lastModel;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="comment">// Gets the action with the highest reward for a state and gets that action&#39;s reward</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        std::vector&lt;double&gt; getModelRewards(<a class="code" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> state);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="comment">// Returns the reward value of the action with the greatest reward.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordtype">double</span> getHighestReward(<a class="code" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> state);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    };</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classnet_1_1_neural_net_html"><div class="ttname"><a href="classnet_1_1_neural_net.html">net::NeuralNet</a></div><div class="ttdoc">Class representing a neural network. </div><div class="ttdef"><b>Definition:</b> NeuralNet.h:17</div></div>
+<div class="ttc" id="classrl_1_1_q_learn_html_a209db7840a51554c937dbce73d4b79d9"><div class="ttname"><a href="classrl_1_1_q_learn.html#a209db7840a51554c937dbce73d4b79d9">rl::QLearn::chooseBestAction</a></div><div class="ttdeci">Action chooseBestAction(State currentState)</div><div class="ttdoc">Gets the action that the network deems most beneficial for the currentState. </div><div class="ttdef"><b>Definition:</b> QLearn.cpp:34</div></div>
+<div class="ttc" id="structrl_1_1_model_html_a1b576656dcf2dc5bb24cf04090110f2a"><div class="ttname"><a href="structrl_1_1_model.html#a1b576656dcf2dc5bb24cf04090110f2a">rl::Model::Model</a></div><div class="ttdeci">Model()</div><div class="ttdef"><b>Definition:</b> QLearn.h:25</div></div>
 <div class="ttc" id="classnet_1_1_backpropagation_html"><div class="ttname"><a href="classnet_1_1_backpropagation.html">net::Backpropagation</a></div><div class="ttdef"><b>Definition:</b> Backpropagation.h:14</div></div>
-<div class="ttc" id="classnet_1_1_q_learn_html"><div class="ttname"><a href="classnet_1_1_q_learn.html">net::QLearn</a></div><div class="ttdef"><b>Definition:</b> QLearn.h:12</div></div>
-<div class="ttc" id="classnet_1_1_q_learn_html_adb6e07fd14e98663e4560aa6fc00bf83"><div class="ttname"><a href="classnet_1_1_q_learn.html#adb6e07fd14e98663e4560aa6fc00bf83">net::QLearn::chooseBoltzmanAction</a></div><div class="ttdeci">unsigned int chooseBoltzmanAction(std::vector&lt; double &gt; currentState, double explorationConstant)</div><div class="ttdef"><b>Definition:</b> QLearn.cpp:62</div></div>
+<div class="ttc" id="classrl_1_1_q_learn_html_ad0617a36dab296a5d1d88fe1a4e27a3f"><div class="ttname"><a href="classrl_1_1_q_learn.html#ad0617a36dab296a5d1d88fe1a4e27a3f">rl::QLearn::applyReinforcementToLastAction</a></div><div class="ttdeci">void applyReinforcementToLastAction(double reward, State newState)</div><div class="ttdoc">Apply reinforcement to the last action. </div><div class="ttdef"><b>Definition:</b> QLearn.cpp:78</div></div>
+<div class="ttc" id="_learner_8h_html"><div class="ttname"><a href="_learner_8h.html">Learner.h</a></div></div>
+<div class="ttc" id="structrl_1_1_model_html"><div class="ttname"><a href="structrl_1_1_model.html">rl::Model</a></div><div class="ttdef"><b>Definition:</b> QLearn.h:15</div></div>
+<div class="ttc" id="namespacerl_html_ab1b0f25d5634995bd741401cdf7677d3"><div class="ttname"><a href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">rl::State</a></div><div class="ttdeci">std::vector&lt; double &gt; State</div><div class="ttdef"><b>Definition:</b> Learner.h:13</div></div>
+<div class="ttc" id="classrl_1_1_q_learn_html_ad66a87f3ec9c7466fc310520bcd9edfb"><div class="ttname"><a href="classrl_1_1_q_learn.html#ad66a87f3ec9c7466fc310520bcd9edfb">rl::QLearn::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdef"><b>Definition:</b> QLearn.cpp:102</div></div>
+<div class="ttc" id="structrl_1_1_model_html_a960c76c5f48749bec0af605626bc638f"><div class="ttname"><a href="structrl_1_1_model.html#a960c76c5f48749bec0af605626bc638f">rl::Model::history</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; State, double &gt; &gt; history</div><div class="ttdef"><b>Definition:</b> QLearn.h:18</div></div>
+<div class="ttc" id="classrl_1_1_q_learn_html_aecf618f5980d399fd60e935658035c81"><div class="ttname"><a href="classrl_1_1_q_learn.html#aecf618f5980d399fd60e935658035c81">rl::QLearn::QLearn</a></div><div class="ttdeci">QLearn()</div><div class="ttdef"><b>Definition:</b> QLearn.cpp:30</div></div>
+<div class="ttc" id="structrl_1_1_model_html_a4bf8bd250bd6f9413e3b8476a476a95f"><div class="ttname"><a href="structrl_1_1_model.html#a4bf8bd250bd6f9413e3b8476a476a95f">rl::Model::network</a></div><div class="ttdeci">net::NeuralNet * network</div><div class="ttdef"><b>Definition:</b> QLearn.h:16</div></div>
+<div class="ttc" id="classrl_1_1_q_learn_html_a7507815f38b376e53fa28802b0bfe1dd"><div class="ttname"><a href="classrl_1_1_q_learn.html#a7507815f38b376e53fa28802b0bfe1dd">rl::QLearn::chooseBoltzmanAction</a></div><div class="ttdeci">Action chooseBoltzmanAction(State currentState, double explorationConstant)</div><div class="ttdoc">Gets an action using the Boltzman softmax probability distribution. </div><div class="ttdef"><b>Definition:</b> QLearn.cpp:42</div></div>
+<div class="ttc" id="structrl_1_1_model_html_a93865ef6199fe0f10c1d2f3fc0766963"><div class="ttname"><a href="structrl_1_1_model.html#a93865ef6199fe0f10c1d2f3fc0766963">rl::Model::addToHistory</a></div><div class="ttdeci">void addToHistory(std::pair&lt; State, double &gt; entry)</div><div class="ttdef"><b>Definition:</b> QLearn.h:27</div></div>
+<div class="ttc" id="_backpropagation_8h_html"><div class="ttname"><a href="_backpropagation_8h.html">Backpropagation.h</a></div></div>
+<div class="ttc" id="structrl_1_1_model_html_a21d64c048921cbcd7e2cc6e1b7f06f2a"><div class="ttname"><a href="structrl_1_1_model.html#a21d64c048921cbcd7e2cc6e1b7f06f2a">rl::Model::action</a></div><div class="ttdeci">Action action</div><div class="ttdef"><b>Definition:</b> QLearn.h:17</div></div>
+<div class="ttc" id="namespacerl_html_a3da872aded4c87056d470bd2916618a1"><div class="ttname"><a href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">rl::Action</a></div><div class="ttdeci">std::vector&lt; double &gt; Action</div><div class="ttdef"><b>Definition:</b> Learner.h:12</div></div>
+<div class="ttc" id="classrl_1_1_q_learn_html"><div class="ttname"><a href="classrl_1_1_q_learn.html">rl::QLearn</a></div><div class="ttdef"><b>Definition:</b> QLearn.h:33</div></div>
+<div class="ttc" id="structrl_1_1_model_html_a236c7bc971eaf5540adbd3cfedbbde66"><div class="ttname"><a href="structrl_1_1_model.html#a236c7bc971eaf5540adbd3cfedbbde66">rl::Model::Model</a></div><div class="ttdeci">Model(net::NeuralNet *network_, Action action_)</div><div class="ttdef"><b>Definition:</b> QLearn.h:20</div></div>
+<div class="ttc" id="classrl_1_1_learner_html"><div class="ttname"><a href="classrl_1_1_learner.html">rl::Learner</a></div><div class="ttdef"><b>Definition:</b> Learner.h:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 18 2016 19:42:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 23 2016 09:58:39 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

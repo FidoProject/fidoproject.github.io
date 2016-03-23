@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['getderivedactivationfunctionnames',['getDerivedActivationFunctionNames',['../classnet_1_1_backpropagation.html#a6ab408a26fae7d69b056ea0d8626ea85',1,'net::Backpropagation']]],
-  ['getderivedhiddenactivationfunctionname',['getDerivedHiddenActivationFunctionName',['../classnet_1_1_backpropagation.html#a79b3839ac981ff0f1b846b9ab43ac7ce',1,'net::Backpropagation']]],
-  ['getderivedoutputactivationfunctionname',['getDerivedOutputActivationFunctionName',['../classnet_1_1_backpropagation.html#a0c5bf774d0494dd1b26f24b7d99b61a2',1,'net::Backpropagation']]],
-  ['getsetofwires',['getSetOfWires',['../classnet_1_1_wire_fit_q_learn.html#ae849291edb14c45d16aaef7b872a7721',1,'net::WireFitQLearn']]],
-  ['getvis',['getVis',['../class_driver.html#a4d70de910237fe653b3dcd5276d77e73',1,'Driver']]]
+  ['choosebestaction',['chooseBestAction',['../classrl_1_1_learner.html#a0c0161ee9581f7ab456f13bbd69baec4',1,'rl::Learner::chooseBestAction()'],['../classrl_1_1_q_learn.html#a209db7840a51554c937dbce73d4b79d9',1,'rl::QLearn::chooseBestAction()'],['../classrl_1_1_wire_fit_q_learn.html#a3959c0dfa6c0c0bb87453d938d81c01e',1,'rl::WireFitQLearn::chooseBestAction()']]],
+  ['chooseboltzmanaction',['chooseBoltzmanAction',['../classrl_1_1_learner.html#a626cd6c6a05357ccb3d392f34688629c',1,'rl::Learner::chooseBoltzmanAction()'],['../classrl_1_1_q_learn.html#a7507815f38b376e53fa28802b0bfe1dd',1,'rl::QLearn::chooseBoltzmanAction()'],['../classrl_1_1_wire_fit_q_learn.html#a9243e7e84bf3a9e295291ae8c50c2971',1,'rl::WireFitQLearn::chooseBoltzmanAction()']]]
 ];

@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -61,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,14 +89,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Backpropagation.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BACKPROPAGATION_H</span></div>
+<a href="_backpropagation_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BACKPROPAGATION_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BACKPROPAGATION_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;ActivationFunctions.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_activation_functions_8h.html">ActivationFunctions.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>net {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
@@ -103,63 +105,54 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classnet_1_1_backpropagation.html">   14</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classnet_1_1_backpropagation.html">Backpropagation</a> {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="classnet_1_1_backpropagation.html#a078f12f7065b8ea1b66bd9fa87dbb5b6">Backpropagation</a>(<span class="keywordtype">double</span> learningRate_, <span class="keywordtype">double</span> momentumTerm_, <span class="keywordtype">double</span> targetErrorLevel_, <span class="keywordtype">int</span> maximumIterations_);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="classnet_1_1_backpropagation.html#a078f12f7065b8ea1b66bd9fa87dbb5b6">Backpropagation</a>();</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classnet_1_1_backpropagation.html#a078f12f7065b8ea1b66bd9fa87dbb5b6">Backpropagation</a>(std::string filename);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classnet_1_1_backpropagation.html#a078f12f7065b8ea1b66bd9fa87dbb5b6">Backpropagation</a>(std::ifstream *input);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classnet_1_1_backpropagation.html#ab33279948cf38660679fb3474908f2eb">storeBackpropagation</a>(std::string filename);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classnet_1_1_backpropagation.html#a08352f1a74216240b2bd9d2531038bc8">storeBackpropagationWithStream</a>(std::ofstream *output);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classnet_1_1_backpropagation.html#a3005bd4ba5ef48306e2b77cad3f2a22c">trainOnData</a>(<a class="code" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *network, <span class="keyword">const</span> std::vector&lt; std::vector&lt;double&gt; &gt; &amp;input, <span class="keyword">const</span> std::vector&lt; std::vector&lt;double&gt; &gt; &amp;correctOutput);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classnet_1_1_backpropagation.html#a56d4a23f6c623f03a4a9db0773a58df8">trainOnDataPoint</a>(<a class="code" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *network, <span class="keyword">const</span> std::vector&lt;double&gt; &amp;input, <span class="keyword">const</span> std::vector&lt;double&gt; &amp;correctOutput);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        std::map&lt;std::string, ActivationFunction&gt; <a class="code" href="classnet_1_1_backpropagation.html#a6ab408a26fae7d69b056ea0d8626ea85">getDerivedActivationFunctionNames</a>();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classnet_1_1_backpropagation.html#ae88fa8b371c7dac877b568c003ea7c3e">setDerivedHiddenActivationFunction</a>(std::string name);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classnet_1_1_backpropagation.html#a6c7f065be066a38a8946d222c0e230f3">setDerivedOutputActivationFunction</a>(std::string name);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        std::string <a class="code" href="classnet_1_1_backpropagation.html#a79b3839ac981ff0f1b846b9ab43ac7ce">getDerivedHiddenActivationFunctionName</a>();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        std::string <a class="code" href="classnet_1_1_backpropagation.html#a0c5bf774d0494dd1b26f24b7d99b61a2">getDerivedOutputActivationFunctionName</a>();</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">double</span> learningRate, momentumTerm, targetErrorLevel;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">int</span> maxiumumIterations;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        std::vector&lt; std::vector&lt; std::vector&lt;double&gt; &gt; &gt; lastChangeInWeight;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        ActivationFunction hiddenActivationFunctionDerivative;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        ActivationFunction outputActivationFunctionDerivative;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classnet_1_1_backpropagation.html#a078f12f7065b8ea1b66bd9fa87dbb5b6">Backpropagation</a>(std::string filename);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classnet_1_1_backpropagation.html#a078f12f7065b8ea1b66bd9fa87dbb5b6">Backpropagation</a>(std::ifstream *input);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classnet_1_1_backpropagation.html#ab33279948cf38660679fb3474908f2eb">storeBackpropagation</a>(std::string filename);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classnet_1_1_backpropagation.html#a08352f1a74216240b2bd9d2531038bc8">storeBackpropagationWithStream</a>(std::ofstream *output);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classnet_1_1_backpropagation.html#a3005bd4ba5ef48306e2b77cad3f2a22c">trainOnData</a>(<a class="code" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *network, <span class="keyword">const</span> std::vector&lt; std::vector&lt;double&gt; &gt; &amp;input, <span class="keyword">const</span> std::vector&lt; std::vector&lt;double&gt; &gt; &amp;correctOutput);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classnet_1_1_backpropagation.html#a56d4a23f6c623f03a4a9db0773a58df8">trainOnDataPoint</a>(<a class="code" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *network, <span class="keyword">const</span> std::vector&lt;double&gt; &amp;input, <span class="keyword">const</span> std::vector&lt;double&gt; &amp;correctOutput);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classnet_1_1_backpropagation.html#a9d8a5f299a8dbbd6f74ff4669e6bd50a">   79</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classnet_1_1_backpropagation.html#a9d8a5f299a8dbbd6f74ff4669e6bd50a">learningRate</a>; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classnet_1_1_backpropagation.html#ac918ac40710812169c46bcf730928e6b">   80</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classnet_1_1_backpropagation.html#ac918ac40710812169c46bcf730928e6b">momentumTerm</a>; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classnet_1_1_backpropagation.html#a4244cf1e73577909b485bcefe41ac07a">   81</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classnet_1_1_backpropagation.html#a4244cf1e73577909b485bcefe41ac07a">targetErrorLevel</a>; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classnet_1_1_backpropagation.html#a2880349375de621da21181bf934750b9">   82</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classnet_1_1_backpropagation.html#a2880349375de621da21181bf934750b9">maximumIterations</a>; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classnet_1_1_backpropagation.html#a0873c4053257eea79d1100bcecfa8703">   83</a></span>&#160;        std::vector&lt; std::vector&lt; std::vector&lt;double&gt; &gt; &gt; <a class="code" href="classnet_1_1_backpropagation.html#a0873c4053257eea79d1100bcecfa8703">lastChangeInWeight</a>; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordtype">void</span> initWithStream(std::ifstream *input);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">void</span> resetLastChangeInWeight(<a class="code" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *network);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        std::map&lt;std::string, ActivationFunction&gt; getDerivedActivationFunctionNames();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    };</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordtype">void</span> initWithStream(std::ifstream *input);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordtype">void</span> resetLastChangeInWeight(<a class="code" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *network);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    };</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classnet_1_1_backpropagation_html_a3005bd4ba5ef48306e2b77cad3f2a22c"><div class="ttname"><a href="classnet_1_1_backpropagation.html#a3005bd4ba5ef48306e2b77cad3f2a22c">net::Backpropagation::trainOnData</a></div><div class="ttdeci">void trainOnData(net::NeuralNet *network, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;input, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;correctOutput)</div><div class="ttdoc">Trains a neural network on a training set. </div><div class="ttdef"><b>Definition:</b> Backpropagation.cpp:58</div></div>
-<div class="ttc" id="classnet_1_1_backpropagation_html_ae88fa8b371c7dac877b568c003ea7c3e"><div class="ttname"><a href="classnet_1_1_backpropagation.html#ae88fa8b371c7dac877b568c003ea7c3e">net::Backpropagation::setDerivedHiddenActivationFunction</a></div><div class="ttdeci">void setDerivedHiddenActivationFunction(std::string name)</div><div class="ttdef"><b>Definition:</b> Backpropagation.cpp:150</div></div>
-<div class="ttc" id="classnet_1_1_neural_net_html"><div class="ttname"><a href="classnet_1_1_neural_net.html">net::NeuralNet</a></div><div class="ttdef"><b>Definition:</b> NeuralNet.h:16</div></div>
-<div class="ttc" id="classnet_1_1_backpropagation_html_a79b3839ac981ff0f1b846b9ab43ac7ce"><div class="ttname"><a href="classnet_1_1_backpropagation.html#a79b3839ac981ff0f1b846b9ab43ac7ce">net::Backpropagation::getDerivedHiddenActivationFunctionName</a></div><div class="ttdeci">std::string getDerivedHiddenActivationFunctionName()</div><div class="ttdef"><b>Definition:</b> Backpropagation.cpp:158</div></div>
-<div class="ttc" id="classnet_1_1_backpropagation_html_a6ab408a26fae7d69b056ea0d8626ea85"><div class="ttname"><a href="classnet_1_1_backpropagation.html#a6ab408a26fae7d69b056ea0d8626ea85">net::Backpropagation::getDerivedActivationFunctionNames</a></div><div class="ttdeci">std::map&lt; std::string, ActivationFunction &gt; getDerivedActivationFunctionNames()</div><div class="ttdef"><b>Definition:</b> Backpropagation.cpp:142</div></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classnet_1_1_backpropagation_html_a3005bd4ba5ef48306e2b77cad3f2a22c"><div class="ttname"><a href="classnet_1_1_backpropagation.html#a3005bd4ba5ef48306e2b77cad3f2a22c">net::Backpropagation::trainOnData</a></div><div class="ttdeci">void trainOnData(net::NeuralNet *network, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;input, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;correctOutput)</div><div class="ttdoc">Trains a neural network on a training set. </div><div class="ttdef"><b>Definition:</b> Backpropagation.cpp:52</div></div>
+<div class="ttc" id="classnet_1_1_neural_net_html"><div class="ttname"><a href="classnet_1_1_neural_net.html">net::NeuralNet</a></div><div class="ttdoc">Class representing a neural network. </div><div class="ttdef"><b>Definition:</b> NeuralNet.h:17</div></div>
+<div class="ttc" id="classnet_1_1_backpropagation_html_a2880349375de621da21181bf934750b9"><div class="ttname"><a href="classnet_1_1_backpropagation.html#a2880349375de621da21181bf934750b9">net::Backpropagation::maximumIterations</a></div><div class="ttdeci">int maximumIterations</div><div class="ttdoc">The maximum number of iterations, set by constructor. </div><div class="ttdef"><b>Definition:</b> Backpropagation.h:82</div></div>
+<div class="ttc" id="classnet_1_1_backpropagation_html_ac918ac40710812169c46bcf730928e6b"><div class="ttname"><a href="classnet_1_1_backpropagation.html#ac918ac40710812169c46bcf730928e6b">net::Backpropagation::momentumTerm</a></div><div class="ttdeci">double momentumTerm</div><div class="ttdoc">The term of momentum, set by constructor. </div><div class="ttdef"><b>Definition:</b> Backpropagation.h:80</div></div>
+<div class="ttc" id="_activation_functions_8h_html"><div class="ttname"><a href="_activation_functions_8h.html">ActivationFunctions.h</a></div><div class="ttdoc">Fido&#39;s supported activation functions and their derivatives. </div></div>
 <div class="ttc" id="classnet_1_1_backpropagation_html"><div class="ttname"><a href="classnet_1_1_backpropagation.html">net::Backpropagation</a></div><div class="ttdef"><b>Definition:</b> Backpropagation.h:14</div></div>
-<div class="ttc" id="classnet_1_1_backpropagation_html_a0c5bf774d0494dd1b26f24b7d99b61a2"><div class="ttname"><a href="classnet_1_1_backpropagation.html#a0c5bf774d0494dd1b26f24b7d99b61a2">net::Backpropagation::getDerivedOutputActivationFunctionName</a></div><div class="ttdeci">std::string getDerivedOutputActivationFunctionName()</div><div class="ttdef"><b>Definition:</b> Backpropagation.cpp:165</div></div>
-<div class="ttc" id="classnet_1_1_backpropagation_html_a56d4a23f6c623f03a4a9db0773a58df8"><div class="ttname"><a href="classnet_1_1_backpropagation.html#a56d4a23f6c623f03a4a9db0773a58df8">net::Backpropagation::trainOnDataPoint</a></div><div class="ttdeci">double trainOnDataPoint(net::NeuralNet *network, const std::vector&lt; double &gt; &amp;input, const std::vector&lt; double &gt; &amp;correctOutput)</div><div class="ttdoc">Gets the output of the neural network, calculates the error of each neuron, and edits the weights of ...</div><div class="ttdef"><b>Definition:</b> Backpropagation.cpp:76</div></div>
-<div class="ttc" id="classnet_1_1_backpropagation_html_ab33279948cf38660679fb3474908f2eb"><div class="ttname"><a href="classnet_1_1_backpropagation.html#ab33279948cf38660679fb3474908f2eb">net::Backpropagation::storeBackpropagation</a></div><div class="ttdeci">void storeBackpropagation(std::string filename)</div><div class="ttdef"><b>Definition:</b> Backpropagation.cpp:41</div></div>
-<div class="ttc" id="classnet_1_1_backpropagation_html_a078f12f7065b8ea1b66bd9fa87dbb5b6"><div class="ttname"><a href="classnet_1_1_backpropagation.html#a078f12f7065b8ea1b66bd9fa87dbb5b6">net::Backpropagation::Backpropagation</a></div><div class="ttdeci">Backpropagation()</div><div class="ttdef"><b>Definition:</b> Backpropagation.cpp:22</div></div>
-<div class="ttc" id="classnet_1_1_backpropagation_html_a6c7f065be066a38a8946d222c0e230f3"><div class="ttname"><a href="classnet_1_1_backpropagation.html#a6c7f065be066a38a8946d222c0e230f3">net::Backpropagation::setDerivedOutputActivationFunction</a></div><div class="ttdeci">void setDerivedOutputActivationFunction(std::string name)</div><div class="ttdef"><b>Definition:</b> Backpropagation.cpp:154</div></div>
-<div class="ttc" id="classnet_1_1_backpropagation_html_a08352f1a74216240b2bd9d2531038bc8"><div class="ttname"><a href="classnet_1_1_backpropagation.html#a08352f1a74216240b2bd9d2531038bc8">net::Backpropagation::storeBackpropagationWithStream</a></div><div class="ttdeci">void storeBackpropagationWithStream(std::ofstream *output)</div><div class="ttdef"><b>Definition:</b> Backpropagation.cpp:48</div></div>
+<div class="ttc" id="classnet_1_1_backpropagation_html_a56d4a23f6c623f03a4a9db0773a58df8"><div class="ttname"><a href="classnet_1_1_backpropagation.html#a56d4a23f6c623f03a4a9db0773a58df8">net::Backpropagation::trainOnDataPoint</a></div><div class="ttdeci">double trainOnDataPoint(net::NeuralNet *network, const std::vector&lt; double &gt; &amp;input, const std::vector&lt; double &gt; &amp;correctOutput)</div><div class="ttdoc">Gets the output of the neural network, calculates the error of each neuron, and edits the weights of ...</div><div class="ttdef"><b>Definition:</b> Backpropagation.cpp:70</div></div>
+<div class="ttc" id="classnet_1_1_backpropagation_html_ab33279948cf38660679fb3474908f2eb"><div class="ttname"><a href="classnet_1_1_backpropagation.html#ab33279948cf38660679fb3474908f2eb">net::Backpropagation::storeBackpropagation</a></div><div class="ttdeci">void storeBackpropagation(std::string filename)</div><div class="ttdoc">Stores a Backpropagation object in the specified file. </div><div class="ttdef"><b>Definition:</b> Backpropagation.cpp:36</div></div>
+<div class="ttc" id="classnet_1_1_backpropagation_html_a9d8a5f299a8dbbd6f74ff4669e6bd50a"><div class="ttname"><a href="classnet_1_1_backpropagation.html#a9d8a5f299a8dbbd6f74ff4669e6bd50a">net::Backpropagation::learningRate</a></div><div class="ttdeci">double learningRate</div><div class="ttdoc">The rate of learning, set by constructor. </div><div class="ttdef"><b>Definition:</b> Backpropagation.h:79</div></div>
+<div class="ttc" id="classnet_1_1_backpropagation_html_a078f12f7065b8ea1b66bd9fa87dbb5b6"><div class="ttname"><a href="classnet_1_1_backpropagation.html#a078f12f7065b8ea1b66bd9fa87dbb5b6">net::Backpropagation::Backpropagation</a></div><div class="ttdeci">Backpropagation()</div><div class="ttdoc">Initialize empty Backpropagation object. </div><div class="ttdef"><b>Definition:</b> Backpropagation.cpp:20</div></div>
+<div class="ttc" id="classnet_1_1_backpropagation_html_a0873c4053257eea79d1100bcecfa8703"><div class="ttname"><a href="classnet_1_1_backpropagation.html#a0873c4053257eea79d1100bcecfa8703">net::Backpropagation::lastChangeInWeight</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt; lastChangeInWeight</div><div class="ttdoc">The last change in weights. </div><div class="ttdef"><b>Definition:</b> Backpropagation.h:83</div></div>
+<div class="ttc" id="classnet_1_1_backpropagation_html_a08352f1a74216240b2bd9d2531038bc8"><div class="ttname"><a href="classnet_1_1_backpropagation.html#a08352f1a74216240b2bd9d2531038bc8">net::Backpropagation::storeBackpropagationWithStream</a></div><div class="ttdeci">void storeBackpropagationWithStream(std::ofstream *output)</div><div class="ttdoc">Stores a Backpropagation object using specified ofstream. </div><div class="ttdef"><b>Definition:</b> Backpropagation.cpp:43</div></div>
+<div class="ttc" id="classnet_1_1_backpropagation_html_a4244cf1e73577909b485bcefe41ac07a"><div class="ttname"><a href="classnet_1_1_backpropagation.html#a4244cf1e73577909b485bcefe41ac07a">net::Backpropagation::targetErrorLevel</a></div><div class="ttdeci">double targetErrorLevel</div><div class="ttdoc">The target error level, set by constructor. </div><div class="ttdef"><b>Definition:</b> Backpropagation.h:81</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 18 2016 19:42:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 23 2016 09:58:39 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

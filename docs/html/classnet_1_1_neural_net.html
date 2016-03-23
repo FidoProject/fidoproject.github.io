@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>net</b></li><li class="navelem"><a class="el" href="classnet_1_1_neural_net.html">NeuralNet</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacenet.html">net</a></li><li class="navelem"><a class="el" href="classnet_1_1_neural_net.html">NeuralNet</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -94,80 +95,616 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">net::NeuralNet Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class representing a neural network.  
+ <a href="classnet_1_1_neural_net.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_neural_net_8h_source.html">NeuralNet.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aeefb2e2afac76798532504ad6af72035"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeefb2e2afac76798532504ad6af72035"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>NeuralNet</b> (int numInputs, int numOutputs, int numHiddenLayers, int numNeuronsPerHiddenLayer, std::string activationFunctionName)</td></tr>
+<tr class="memitem:a66b1ddd47bc5b393cf184f02517e82d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#a66b1ddd47bc5b393cf184f02517e82d4">NeuralNet</a> ()</td></tr>
+<tr class="memdesc:a66b1ddd47bc5b393cf184f02517e82d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty neural network.  <a href="#a66b1ddd47bc5b393cf184f02517e82d4">More...</a><br/></td></tr>
+<tr class="separator:a66b1ddd47bc5b393cf184f02517e82d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeefb2e2afac76798532504ad6af72035"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#aeefb2e2afac76798532504ad6af72035">NeuralNet</a> (int numInputs, int numOutputs, int numHiddenLayers, int numNeuronsPerHiddenLayer, std::string activationFunctionName)</td></tr>
+<tr class="memdesc:aeefb2e2afac76798532504ad6af72035"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manually initializes a neural network.  <a href="#aeefb2e2afac76798532504ad6af72035">More...</a><br/></td></tr>
 <tr class="separator:aeefb2e2afac76798532504ad6af72035"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec0b617414857c42c29736950d0496eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec0b617414857c42c29736950d0496eb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>NeuralNet</b> (<a class="el" href="classnet_1_1_neural_net.html">NeuralNet</a> *otherNet)</td></tr>
+<tr class="memitem:aec0b617414857c42c29736950d0496eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#aec0b617414857c42c29736950d0496eb">NeuralNet</a> (<a class="el" href="classnet_1_1_neural_net.html">NeuralNet</a> *otherNet)</td></tr>
+<tr class="memdesc:aec0b617414857c42c29736950d0496eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a neural network copying another networks architecture with random weights.  <a href="#aec0b617414857c42c29736950d0496eb">More...</a><br/></td></tr>
 <tr class="separator:aec0b617414857c42c29736950d0496eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeda70338594cac52cf35efcd69a7157"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeeda70338594cac52cf35efcd69a7157"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>NeuralNet</b> (std::string filename)</td></tr>
+<tr class="memitem:aeeda70338594cac52cf35efcd69a7157"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#aeeda70338594cac52cf35efcd69a7157">NeuralNet</a> (std::string filename)</td></tr>
+<tr class="memdesc:aeeda70338594cac52cf35efcd69a7157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores a neural network from the specified file.  <a href="#aeeda70338594cac52cf35efcd69a7157">More...</a><br/></td></tr>
 <tr class="separator:aeeda70338594cac52cf35efcd69a7157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9f4c113806d2247a2f56a7eecd792c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9f4c113806d2247a2f56a7eecd792c3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>NeuralNet</b> (std::ifstream *input)</td></tr>
+<tr class="memitem:ac9f4c113806d2247a2f56a7eecd792c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#ac9f4c113806d2247a2f56a7eecd792c3">NeuralNet</a> (std::ifstream *input)</td></tr>
+<tr class="memdesc:ac9f4c113806d2247a2f56a7eecd792c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores a neural network from the specified file.  <a href="#ac9f4c113806d2247a2f56a7eecd792c3">More...</a><br/></td></tr>
 <tr class="separator:ac9f4c113806d2247a2f56a7eecd792c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86be573ee4ff3ac06d22e17a74486067"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86be573ee4ff3ac06d22e17a74486067"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>storeNet</b> (std::string filename)</td></tr>
+<tr class="memitem:a86be573ee4ff3ac06d22e17a74486067"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#a86be573ee4ff3ac06d22e17a74486067">storeNet</a> (std::string filename)</td></tr>
+<tr class="memdesc:a86be573ee4ff3ac06d22e17a74486067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores a neural network in the specified file.  <a href="#a86be573ee4ff3ac06d22e17a74486067">More...</a><br/></td></tr>
 <tr class="separator:a86be573ee4ff3ac06d22e17a74486067"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc542636ea5495a5aaa5d8b702a0e4f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc542636ea5495a5aaa5d8b702a0e4f9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>storeNetWithStream</b> (std::ofstream *output)</td></tr>
+<tr class="memitem:acc542636ea5495a5aaa5d8b702a0e4f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#acc542636ea5495a5aaa5d8b702a0e4f9">storeNetWithStream</a> (std::ofstream *output)</td></tr>
+<tr class="memdesc:acc542636ea5495a5aaa5d8b702a0e4f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores a neural network in the specified file.  <a href="#acc542636ea5495a5aaa5d8b702a0e4f9">More...</a><br/></td></tr>
 <tr class="separator:acc542636ea5495a5aaa5d8b702a0e4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cdcd419c43073094adbeccd5883e1c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3cdcd419c43073094adbeccd5883e1c2"></a>
-std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getWeights</b> ()</td></tr>
+<tr class="memitem:a3cdcd419c43073094adbeccd5883e1c2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#a3cdcd419c43073094adbeccd5883e1c2">getWeights</a> ()</td></tr>
+<tr class="memdesc:a3cdcd419c43073094adbeccd5883e1c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the weights of each neuron in the net.  <a href="#a3cdcd419c43073094adbeccd5883e1c2">More...</a><br/></td></tr>
 <tr class="separator:a3cdcd419c43073094adbeccd5883e1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af732e3b8f12a8a8bf383d120f21a0132"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af732e3b8f12a8a8bf383d120f21a0132"></a>
-std::vector&lt; std::vector<br class="typebreak"/>
-&lt; std::vector&lt; double &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getWeights3D</b> ()</td></tr>
+<tr class="memitem:af732e3b8f12a8a8bf383d120f21a0132"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector<br class="typebreak"/>
+&lt; std::vector&lt; double &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#af732e3b8f12a8a8bf383d120f21a0132">getWeights3D</a> ()</td></tr>
+<tr class="memdesc:af732e3b8f12a8a8bf383d120f21a0132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the weights of each neuron in the net.  <a href="#af732e3b8f12a8a8bf383d120f21a0132">More...</a><br/></td></tr>
 <tr class="separator:af732e3b8f12a8a8bf383d120f21a0132"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5db986fa1c1b835271ac29e9adad03f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5db986fa1c1b835271ac29e9adad03f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setWeights</b> (std::vector&lt; double &gt; w)</td></tr>
+<tr class="memitem:af5db986fa1c1b835271ac29e9adad03f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#af5db986fa1c1b835271ac29e9adad03f">setWeights</a> (std::vector&lt; double &gt; w)</td></tr>
+<tr class="memdesc:af5db986fa1c1b835271ac29e9adad03f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the weights of each input for each neuron in the net.  <a href="#af5db986fa1c1b835271ac29e9adad03f">More...</a><br/></td></tr>
 <tr class="separator:af5db986fa1c1b835271ac29e9adad03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e31985917afc5c735aa11af85085a40"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e31985917afc5c735aa11af85085a40"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setWeights3D</b> (std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt; w)</td></tr>
+<tr class="memitem:a7e31985917afc5c735aa11af85085a40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#a7e31985917afc5c735aa11af85085a40">setWeights3D</a> (std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt; w)</td></tr>
+<tr class="memdesc:a7e31985917afc5c735aa11af85085a40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the weights of each input for each neuron in the net.  <a href="#a7e31985917afc5c735aa11af85085a40">More...</a><br/></td></tr>
 <tr class="separator:a7e31985917afc5c735aa11af85085a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ebe34e81e9cae5ae7d9ccc1e4c429cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ebe34e81e9cae5ae7d9ccc1e4c429cc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>randomizeWeights</b> ()</td></tr>
+<tr class="memitem:a9ebe34e81e9cae5ae7d9ccc1e4c429cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#a9ebe34e81e9cae5ae7d9ccc1e4c429cc">randomizeWeights</a> ()</td></tr>
+<tr class="memdesc:a9ebe34e81e9cae5ae7d9ccc1e4c429cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Randomizes all the weights of the neurons in the net.  <a href="#a9ebe34e81e9cae5ae7d9ccc1e4c429cc">More...</a><br/></td></tr>
 <tr class="separator:a9ebe34e81e9cae5ae7d9ccc1e4c429cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8788d154fa2cd7899bdb8b12d0b3b189"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8788d154fa2cd7899bdb8b12d0b3b189"></a>
-std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getOutput</b> (std::vector&lt; double &gt; input)</td></tr>
+<tr class="memitem:a8788d154fa2cd7899bdb8b12d0b3b189"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#a8788d154fa2cd7899bdb8b12d0b3b189">getOutput</a> (std::vector&lt; double &gt; input)</td></tr>
+<tr class="memdesc:a8788d154fa2cd7899bdb8b12d0b3b189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the outputs of the network for a set of inputs.  <a href="#a8788d154fa2cd7899bdb8b12d0b3b189">More...</a><br/></td></tr>
 <tr class="separator:a8788d154fa2cd7899bdb8b12d0b3b189"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc3ff99e5e187145ba00816bf2080fb1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc3ff99e5e187145ba00816bf2080fb1"></a>
-std::vector&lt; std::vector<br class="typebreak"/>
-&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>feedForward</b> (std::vector&lt; double &gt; input)</td></tr>
+<tr class="memitem:abc3ff99e5e187145ba00816bf2080fb1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector<br class="typebreak"/>
+&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#abc3ff99e5e187145ba00816bf2080fb1">feedForward</a> (std::vector&lt; double &gt; input)</td></tr>
+<tr class="memdesc:abc3ff99e5e187145ba00816bf2080fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the output of each layer of neurons as an input is fed for just as it is fed forward in getOutput.  <a href="#abc3ff99e5e187145ba00816bf2080fb1">More...</a><br/></td></tr>
 <tr class="separator:abc3ff99e5e187145ba00816bf2080fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b2ca3ea7afde8023721b1e036698711"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b2ca3ea7afde8023721b1e036698711"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>printWeights</b> ()</td></tr>
+<tr class="memitem:a2b2ca3ea7afde8023721b1e036698711"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#a2b2ca3ea7afde8023721b1e036698711">printWeights</a> ()</td></tr>
+<tr class="memdesc:a2b2ca3ea7afde8023721b1e036698711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the weights of the neurons of the layers of the net.  <a href="#a2b2ca3ea7afde8023721b1e036698711">More...</a><br/></td></tr>
 <tr class="separator:a2b2ca3ea7afde8023721b1e036698711"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2048729dafd7e1914706e20d4e67228"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2048729dafd7e1914706e20d4e67228"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>numberOfHiddenLayers</b> ()</td></tr>
+<tr class="memitem:ae2048729dafd7e1914706e20d4e67228"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#ae2048729dafd7e1914706e20d4e67228">numberOfHiddenLayers</a> ()</td></tr>
+<tr class="memdesc:ae2048729dafd7e1914706e20d4e67228"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of hidden layers in the neural net.  <a href="#ae2048729dafd7e1914706e20d4e67228">More...</a><br/></td></tr>
 <tr class="separator:ae2048729dafd7e1914706e20d4e67228"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1434e08f12317deca0cbe9c4e05e362d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1434e08f12317deca0cbe9c4e05e362d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>numberOfInputs</b> ()</td></tr>
+<tr class="memitem:a1434e08f12317deca0cbe9c4e05e362d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#a1434e08f12317deca0cbe9c4e05e362d">numberOfInputs</a> ()</td></tr>
+<tr class="memdesc:a1434e08f12317deca0cbe9c4e05e362d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of input neurons in the <a class="el" href="classnet_1_1_neural_net.html" title="Class representing a neural network. ">NeuralNet</a>.  <a href="#a1434e08f12317deca0cbe9c4e05e362d">More...</a><br/></td></tr>
 <tr class="separator:a1434e08f12317deca0cbe9c4e05e362d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60b4fdbf50e35d8ba539079ca39f5cfe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60b4fdbf50e35d8ba539079ca39f5cfe"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>numberOfOutputs</b> ()</td></tr>
+<tr class="memitem:a60b4fdbf50e35d8ba539079ca39f5cfe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#a60b4fdbf50e35d8ba539079ca39f5cfe">numberOfOutputs</a> ()</td></tr>
+<tr class="memdesc:a60b4fdbf50e35d8ba539079ca39f5cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of output neurons in the <a class="el" href="classnet_1_1_neural_net.html" title="Class representing a neural network. ">NeuralNet</a>.  <a href="#a60b4fdbf50e35d8ba539079ca39f5cfe">More...</a><br/></td></tr>
 <tr class="separator:a60b4fdbf50e35d8ba539079ca39f5cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b7790f0e1c83cc52bb109846c509858"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b7790f0e1c83cc52bb109846c509858"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setOutputActivationFunction</b> (std::string name)</td></tr>
+<tr class="memitem:a2b7790f0e1c83cc52bb109846c509858"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#a2b7790f0e1c83cc52bb109846c509858">setOutputActivationFunction</a> (std::string name)</td></tr>
+<tr class="memdesc:a2b7790f0e1c83cc52bb109846c509858"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the activation function of the output layer.  <a href="#a2b7790f0e1c83cc52bb109846c509858">More...</a><br/></td></tr>
 <tr class="separator:a2b7790f0e1c83cc52bb109846c509858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab751a8009efd0775284deb85f498af7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#aab751a8009efd0775284deb85f498af7">getHiddenActivationFunctionName</a> ()</td></tr>
+<tr class="memdesc:aab751a8009efd0775284deb85f498af7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the activation function used for hidden layers.  <a href="#aab751a8009efd0775284deb85f498af7">More...</a><br/></td></tr>
+<tr class="separator:aab751a8009efd0775284deb85f498af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68991e858588c216c9f6c451c79f0e2b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#a68991e858588c216c9f6c451c79f0e2b">getOutputActivationFunctionName</a> ()</td></tr>
+<tr class="memdesc:a68991e858588c216c9f6c451c79f0e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the activation function used for output layers.  <a href="#a68991e858588c216c9f6c451c79f0e2b">More...</a><br/></td></tr>
+<tr class="separator:a68991e858588c216c9f6c451c79f0e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a32b37f5da84f5f398e816390fc96ce83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32b37f5da84f5f398e816390fc96ce83"></a>
-std::vector&lt; <a class="el" href="structnet_1_1_layer.html">Layer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>net</b></td></tr>
+<tr class="memitem:a32b37f5da84f5f398e816390fc96ce83"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structnet_1_1_layer.html">Layer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#a32b37f5da84f5f398e816390fc96ce83">net</a></td></tr>
+<tr class="memdesc:a32b37f5da84f5f398e816390fc96ce83"><td class="mdescLeft">&#160;</td><td class="mdescRight">A two dimensional network of neurons.  <a href="#a32b37f5da84f5f398e816390fc96ce83">More...</a><br/></td></tr>
 <tr class="separator:a32b37f5da84f5f398e816390fc96ce83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class representing a neural network. </p>
+<p>A flexible implementation designed to be usable in a wide scope of projects. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a66b1ddd47bc5b393cf184f02517e82d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NeuralNet::NeuralNet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs an empty neural network. </p>
+
+</div>
+</div>
+<a class="anchor" id="aeefb2e2afac76798532504ad6af72035"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NeuralNet::NeuralNet </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numInputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numOutputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numHiddenLayers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numNeuronsPerHiddenLayer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>activationFunctionName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Manually initializes a neural network. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numInputs</td><td>the number of inputs to the network (or neurons in the input layer) </td></tr>
+    <tr><td class="paramname">numOutputs</td><td>the number of outputs to the network (or neurons in the output layer) </td></tr>
+    <tr><td class="paramname">numHiddenLayers</td><td>the number of hidden layers </td></tr>
+    <tr><td class="paramname">numNeuronsPerHiddenLayer</td><td>the number of neurons per hidden layer. </td></tr>
+    <tr><td class="paramname">activationFunctionName</td><td>the name of the activation function to be used in the NN </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aec0b617414857c42c29736950d0496eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NeuralNet::NeuralNet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnet_1_1_neural_net.html">NeuralNet</a> *&#160;</td>
+          <td class="paramname"><em>otherNet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a neural network copying another networks architecture with random weights. </p>
+<p>The new network has the same number of inputs, outputs, hidden layers, and neurons per hidden layer as the network given.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">otherNet</td><td>the network to be copied </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aeeda70338594cac52cf35efcd69a7157"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NeuralNet::NeuralNet </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Restores a neural network from the specified file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>the name of the file the network is to be constructed from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac9f4c113806d2247a2f56a7eecd792c3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NeuralNet::NeuralNet </td>
+          <td>(</td>
+          <td class="paramtype">std::ifstream *&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Restores a neural network from the specified file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>the file the network is to be constructed from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="abc3ff99e5e187145ba00816bf2080fb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::vector&lt; double &gt; &gt; NeuralNet::feedForward </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the output of each layer of neurons as an input is fed for just as it is fed forward in getOutput. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>the inputs to the neural network </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a 2d vector containing the outputs of each layer </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aab751a8009efd0775284deb85f498af7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string NeuralNet::getHiddenActivationFunctionName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the name of the activation function used for hidden layers. </p>
+<dl class="section return"><dt>Returns</dt><dd>the string representing the activation function </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8788d154fa2cd7899bdb8b12d0b3b189"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; double &gt; NeuralNet::getOutput </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the outputs of the network for a set of inputs. </p>
+<p>The crowning function of this class ;)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>the inputs to the neural network </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the outputs of the neural network </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a68991e858588c216c9f6c451c79f0e2b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string NeuralNet::getOutputActivationFunctionName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the name of the activation function used for output layers. </p>
+<dl class="section return"><dt>Returns</dt><dd>the string representing the activation function </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3cdcd419c43073094adbeccd5883e1c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; double &gt; NeuralNet::getWeights </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the weights of each neuron in the net. </p>
+<dl class="section return"><dt>Returns</dt><dd>A 1d vector of neuron weights starting from the first neuron in the first layer to the last neuron in the output layer. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af732e3b8f12a8a8bf383d120f21a0132"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt; NeuralNet::getWeights3D </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the weights of each neuron in the net. </p>
+<dl class="section return"><dt>Returns</dt><dd>A 3d vector of neuron weights. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae2048729dafd7e1914706e20d4e67228"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NeuralNet::numberOfHiddenLayers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the number of hidden layers in the neural net. </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of layers minus 1 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1434e08f12317deca0cbe9c4e05e362d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NeuralNet::numberOfInputs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the number of input neurons in the <a class="el" href="classnet_1_1_neural_net.html" title="Class representing a neural network. ">NeuralNet</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of inputs to the network </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a60b4fdbf50e35d8ba539079ca39f5cfe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NeuralNet::numberOfOutputs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the number of output neurons in the <a class="el" href="classnet_1_1_neural_net.html" title="Class representing a neural network. ">NeuralNet</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of outputs to the network </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2b2ca3ea7afde8023721b1e036698711"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NeuralNet::printWeights </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prints the weights of the neurons of the layers of the net. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9ebe34e81e9cae5ae7d9ccc1e4c429cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NeuralNet::randomizeWeights </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Randomizes all the weights of the neurons in the net. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2b7790f0e1c83cc52bb109846c509858"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NeuralNet::setOutputActivationFunction </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the activation function of the output layer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the activation function </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af5db986fa1c1b835271ac29e9adad03f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NeuralNet::setWeights </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the weights of each input for each neuron in the net. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>the vector of weights from which neuron weights are set, starting from the first neuron in the first layer to the last neuron in the output layer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7e31985917afc5c735aa11af85085a40"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NeuralNet::setWeights3D </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt;&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the weights of each input for each neuron in the net. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>the 3d vector of weights from which neuron weights are set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a86be573ee4ff3ac06d22e17a74486067"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NeuralNet::storeNet </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stores a neural network in the specified file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>the file the network is to be written to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="acc542636ea5495a5aaa5d8b702a0e4f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NeuralNet::storeNetWithStream </td>
+          <td>(</td>
+          <td class="paramtype">std::ofstream *&#160;</td>
+          <td class="paramname"><em>output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stores a neural network in the specified file. </p>
+<p>Stores a neural network using ofstream. Useful for appending a network to the end of a file without overwriting it. WARNING: will not close ofstream.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output</td><td>the file the network is to be written to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a32b37f5da84f5f398e816390fc96ce83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structnet_1_1_layer.html">Layer</a> &gt; net::NeuralNet::net</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A two dimensional network of neurons. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Software/<a class="el" href="_neural_net_8h_source.html">NeuralNet.h</a></li>
-<li>Software/NeuralNet.cpp</li>
+<li>Software/<a class="el" href="_neural_net_8cpp.html">NeuralNet.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 18 2016 19:42:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 23 2016 09:58:39 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

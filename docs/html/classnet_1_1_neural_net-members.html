@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>net</b></li><li class="navelem"><a class="el" href="classnet_1_1_neural_net.html">NeuralNet</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacenet.html">net</a></li><li class="navelem"><a class="el" href="classnet_1_1_neural_net.html">NeuralNet</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -93,30 +94,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>feedForward</b>(std::vector&lt; double &gt; input) (defined in <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getOutput</b>(std::vector&lt; double &gt; input) (defined in <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getWeights</b>() (defined in <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getWeights3D</b>() (defined in <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>net</b> (defined in <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>NeuralNet</b>() (defined in <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>NeuralNet</b>(int numInputs, int numOutputs, int numHiddenLayers, int numNeuronsPerHiddenLayer, std::string activationFunctionName) (defined in <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>NeuralNet</b>(NeuralNet *otherNet) (defined in <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>NeuralNet</b>(std::string filename) (defined in <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>NeuralNet</b>(std::ifstream *input) (defined in <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>numberOfHiddenLayers</b>() (defined in <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>numberOfInputs</b>() (defined in <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>numberOfOutputs</b>() (defined in <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>printWeights</b>() (defined in <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>randomizeWeights</b>() (defined in <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>setOutputActivationFunction</b>(std::string name) (defined in <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setWeights</b>(std::vector&lt; double &gt; w) (defined in <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>setWeights3D</b>(std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt; w) (defined in <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>storeNet</b>(std::string filename) (defined in <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>storeNetWithStream</b>(std::ofstream *output) (defined in <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#abc3ff99e5e187145ba00816bf2080fb1">feedForward</a>(std::vector&lt; double &gt; input)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#aab751a8009efd0775284deb85f498af7">getHiddenActivationFunctionName</a>()</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#a8788d154fa2cd7899bdb8b12d0b3b189">getOutput</a>(std::vector&lt; double &gt; input)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#a68991e858588c216c9f6c451c79f0e2b">getOutputActivationFunctionName</a>()</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#a3cdcd419c43073094adbeccd5883e1c2">getWeights</a>()</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#af732e3b8f12a8a8bf383d120f21a0132">getWeights3D</a>()</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#a32b37f5da84f5f398e816390fc96ce83">net</a></td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#a66b1ddd47bc5b393cf184f02517e82d4">NeuralNet</a>()</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#aeefb2e2afac76798532504ad6af72035">NeuralNet</a>(int numInputs, int numOutputs, int numHiddenLayers, int numNeuronsPerHiddenLayer, std::string activationFunctionName)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#aec0b617414857c42c29736950d0496eb">NeuralNet</a>(NeuralNet *otherNet)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#aeeda70338594cac52cf35efcd69a7157">NeuralNet</a>(std::string filename)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#ac9f4c113806d2247a2f56a7eecd792c3">NeuralNet</a>(std::ifstream *input)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#ae2048729dafd7e1914706e20d4e67228">numberOfHiddenLayers</a>()</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#a1434e08f12317deca0cbe9c4e05e362d">numberOfInputs</a>()</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#a60b4fdbf50e35d8ba539079ca39f5cfe">numberOfOutputs</a>()</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#a2b2ca3ea7afde8023721b1e036698711">printWeights</a>()</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#a9ebe34e81e9cae5ae7d9ccc1e4c429cc">randomizeWeights</a>()</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#a2b7790f0e1c83cc52bb109846c509858">setOutputActivationFunction</a>(std::string name)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#af5db986fa1c1b835271ac29e9adad03f">setWeights</a>(std::vector&lt; double &gt; w)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#a7e31985917afc5c735aa11af85085a40">setWeights3D</a>(std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt; w)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#a86be573ee4ff3ac06d22e17a74486067">storeNet</a>(std::string filename)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classnet_1_1_neural_net.html#acc542636ea5495a5aaa5d8b702a0e4f9">storeNetWithStream</a>(std::ofstream *output)</td><td class="entry"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 18 2016 19:42:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 23 2016 09:58:39 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

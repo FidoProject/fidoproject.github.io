@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,52 +90,347 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Driver Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_driver_8h_source.html">Driver.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a30389fa60508135af6b4068d0bc1d5ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30389fa60508135af6b4068d0bc1d5ec"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_driver.html#a30389fa60508135af6b4068d0bc1d5ec">setMotors</a> (int motorOne, int motorTwo)=0</td></tr>
-<tr class="memdesc:a30389fa60508135af6b4068d0bc1d5ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">ACTIONS. <br/></td></tr>
+<tr class="memitem:a30389fa60508135af6b4068d0bc1d5ec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_driver.html#a30389fa60508135af6b4068d0bc1d5ec">setMotors</a> (int motorOne, int motorTwo)=0</td></tr>
+<tr class="memdesc:a30389fa60508135af6b4068d0bc1d5ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">ACTIONS.  <a href="#a30389fa60508135af6b4068d0bc1d5ec">More...</a><br/></td></tr>
 <tr class="separator:a30389fa60508135af6b4068d0bc1d5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad00b7086381c3a14fd0c62aa6c8c9fe4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad00b7086381c3a14fd0c62aa6c8c9fe4"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setLED</b> (double r, double g, double b)=0</td></tr>
+<tr class="memitem:ad00b7086381c3a14fd0c62aa6c8c9fe4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_driver.html#ad00b7086381c3a14fd0c62aa6c8c9fe4">setLED</a> (double r, double g, double b)=0</td></tr>
 <tr class="separator:ad00b7086381c3a14fd0c62aa6c8c9fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae024953e10e76777b10b39cb34389248"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae024953e10e76777b10b39cb34389248"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>chirp</b> (double volume, int frequency, int time)=0</td></tr>
+<tr class="memitem:ae024953e10e76777b10b39cb34389248"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_driver.html#ae024953e10e76777b10b39cb34389248">chirp</a> (double volume, int frequency, int time)=0</td></tr>
 <tr class="separator:ae024953e10e76777b10b39cb34389248"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d70de910237fe653b3dcd5276d77e73"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d70de910237fe653b3dcd5276d77e73"></a>
-virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_driver.html#a4d70de910237fe653b3dcd5276d77e73">getVis</a> ()=0</td></tr>
-<tr class="memdesc:a4d70de910237fe653b3dcd5276d77e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">SENSORS. <br/></td></tr>
+<tr class="memitem:a4d70de910237fe653b3dcd5276d77e73"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_driver.html#a4d70de910237fe653b3dcd5276d77e73">getVis</a> ()=0</td></tr>
+<tr class="memdesc:a4d70de910237fe653b3dcd5276d77e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">SENSORS.  <a href="#a4d70de910237fe653b3dcd5276d77e73">More...</a><br/></td></tr>
 <tr class="separator:a4d70de910237fe653b3dcd5276d77e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add916a5d982d5f021f530032d847bc6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add916a5d982d5f021f530032d847bc6c"></a>
-virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>getMicrophone</b> ()=0</td></tr>
+<tr class="memitem:add916a5d982d5f021f530032d847bc6c"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_driver.html#add916a5d982d5f021f530032d847bc6c">getMicrophone</a> ()=0</td></tr>
 <tr class="separator:add916a5d982d5f021f530032d847bc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78a3b4f9494c12a703458f46b98c4230"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78a3b4f9494c12a703458f46b98c4230"></a>
-virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>getLoudness</b> (int samples)=0</td></tr>
+<tr class="memitem:a78a3b4f9494c12a703458f46b98c4230"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_driver.html#a78a3b4f9494c12a703458f46b98c4230">getLoudness</a> (int samples)=0</td></tr>
 <tr class="separator:a78a3b4f9494c12a703458f46b98c4230"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a895e9f88cf988643eacc47550a2fc3fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a895e9f88cf988643eacc47550a2fc3fe"></a>
-virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>getTemperature</b> ()=0</td></tr>
+<tr class="memitem:a895e9f88cf988643eacc47550a2fc3fe"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_driver.html#a895e9f88cf988643eacc47550a2fc3fe">getTemperature</a> ()=0</td></tr>
 <tr class="separator:a895e9f88cf988643eacc47550a2fc3fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ac54a1eb9a11ce7909d57c9ed736bc0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ac54a1eb9a11ce7909d57c9ed736bc0"></a>
-virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>getIR</b> ()=0</td></tr>
+<tr class="memitem:a5ac54a1eb9a11ce7909d57c9ed736bc0"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_driver.html#a5ac54a1eb9a11ce7909d57c9ed736bc0">getIR</a> ()=0</td></tr>
 <tr class="separator:a5ac54a1eb9a11ce7909d57c9ed736bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a482695201381c9dffa436559c0599962"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a482695201381c9dffa436559c0599962"></a>
-virtual <a class="el" href="struct_t_d_vect.html">TDVect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getAccel</b> ()=0</td></tr>
+<tr class="memitem:a482695201381c9dffa436559c0599962"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_t_d_vect.html">TDVect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_driver.html#a482695201381c9dffa436559c0599962">getAccel</a> ()=0</td></tr>
 <tr class="separator:a482695201381c9dffa436559c0599962"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59fefad265ad643b3606f5d7ceb3d8cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59fefad265ad643b3606f5d7ceb3d8cf"></a>
-virtual <a class="el" href="struct_t_d_vect.html">TDVect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getCompass</b> ()=0</td></tr>
+<tr class="memitem:a59fefad265ad643b3606f5d7ceb3d8cf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_t_d_vect.html">TDVect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_driver.html#a59fefad265ad643b3606f5d7ceb3d8cf">getCompass</a> ()=0</td></tr>
 <tr class="separator:a59fefad265ad643b3606f5d7ceb3d8cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e16d914c3ec7dc4872670e250cc8fc5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e16d914c3ec7dc4872670e250cc8fc5"></a>
-virtual <a class="el" href="struct_t_d_vect.html">TDVect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getGyro</b> ()=0</td></tr>
+<tr class="memitem:a4e16d914c3ec7dc4872670e250cc8fc5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_t_d_vect.html">TDVect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_driver.html#a4e16d914c3ec7dc4872670e250cc8fc5">getGyro</a> ()=0</td></tr>
 <tr class="separator:a4e16d914c3ec7dc4872670e250cc8fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae024953e10e76777b10b39cb34389248"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Driver::chirp </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>volume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frequency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a482695201381c9dffa436559c0599962"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_t_d_vect.html">TDVect</a> Driver::getAccel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a59fefad265ad643b3606f5d7ceb3d8cf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_t_d_vect.html">TDVect</a> Driver::getCompass </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4e16d914c3ec7dc4872670e250cc8fc5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_t_d_vect.html">TDVect</a> Driver::getGyro </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5ac54a1eb9a11ce7909d57c9ed736bc0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double Driver::getIR </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a78a3b4f9494c12a703458f46b98c4230"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double Driver::getLoudness </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>samples</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="add916a5d982d5f021f530032d847bc6c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double Driver::getMicrophone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a895e9f88cf988643eacc47550a2fc3fe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double Driver::getTemperature </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4d70de910237fe653b3dcd5276d77e73"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double Driver::getVis </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SENSORS. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad00b7086381c3a14fd0c62aa6c8c9fe4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Driver::setLED </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a30389fa60508135af6b4068d0bc1d5ec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Driver::setMotors </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>motorOne</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>motorTwo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ACTIONS. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Software/<a class="el" href="_driver_8h_source.html">Driver.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 18 2016 19:42:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 22 2016 00:05:58 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

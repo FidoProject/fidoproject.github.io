@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>net</b></li><li class="navelem"><a class="el" href="classnet_1_1_neuron.html">Neuron</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacenet.html">net</a></li><li class="navelem"><a class="el" href="classnet_1_1_neuron.html">Neuron</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -95,42 +96,194 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">net::Neuron Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class representing a single neuron.  
+ <a href="classnet_1_1_neuron.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_neuron_8h_source.html">Neuron.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad7f1ceca26b314e197c775d0e2ca913a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7f1ceca26b314e197c775d0e2ca913a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Neuron</b> (int numInputs)</td></tr>
+<tr class="memitem:ad7f1ceca26b314e197c775d0e2ca913a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neuron.html#ad7f1ceca26b314e197c775d0e2ca913a">Neuron</a> (int numInputs)</td></tr>
+<tr class="memdesc:ad7f1ceca26b314e197c775d0e2ca913a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a neuron with randomly assigned weights.  <a href="#ad7f1ceca26b314e197c775d0e2ca913a">More...</a><br/></td></tr>
 <tr class="separator:ad7f1ceca26b314e197c775d0e2ca913a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc9e03717e539e7bb416e01e8de86c1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc9e03717e539e7bb416e01e8de86c1d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Neuron</b> (std::vector&lt; double &gt; w)</td></tr>
+<tr class="memitem:abc9e03717e539e7bb416e01e8de86c1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neuron.html#abc9e03717e539e7bb416e01e8de86c1d">Neuron</a> (std::vector&lt; double &gt; w)</td></tr>
+<tr class="memdesc:abc9e03717e539e7bb416e01e8de86c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a neuron with given weights.  <a href="#abc9e03717e539e7bb416e01e8de86c1d">More...</a><br/></td></tr>
 <tr class="separator:abc9e03717e539e7bb416e01e8de86c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa250fbfafeb1cde4706a347867d3b444"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa250fbfafeb1cde4706a347867d3b444"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getOutput</b> (std::vector&lt; double &gt; inputs)</td></tr>
+<tr class="memitem:aa250fbfafeb1cde4706a347867d3b444"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neuron.html#aa250fbfafeb1cde4706a347867d3b444">getOutput</a> (std::vector&lt; double &gt; inputs)</td></tr>
+<tr class="memdesc:aa250fbfafeb1cde4706a347867d3b444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets outputs of neuron from given inputs.  <a href="#aa250fbfafeb1cde4706a347867d3b444">More...</a><br/></td></tr>
 <tr class="separator:aa250fbfafeb1cde4706a347867d3b444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae08ecbb16b4de970c532abbb65329445"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae08ecbb16b4de970c532abbb65329445"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>randomizeWeights</b> ()</td></tr>
+<tr class="memitem:ae08ecbb16b4de970c532abbb65329445"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neuron.html#ae08ecbb16b4de970c532abbb65329445">randomizeWeights</a> ()</td></tr>
+<tr class="memdesc:ae08ecbb16b4de970c532abbb65329445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Randomizes the weights of the neuron.  <a href="#ae08ecbb16b4de970c532abbb65329445">More...</a><br/></td></tr>
 <tr class="separator:ae08ecbb16b4de970c532abbb65329445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a096a531a32f0063bd75094f056994b9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a096a531a32f0063bd75094f056994b9e"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>randomWeight</b> ()</td></tr>
+<tr class="memitem:a096a531a32f0063bd75094f056994b9e"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neuron.html#a096a531a32f0063bd75094f056994b9e">randomWeight</a> ()</td></tr>
+<tr class="memdesc:a096a531a32f0063bd75094f056994b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a random input weight.  <a href="#a096a531a32f0063bd75094f056994b9e">More...</a><br/></td></tr>
 <tr class="separator:a096a531a32f0063bd75094f056994b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aec978b00351eed6c0b290940e56ca8d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec978b00351eed6c0b290940e56ca8d8"></a>
-std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>weights</b></td></tr>
+<tr class="memitem:aec978b00351eed6c0b290940e56ca8d8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neuron.html#aec978b00351eed6c0b290940e56ca8d8">weights</a></td></tr>
+<tr class="memdesc:aec978b00351eed6c0b290940e56ca8d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set of weights for the <a class="el" href="classnet_1_1_neuron.html" title="Class representing a single neuron. ">Neuron</a> object.  <a href="#aec978b00351eed6c0b290940e56ca8d8">More...</a><br/></td></tr>
 <tr class="separator:aec978b00351eed6c0b290940e56ca8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class representing a single neuron. </p>
+<p>Each neuron takes a variable number of inputs each assigned a weight and returns one output. Each neuron has a threshold value used to determine if an output is produced (or to determine the magnitude of the neuron's output). A quality class by all accounts. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ad7f1ceca26b314e197c775d0e2ca913a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Neuron::Neuron </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numInputs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a neuron with randomly assigned weights. </p>
+<p>Each weight is a random double between 0 and 1.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numInputs</td><td>the number of inputs to the neuron </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abc9e03717e539e7bb416e01e8de86c1d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Neuron::Neuron </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a neuron with given weights. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>the input weights from which to construct the neuron. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa250fbfafeb1cde4706a347867d3b444"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Neuron::getOutput </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>inputs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets outputs of neuron from given inputs. </p>
+<p>The last weight is the threshold, as documented <a href="http://www.ai-junkie.com/ann/evolved/nnt6.html">here</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae08ecbb16b4de970c532abbb65329445"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Neuron::randomizeWeights </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Randomizes the weights of the neuron. </p>
+
+</div>
+</div>
+<a class="anchor" id="a096a531a32f0063bd75094f056994b9e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double net::Neuron::randomWeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generates a random input weight. </p>
+<dl class="section return"><dt>Returns</dt><dd>A random double between zero and one. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aec978b00351eed6c0b290940e56ca8d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; net::Neuron::weights</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set of weights for the <a class="el" href="classnet_1_1_neuron.html" title="Class representing a single neuron. ">Neuron</a> object. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Software/<a class="el" href="_neuron_8h_source.html">Neuron.h</a></li>
-<li>Software/Neuron.cpp</li>
+<li>Software/<a class="el" href="_neuron_8cpp.html">Neuron.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 18 2016 19:42:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 23 2016 09:58:39 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>net</b></li><li class="navelem"><a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacenet.html">net</a></li><li class="navelem"><a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -94,6 +95,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">net::Backpropagation Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_backpropagation_8h_source.html">Backpropagation.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -101,14 +104,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1380ed2d38446fb7c6263fc694123802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object with necessary constants.  <a href="#a1380ed2d38446fb7c6263fc694123802">More...</a><br/></td></tr>
 <tr class="separator:a1380ed2d38446fb7c6263fc694123802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a078f12f7065b8ea1b66bd9fa87dbb5b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a078f12f7065b8ea1b66bd9fa87dbb5b6">Backpropagation</a> ()</td></tr>
+<tr class="memdesc:a078f12f7065b8ea1b66bd9fa87dbb5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize empty <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object.  <a href="#a078f12f7065b8ea1b66bd9fa87dbb5b6">More...</a><br/></td></tr>
 <tr class="separator:a078f12f7065b8ea1b66bd9fa87dbb5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95dd6dc9c5d61a9c31018cad07b91452"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a95dd6dc9c5d61a9c31018cad07b91452">Backpropagation</a> (std::string filename)</td></tr>
+<tr class="memdesc:a95dd6dc9c5d61a9c31018cad07b91452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object from a file.  <a href="#a95dd6dc9c5d61a9c31018cad07b91452">More...</a><br/></td></tr>
 <tr class="separator:a95dd6dc9c5d61a9c31018cad07b91452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2e1099b2984436e6e110648a7b8f362"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#ac2e1099b2984436e6e110648a7b8f362">Backpropagation</a> (std::ifstream *input)</td></tr>
+<tr class="memdesc:ac2e1099b2984436e6e110648a7b8f362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object using an input stream.  <a href="#ac2e1099b2984436e6e110648a7b8f362">More...</a><br/></td></tr>
 <tr class="separator:ac2e1099b2984436e6e110648a7b8f362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab33279948cf38660679fb3474908f2eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#ab33279948cf38660679fb3474908f2eb">storeBackpropagation</a> (std::string filename)</td></tr>
+<tr class="memdesc:ab33279948cf38660679fb3474908f2eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object in the specified file.  <a href="#ab33279948cf38660679fb3474908f2eb">More...</a><br/></td></tr>
 <tr class="separator:ab33279948cf38660679fb3474908f2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08352f1a74216240b2bd9d2531038bc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a08352f1a74216240b2bd9d2531038bc8">storeBackpropagationWithStream</a> (std::ofstream *output)</td></tr>
+<tr class="memdesc:a08352f1a74216240b2bd9d2531038bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object using specified ofstream.  <a href="#a08352f1a74216240b2bd9d2531038bc8">More...</a><br/></td></tr>
 <tr class="separator:a08352f1a74216240b2bd9d2531038bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3005bd4ba5ef48306e2b77cad3f2a22c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a3005bd4ba5ef48306e2b77cad3f2a22c">trainOnData</a> (<a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *network, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;input, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;correctOutput)</td></tr>
 <tr class="memdesc:a3005bd4ba5ef48306e2b77cad3f2a22c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trains a neural network on a training set.  <a href="#a3005bd4ba5ef48306e2b77cad3f2a22c">More...</a><br/></td></tr>
@@ -116,35 +124,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a56d4a23f6c623f03a4a9db0773a58df8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a56d4a23f6c623f03a4a9db0773a58df8">trainOnDataPoint</a> (<a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *network, const std::vector&lt; double &gt; &amp;input, const std::vector&lt; double &gt; &amp;correctOutput)</td></tr>
 <tr class="memdesc:a56d4a23f6c623f03a4a9db0773a58df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the output of the neural network, calculates the error of each neuron, and edits the weights of the neurons to reduce error.  <a href="#a56d4a23f6c623f03a4a9db0773a58df8">More...</a><br/></td></tr>
 <tr class="separator:a56d4a23f6c623f03a4a9db0773a58df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab408a26fae7d69b056ea0d8626ea85"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <br class="typebreak"/>
-ActivationFunction &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a6ab408a26fae7d69b056ea0d8626ea85">getDerivedActivationFunctionNames</a> ()</td></tr>
-<tr class="separator:a6ab408a26fae7d69b056ea0d8626ea85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae88fa8b371c7dac877b568c003ea7c3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#ae88fa8b371c7dac877b568c003ea7c3e">setDerivedHiddenActivationFunction</a> (std::string name)</td></tr>
-<tr class="separator:ae88fa8b371c7dac877b568c003ea7c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c7f065be066a38a8946d222c0e230f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a6c7f065be066a38a8946d222c0e230f3">setDerivedOutputActivationFunction</a> (std::string name)</td></tr>
-<tr class="separator:a6c7f065be066a38a8946d222c0e230f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79b3839ac981ff0f1b846b9ab43ac7ce"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a79b3839ac981ff0f1b846b9ab43ac7ce">getDerivedHiddenActivationFunctionName</a> ()</td></tr>
-<tr class="separator:a79b3839ac981ff0f1b846b9ab43ac7ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c5bf774d0494dd1b26f24b7d99b61a2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a0c5bf774d0494dd1b26f24b7d99b61a2">getDerivedOutputActivationFunctionName</a> ()</td></tr>
-<tr class="separator:a0c5bf774d0494dd1b26f24b7d99b61a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a9d8a5f299a8dbbd6f74ff4669e6bd50a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d8a5f299a8dbbd6f74ff4669e6bd50a"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>learningRate</b></td></tr>
+<tr class="memitem:a9d8a5f299a8dbbd6f74ff4669e6bd50a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a9d8a5f299a8dbbd6f74ff4669e6bd50a">learningRate</a></td></tr>
+<tr class="memdesc:a9d8a5f299a8dbbd6f74ff4669e6bd50a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The rate of learning, set by constructor.  <a href="#a9d8a5f299a8dbbd6f74ff4669e6bd50a">More...</a><br/></td></tr>
 <tr class="separator:a9d8a5f299a8dbbd6f74ff4669e6bd50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac918ac40710812169c46bcf730928e6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac918ac40710812169c46bcf730928e6b"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>momentumTerm</b></td></tr>
+<tr class="memitem:ac918ac40710812169c46bcf730928e6b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#ac918ac40710812169c46bcf730928e6b">momentumTerm</a></td></tr>
+<tr class="memdesc:ac918ac40710812169c46bcf730928e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The term of momentum, set by constructor.  <a href="#ac918ac40710812169c46bcf730928e6b">More...</a><br/></td></tr>
 <tr class="separator:ac918ac40710812169c46bcf730928e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4244cf1e73577909b485bcefe41ac07a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4244cf1e73577909b485bcefe41ac07a"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>targetErrorLevel</b></td></tr>
+<tr class="memitem:a4244cf1e73577909b485bcefe41ac07a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a4244cf1e73577909b485bcefe41ac07a">targetErrorLevel</a></td></tr>
+<tr class="memdesc:a4244cf1e73577909b485bcefe41ac07a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target error level, set by constructor.  <a href="#a4244cf1e73577909b485bcefe41ac07a">More...</a><br/></td></tr>
 <tr class="separator:a4244cf1e73577909b485bcefe41ac07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14009d04a06d4de0cbe23bd995998343"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14009d04a06d4de0cbe23bd995998343"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>maxiumumIterations</b></td></tr>
-<tr class="separator:a14009d04a06d4de0cbe23bd995998343"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0873c4053257eea79d1100bcecfa8703"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0873c4053257eea79d1100bcecfa8703"></a>
-std::vector&lt; std::vector<br class="typebreak"/>
-&lt; std::vector&lt; double &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lastChangeInWeight</b></td></tr>
+<tr class="memitem:a2880349375de621da21181bf934750b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a2880349375de621da21181bf934750b9">maximumIterations</a></td></tr>
+<tr class="memdesc:a2880349375de621da21181bf934750b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of iterations, set by constructor.  <a href="#a2880349375de621da21181bf934750b9">More...</a><br/></td></tr>
+<tr class="separator:a2880349375de621da21181bf934750b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0873c4053257eea79d1100bcecfa8703"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector<br class="typebreak"/>
+&lt; std::vector&lt; double &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a0873c4053257eea79d1100bcecfa8703">lastChangeInWeight</a></td></tr>
+<tr class="memdesc:a0873c4053257eea79d1100bcecfa8703"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last change in weights.  <a href="#a0873c4053257eea79d1100bcecfa8703">More...</a><br/></td></tr>
 <tr class="separator:a0873c4053257eea79d1100bcecfa8703"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -209,7 +206,8 @@ std::vector&lt; std::vector<br class="typebreak"/>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initialize empty <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object </p>
+
+<p>Initialize empty <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object. </p>
 
 </div>
 </div>
@@ -234,7 +232,14 @@ std::vector&lt; std::vector<br class="typebreak"/>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Loads a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object from a file </p>
+
+<p>Loads a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object from a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>the filename of the file being imported </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -259,93 +264,18 @@ std::vector&lt; std::vector<br class="typebreak"/>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Loads a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object using an input stream </p>
+
+<p>Loads a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object using an input stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>a pointer to the input stream that you want to form a neural network from </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6ab408a26fae7d69b056ea0d8626ea85"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::map&lt; std::string, ActivationFunction &gt; Backpropagation::getDerivedActivationFunctionNames </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Gets a map with the names of each activation function derivative as its keys and the available activation function derivatives as its values </p>
-
-</div>
-</div>
-<a class="anchor" id="a79b3839ac981ff0f1b846b9ab43ac7ce"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string Backpropagation::getDerivedHiddenActivationFunctionName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Gets the name of the derivative of the activation function of the nuerons of the hidden layers </p>
-
-</div>
-</div>
-<a class="anchor" id="a0c5bf774d0494dd1b26f24b7d99b61a2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string Backpropagation::getDerivedOutputActivationFunctionName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Gets the name of the derivative of the activation function of the neurons of the output layer </p>
-
-</div>
-</div>
-<a class="anchor" id="ae88fa8b371c7dac877b568c003ea7c3e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Backpropagation::setDerivedHiddenActivationFunction </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sets the derivative of the activation function for the neurons of the hidden layers with the name of the activation funciton </p>
-
-</div>
-</div>
-<a class="anchor" id="a6c7f065be066a38a8946d222c0e230f3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Backpropagation::setDerivedOutputActivationFunction </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sets the derivative of the activation function for the neurons of the output layer with the name of the activation funciton </p>
-
-</div>
-</div>
 <a class="anchor" id="ab33279948cf38660679fb3474908f2eb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -359,7 +289,14 @@ std::vector&lt; std::vector<br class="typebreak"/>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Stores a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object in the specified file </p>
+
+<p>Stores a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object in the specified file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>the filename of the output file </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -376,7 +313,15 @@ std::vector&lt; std::vector<br class="typebreak"/>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Stores a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object using specified ofstream. Useful for appending a network to the end of a file without overwriting it. WARNING: will not close ofstream. </p>
+
+<p>Stores a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object using specified ofstream. </p>
+<p>Useful for appending a network to the end of a file without overwriting it. WARNING: will not close ofstream.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output</td><td>pointer to the output stream which the neural network will be written to </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -465,14 +410,85 @@ std::vector&lt; std::vector<br class="typebreak"/>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a0873c4053257eea79d1100bcecfa8703"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::vector&lt; std::vector&lt;double&gt; &gt; &gt; net::Backpropagation::lastChangeInWeight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The last change in weights. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9d8a5f299a8dbbd6f74ff4669e6bd50a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double net::Backpropagation::learningRate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The rate of learning, set by constructor. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2880349375de621da21181bf934750b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net::Backpropagation::maximumIterations</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The maximum number of iterations, set by constructor. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac918ac40710812169c46bcf730928e6b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double net::Backpropagation::momentumTerm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The term of momentum, set by constructor. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4244cf1e73577909b485bcefe41ac07a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double net::Backpropagation::targetErrorLevel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The target error level, set by constructor. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Software/<a class="el" href="_backpropagation_8h_source.html">Backpropagation.h</a></li>
-<li>Software/Backpropagation.cpp</li>
+<li>Software/<a class="el" href="_backpropagation_8cpp.html">Backpropagation.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 18 2016 19:42:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 23 2016 09:58:39 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
