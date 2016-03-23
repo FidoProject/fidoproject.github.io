@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -65,7 +66,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -79,10 +80,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Fido Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><h1><a class="anchor" id="welcome"></a>
+Welcome</h1>
+<p>Welcome to the official Fido documentation. Here you will find a detailed view of all the Fido classes and functions.</p>
+<h1><a class="anchor" id="example"></a>
+Short Example</h1>
+<p>Here is a short, simple example of Fido's functionality. In this example, we will train a neural network to perform linear regression.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="_neural_net_8h.html">NeuralNet.h</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="_backpropagation_8h.html">Backpropagation.h</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line">  <span class="comment">// Creates a neural network with</span></div>
+<div class="line">  <span class="comment">// 1 input, 1 output, 2 hidden layers, 4 neurons per hidden layer,</span></div>
+<div class="line">  <span class="comment">// a sigmoid activation function for hidden layers, and a linear activation function on the final layer.</span></div>
+<div class="line">  <a class="code" href="classnet_1_1_neural_net.html">net::NeuralNet</a> neuralNetwork = <a class="code" href="classnet_1_1_neural_net.html">net::NeuralNet</a>(1, 1, 2, 4, <span class="stringliteral">&quot;sigmoid&quot;</span>);</div>
+<div class="line">  neuralNetwork.<a class="code" href="classnet_1_1_neural_net.html#a2b7790f0e1c83cc52bb109846c509858">setOutputActivationFunction</a>(<span class="stringliteral">&quot;simpleLinear&quot;</span>);</div>
+<div class="line"></div>
+<div class="line">  std::vector&lt; std::vector&lt;double&gt; &gt; input = { {1}, {2}, {5}, {6} };</div>
+<div class="line">  std::vector&lt; std::vector&lt;double&gt; &gt; correctOutput = { {2}, {4}, {10}, {12} };</div>
+<div class="line"></div>
+<div class="line">  <span class="comment">// Create backpropagation object with</span></div>
+<div class="line">  <span class="comment">// a learning rate of 10%, a momentum term of 0.001, an acceptable error level of 0.1%,</span></div>
+<div class="line">  <span class="comment">// and a maximum number of training iterations of 10000</span></div>
+<div class="line">  <a class="code" href="classnet_1_1_backpropagation.html">net::Backpropagation</a> backprop = <a class="code" href="classnet_1_1_backpropagation.html">net::Backpropagation</a>(0.1, 0.001, 0.001, 10000);</div>
+<div class="line">  backprop.<a class="code" href="classnet_1_1_backpropagation.html#a3005bd4ba5ef48306e2b77cad3f2a22c">trainOnData</a>(&amp;neuralNetwork, input, correctOutput);</div>
+<div class="line"></div>
+<div class="line">  <span class="comment">// Cycle through inputs and print the outputs</span></div>
+<div class="line">  <span class="keywordflow">for</span> (std::vector&lt;double&gt; current: input) {</div>
+<div class="line">      std::cout &lt;&lt; <span class="stringliteral">&quot;Input: &quot;</span> &lt;&lt; current[0] &lt;&lt; <span class="stringliteral">&quot;\tNeural network&#39;s answer:&quot;</span> &lt;&lt; neuralNetwork.<a class="code" href="classnet_1_1_neural_net.html#a8788d154fa2cd7899bdb8b12d0b3b189">getOutput</a>(current)[0] &lt;&lt; std::endl;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 09:58:39 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 23 2016 10:35:01 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

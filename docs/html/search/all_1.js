@@ -6,5 +6,6 @@ var searchData=
   ['backpropagation_2ecpp',['Backpropagation.cpp',['../_backpropagation_8cpp.html',1,'']]],
   ['backpropagation_2eh',['Backpropagation.h',['../_backpropagation_8h.html',1,'']]],
   ['baseofdimensions',['baseOfDimensions',['../classrl_1_1_wire_fit_q_learn.html#ac83e41371684a945031e39af85370251',1,'rl::WireFitQLearn']]],
-  ['binary',['binary',['../namespacenet.html#ad1443312aab902760604d9328b139eb0',1,'net']]]
+  ['binary',['binary',['../namespacenet.html#ad1443312aab902760604d9328b139eb0',1,'net']]],
+  ['bye',['bye',['../class_emitter.html#a6455fbb322b5eb88e4b46c28bbf06bd1',1,'Emitter']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['wire',['Wire',['../structrl_1_1_wire.html',1,'rl']]],
-  ['wirefitqlearn',['WireFitQLearn',['../classrl_1_1_wire_fit_q_learn.html',1,'rl']]]
+  ['task',['Task',['../classrl_1_1_task.html',1,'rl']]],
+  ['tdvect',['TDVect',['../struct_t_d_vect.html',1,'']]]
 ];

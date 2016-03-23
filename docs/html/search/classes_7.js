@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['task',['Task',['../classrl_1_1_task.html',1,'rl']]]
+  ['robby',['Robby',['../class_robby.html',1,'']]],
+  ['robot',['Robot',['../classrl_1_1_robot.html',1,'rl']]]
 ];

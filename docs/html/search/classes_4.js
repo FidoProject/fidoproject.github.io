@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['neuralnet',['NeuralNet',['../classnet_1_1_neural_net.html',1,'net']]],
-  ['neuron',['Neuron',['../classnet_1_1_neuron.html',1,'net']]]
+  ['model',['Model',['../structrl_1_1_model.html',1,'rl']]]
 ];

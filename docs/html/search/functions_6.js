@@ -1,5 +1,27 @@
 var searchData=
 [
-  ['layer',['Layer',['../structnet_1_1_layer.html#a7391347edde4265980cf5d18a17bcecf',1,'net::Layer::Layer()'],['../structnet_1_1_layer.html#a9abb1395d84c734c771e7e4b3ed87fb8',1,'net::Layer::Layer(std::ifstream *input)']]],
-  ['lsinterpolator',['LSInterpolator',['../classrl_1_1_l_s_interpolator.html#aca950947cc011821df26f6259b001b74',1,'rl::LSInterpolator::LSInterpolator()'],['../classrl_1_1_l_s_interpolator.html#a69c5f93983cc3f76b791a1750f70d907',1,'rl::LSInterpolator::LSInterpolator(double smoothingFactor_, double e_)']]]
+  ['getaccel',['getAccel',['../class_simlink.html#afa2f3b068623a080e9028424aafc088d',1,'Simlink']]],
+  ['getactivationfunctionname',['getActivationFunctionName',['../structnet_1_1_layer.html#a4b7641180e81075ca7aa7f582417df67',1,'net::Layer']]],
+  ['getactivationfunctionnamemap',['getActivationFunctionNameMap',['../structnet_1_1_layer.html#a4adf2f8fbe7fad75651d400a43abb1cc',1,'net::Layer']]],
+  ['getanyinterpolatorfromfile',['getAnyInterpolatorFromFile',['../classrl_1_1_interpolator.html#aa1a31d450a0a4824d50e897adf972bb1',1,'rl::Interpolator']]],
+  ['getbattery',['getBattery',['../class_simlink.html#a51bc1102973c8d75943eae16b8476e95',1,'Simlink']]],
+  ['getcompass',['getCompass',['../class_simlink.html#aa2cbdd60a1dc973fbe855764d638b2d9',1,'Simlink']]],
+  ['getdistanceofrobotfromemitter',['getDistanceOfRobotFromEmitter',['../class_simlink.html#a72011cd90b8174543785bc10e72822b5',1,'Simlink']]],
+  ['getgyro',['getGyro',['../class_simlink.html#ae00911e4fe2dff43e0917c74e536c5f2',1,'Simlink']]],
+  ['gethiddenactivationfunctionname',['getHiddenActivationFunctionName',['../classnet_1_1_neural_net.html#aab751a8009efd0775284deb85f498af7',1,'net::NeuralNet']]],
+  ['getir',['getIR',['../class_simlink.html#a10f543f16f6b82403db63572056bd4ed',1,'Simlink']]],
+  ['getmicrophone',['getMicrophone',['../class_simlink.html#a9c7ed2bd955896ac0dc0defd905d18a3',1,'Simlink']]],
+  ['getoutput',['getOutput',['../classnet_1_1_neural_net.html#a8788d154fa2cd7899bdb8b12d0b3b189',1,'net::NeuralNet::getOutput()'],['../classnet_1_1_neuron.html#aa250fbfafeb1cde4706a347867d3b444',1,'net::Neuron::getOutput()']]],
+  ['getoutputactivationfunctionname',['getOutputActivationFunctionName',['../classnet_1_1_neural_net.html#a68991e858588c216c9f6c451c79f0e2b',1,'net::NeuralNet']]],
+  ['getreward',['getReward',['../classrl_1_1_interpolator.html#a21e967a7dcf3e40adea22dd5da5df03a',1,'rl::Interpolator::getReward()'],['../classrl_1_1_l_s_interpolator.html#ab63667c318d17dc7330ad579cf739e28',1,'rl::LSInterpolator::getReward()']]],
+  ['getrewardforlaststateaction',['getRewardForLastStateAction',['../classrl_1_1_task.html#ae9640e72742f35d60e2df1fcf6fdaaeb',1,'rl::Task']]],
+  ['getrobotdisplacementfromemitter',['getRobotDisplacementFromEmitter',['../class_simlink.html#ae0824d51ddc848bc924619ae7ad1a407',1,'Simlink']]],
+  ['getrtp',['getRTP',['../struct_t_d_vect.html#a7801dc9b4a8f45e1ed5e3894c847e8fb',1,'TDVect']]],
+  ['getstate',['getState',['../classrl_1_1_task.html#a42e14ff19fa2ae2b79a4794716caa3c8',1,'rl::Task']]],
+  ['gettemperature',['getTemperature',['../class_simlink.html#aaa117c72e3a1e9a1b1411266be32f82c',1,'Simlink']]],
+  ['getvis',['getVis',['../class_simlink.html#ae4e3b4ac083f4c40f5e3e1d1534c3254',1,'Simlink']]],
+  ['getweights',['getWeights',['../classnet_1_1_neural_net.html#a3cdcd419c43073094adbeccd5883e1c2',1,'net::NeuralNet']]],
+  ['getweights3d',['getWeights3D',['../classnet_1_1_neural_net.html#af732e3b8f12a8a8bf383d120f21a0132',1,'net::NeuralNet']]],
+  ['go',['go',['../class_robby.html#ac3f3ceb9487adebc0a2817de48e6839b',1,'Robby']]],
+  ['goaccel',['goAccel',['../class_robby.html#ae1210ebcf996dbe223a2a6fe619c37c7',1,'Robby']]]
 ];

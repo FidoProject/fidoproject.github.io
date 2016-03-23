@@ -1,20 +1,30 @@
 var searchData=
 [
   ['scalingfactortomillis',['scalingFactorToMillis',['../classrl_1_1_wire_fit_q_learn.html#a4e0bd0337539184d3db1b089c9be8abf',1,'rl::WireFitQLearn']]],
+  ['sense',['sense',['../class_emitter.html#a6004a0ece71ccb93a5a7bc53b044288a',1,'Emitter']]],
+  ['set',['set',['../class_emitter.html#a5dd93ee85a8230b7cf75615e71cc08c0',1,'Emitter']]],
   ['setactivationfunctionwithname',['setActivationFunctionWithName',['../structnet_1_1_layer.html#a32c3ee05ce075b98110ecea826d8338f',1,'net::Layer']]],
+  ['setled',['setLED',['../class_simlink.html#a7f9e75b5d58b5fce6297e2aafbb1e1f4',1,'Simlink']]],
+  ['setmotors',['setMotors',['../class_simlink.html#a8650e3647b863e7a559fab15db7294c8',1,'Simlink']]],
   ['setoutputactivationfunction',['setOutputActivationFunction',['../classnet_1_1_neural_net.html#a2b7790f0e1c83cc52bb109846c509858',1,'net::NeuralNet']]],
   ['setweights',['setWeights',['../classnet_1_1_neural_net.html#af5db986fa1c1b835271ac29e9adad03f',1,'net::NeuralNet']]],
   ['setweights3d',['setWeights3D',['../classnet_1_1_neural_net.html#a7e31985917afc5c735aa11af85085a40',1,'net::NeuralNet']]],
   ['sigmoid',['sigmoid',['../namespacenet.html#a53a47ce3f3518d73222d05a8702045df',1,'net']]],
   ['sigmoidderivative',['sigmoidDerivative',['../namespacenet.html#a2feb5dc8e9eb27e59f537d82264cafad',1,'net']]],
+  ['simlink',['Simlink',['../class_simlink.html',1,'Simlink'],['../class_simlink.html#a0d35f7dc0aba2652bc29bd00f538e026',1,'Simlink::Simlink()']]],
+  ['simlink_2ecpp',['Simlink.cpp',['../_simlink_8cpp.html',1,'']]],
+  ['simlink_2eh',['Simlink.h',['../_simlink_8h.html',1,'']]],
   ['simplelinear',['simpleLinear',['../namespacenet.html#a8baef1af5ab8bb67554ff99f5f012f0f',1,'net']]],
   ['simplelinearderivative',['simpleLinearDerivative',['../namespacenet.html#a59c54b6eec7b58483beba66dcf0cdfaa',1,'net']]],
   ['smoothingfactor',['smoothingFactor',['../classrl_1_1_l_s_interpolator.html#a151ebceb9a8674a61ad40a1e5ee561df',1,'rl::LSInterpolator']]],
+  ['speed',['speed',['../class_robby.html#a5ac3e2d409fe8a1a492a18378cc3042a',1,'Robby']]],
   ['state',['State',['../namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3',1,'rl']]],
+  ['stop',['stop',['../class_simlink.html#a078f133ddadc6e8784537fc7901023c7',1,'Simlink']]],
   ['storebackpropagation',['storeBackpropagation',['../classnet_1_1_backpropagation.html#ab33279948cf38660679fb3474908f2eb',1,'net::Backpropagation']]],
   ['storebackpropagationwithstream',['storeBackpropagationWithStream',['../classnet_1_1_backpropagation.html#a08352f1a74216240b2bd9d2531038bc8',1,'net::Backpropagation']]],
   ['storeinterpolator',['storeInterpolator',['../classrl_1_1_interpolator.html#a803e9360ae5b13e7b4078159890dcc6b',1,'rl::Interpolator::storeInterpolator()'],['../classrl_1_1_l_s_interpolator.html#a10dcfba8d08aad8d4a1649ce2b1ef915',1,'rl::LSInterpolator::storeInterpolator()']]],
   ['storenet',['storeNet',['../classnet_1_1_neural_net.html#a86be573ee4ff3ac06d22e17a74486067',1,'net::NeuralNet']]],
   ['storenetwithstream',['storeNetWithStream',['../structnet_1_1_layer.html#a4e4feecd5ca4c9fcd24ffd5adbe28eee',1,'net::Layer::storeNetWithStream()'],['../classnet_1_1_neural_net.html#acc542636ea5495a5aaa5d8b702a0e4f9',1,'net::NeuralNet::storeNetWithStream()']]],
-  ['storewirefitqlearn',['storeWireFitQLearn',['../classrl_1_1_wire_fit_q_learn.html#adc3aa2bca09a0060bea6b74d0ee02654',1,'rl::WireFitQLearn']]]
+  ['storewirefitqlearn',['storeWireFitQLearn',['../classrl_1_1_wire_fit_q_learn.html#adc3aa2bca09a0060bea6b74d0ee02654',1,'rl::WireFitQLearn']]],
+  ['strength',['strength',['../class_emitter.html#ab2d0781c27e76df5ab0370b3cd751260',1,'Emitter']]]
 ];
