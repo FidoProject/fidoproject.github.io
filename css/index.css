@@ -88,3 +88,8 @@ a:hover {
     -moz-hyphens: auto;
     hyphens: auto;
 }
+
+.sec code {
+	text-align:left;
+	overflow:none;
+}

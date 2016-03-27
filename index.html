@@ -5,8 +5,8 @@
 	<title>The Fido Project</title>
 
 	<meta charset="UTF-8"> 
-	<meta name="description" content="An open-source machine learning library for embedded electronics and robotics.">
-	<meta name="author" content="Joshua Gruenstein and Michael Truell">
+	<meta name="description" content="An open-source machine learning library targeted towards embedded electronics and robotics.">
+	<meta name="author" content="Michael Truell and Joshua Gruenstein">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="css/normalize.css" />
@@ -20,6 +20,7 @@
 			<ul>
 				<li><a data-scroll href="#about">about</a></li>
 				<li><a data-scroll href="#start">start</a></li>
+				<li><a data-scroll href="#start">example</a></li>
 				<li><a data-scroll href="#who">who</a></li>
 				<li><a href="/research">research</a></li>
 				<li><a href="/docs/html">docs</a></li>
@@ -28,28 +29,56 @@
 		</div>
 
 		<h2>The Fido Project</h2>
-		<p>A libre C++ machine learning library for embedded electronics and robotics.</p>
+		<p>An open source C++ machine learning library targeted towards embedded electronics and robotics.</p>
 		<hr>
 
 		<div class="sec" id="about">
 			<h4>about fido</h4>
-			<p>Real-time machine learning is the next step for mobile, integrated intelligent systems.  However, most solutions are designed for laboratory-only use, and cannot be practically implemented in real-world resource-limited environments.  <strong>Meet Fido</strong>, the machine learning library designed for integrated high-performance practical operation; Fido can run smoothly on devices from AVR micro-controllers to Raspberry Pi's.</p>
-
-			<p>Fido is loosely organized into three types of tools: <code>systems</code>, <code>widgets</code>, and <code>utilities</code>.  Widgets are classes that represent useful machine learning devices: examples include neurons, layers, and neural networks.  Utilities are what they say on the tin: examples include activation functions.  Finally, systems are complete constructions of widgets, utilities, and other systems to form fully functional devices.   This is what makes Fido truly powerful: a physical robot that learns from positive and negative reinforcement is only a line of code away.</p>
+			<p>Fido is an open-source, highly modular C++ machine learning library for embedded electronics and robotics. Fido includes implementations of neural networks, reinforcement learning methods, and genetic algorithms. Fido is especially suited for robotic contexts, as it is written in C++ with minimal use of the standard library, comes packaged with a robotic simulator, and provides and easy interface in which to write robotic drivers. Fido also comes packaged with a human-trainable robot control system as described in <a href="https://github.com/FidoProject/Research">Truell and Gruenstein</a>.</p>
 		</div>
 
 		<div class="sec" id="start">
 			<h4>getting started</h4>
-			<p>First, download the latest release from <a href="https://github.com/FidoProject/Fido/releases">Github</a>.  In the downloaded zip you will find amalgamated header and source files, <code>Fido.h</code> and <code>Fido.cpp</code>.  Now, simply add the two files to your project and put the following at the top of wherever you're using Fido:</p>
+			<p>First, download the latest release from <a href="https://github.com/FidoProject/Fido/releases">Github</a>. Navigate to the library's folder and build the library.</p>
+			
+			<pre>$ cd Fido && make install</pre>
 
-			<pre>#include &lt;Fido.h&gt;</pre>
+			<p>And you're done! To use Fido, just include <code>Fido.h</code> in your C++ code. For more information please visit the <a href="/docs">docs</a>.</p>
+		</div>
 
-			<p>And you're done!  For more information please visit the <a href="/docs">docs</a>.</p>
+		<div class="sec" id="example">
+			<h4>quick example</h4>
+			<p>Here is a quick example of using the Fido library to train a robot to perform line following.</p>
+			
+			<pre><code>rl::FidoControlSystem learner = rl::FidoControlSystem(1, 2, {-1, -1}, {1, 1});
+Simlink simulator;
+double maxMovement = 20;
+int goodIterations = 0;
+
+// Robot has to stay on the line for 5 reward iterations
+while(goodIterations < 5) {
+	// Choose an action. Give the side of the line that the robot is on as the state
+	rl::Action action = learner.chooseBoltzmanAction({ simulator.isLeftOfLine() }, 0.2);
+
+	// Execute the action. Note change in distance from line
+	double originalDistance = simulator.distanceFromLine();
+	simulator.robot.setPosition(simulator.robot.getPosition() + sf::Vector2f(action[0]*maxMovement, action[1]*maxMovement));
+	double newLineDistance = simulator.distanceFromLine();
+
+	// Give the movement towards the line as reward. Weight by max possible movement.
+	learner.applyReinforcementToLastAction((fabs(originalDistance) - fabs(newLineDistance)) / sqrt(2*pow(maxMovement, 2)), { simulator.isLeftOfLine() });
+	
+	std::this_thread::sleep_for(std::chrono::milliseconds(10));
+
+	// The robot has stayed on the line if it is within 80 pixels of it
+	if(simulator.distanceFromLine() < 80) goodIterations++;
+	else goodIterations = 0;
+}</code></pre>
 		</div>
 
 		<div class="sec" id="who">
 			<h4>who is fido</h4>
-			<p>Fido was created by programmers <span id="nameOne"><a href="https://github.com/joshuagruenstein/">Joshua Gruenstein</a></span> and <span id="nameTwo"><a href="https://github.com/truell20/">Michael Truell</a></span> from the Horace Mann School.  The project was started as a universal robot control system using limited feedback, which can be read about <a href="/research">here</a>.  Fido still continues to be developed in this direction, and the research is included in the library as systems.  Fido is free software licensed under the GNU General Public License, or <a href="http://www.gnu.org/licenses/gpl-3.0.en.html">GPL 3.0</a>.</p>
+			<p>Fido was created by programmers <span id="nameOne"><a href="https://github.com/joshuagruenstein/">Joshua Gruenstein</a></span> and <span id="nameTwo"><a href="https://github.com/truell20/">Michael Truell</a></span> from the Horace Mann School.  The project was started as a universal robot control system using limited feedback, which can be read about <a href="research">here</a>.  Fido still continues to be developed in this direction. Fido is open source licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
 		</div>
 	</div>
 	<script src="js/smooth-scroll.min.js"></script>
