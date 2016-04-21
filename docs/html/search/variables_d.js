@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['smoothingfactor',['smoothingFactor',['../classrl_1_1_l_s_interpolator.html#a151ebceb9a8674a61ad40a1e5ee561df',1,'rl::LSInterpolator']]],
-  ['speed',['speed',['../class_robby.html#a5ac3e2d409fe8a1a492a18378cc3042a',1,'Robby']]],
-  ['strength',['strength',['../class_emitter.html#ab2d0781c27e76df5ab0370b3cd751260',1,'Emitter']]]
+  ['targeterrorlevel',['targetErrorLevel',['../classnet_1_1_backpropagation.html#a4244cf1e73577909b485bcefe41ac07a',1,'net::Backpropagation']]],
+  ['trainer',['trainer',['../classnet_1_1_pruner.html#ade0659ce28ad179d414ff55d481ac29c',1,'net::Pruner']]]
 ];

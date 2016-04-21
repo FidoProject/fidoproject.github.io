@@ -90,7 +90,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classgen_1_1_genetic_algo-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">gen::GeneticAlgo Class Reference</div>  </div>
@@ -101,21 +100,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abaa797a3e86916a5b5b8fd0da1e9ffd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgen_1_1_genetic_algo.html#abaa797a3e86916a5b5b8fd0da1e9ffd8">GeneticAlgo</a> (unsigned int populationSize_, float mutationRate_, float crossoverRate_, int numberOfElitismCopies_, std::vector&lt; double &gt;(*getPopulationFitness_)(std::vector&lt; <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> * &gt; neuralNet))</td></tr>
-<tr class="memdesc:abaa797a3e86916a5b5b8fd0da1e9ffd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a genetic algorithm with the necessary parameters.  <a href="#abaa797a3e86916a5b5b8fd0da1e9ffd8">More...</a><br/></td></tr>
-<tr class="separator:abaa797a3e86916a5b5b8fd0da1e9ffd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a830caa746dab137f661b075437683e69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgen_1_1_genetic_algo.html#a830caa746dab137f661b075437683e69">getBestNeuralNetwork</a> (int numberOfGenerations, <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *modelNetwork)</td></tr>
-<tr class="memdesc:a830caa746dab137f661b075437683e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the most fit neural network in a population that undergoes a specified number of generations.  <a href="#a830caa746dab137f661b075437683e69">More...</a><br/></td></tr>
-<tr class="separator:a830caa746dab137f661b075437683e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a30f50198ce0e98b27fb04bebeaf8ac34"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgen_1_1_genetic_algo.html#a30f50198ce0e98b27fb04bebeaf8ac34">getPopulationFitness</a> )(std::vector&lt; <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> * &gt; neuralNet)</td></tr>
-<tr class="memdesc:a30f50198ce0e98b27fb04bebeaf8ac34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the fitness of every individual in the population, when given the population of neural networks.  <a href="#a30f50198ce0e98b27fb04bebeaf8ac34">More...</a><br/></td></tr>
-<tr class="separator:a30f50198ce0e98b27fb04bebeaf8ac34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12132162a24738a1acca85c1744ed8f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgen_1_1_genetic_algo.html#a12132162a24738a1acca85c1744ed8f5">GeneticAlgo</a> (unsigned int populationSize_, float mutationRate_, float crossoverRate_, int numberOfElitismCopies_, std::vector&lt; double &gt;(*getPopulationFitness_)(const std::vector&lt; <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> &gt; &amp;neuralNet))</td></tr>
+<tr class="memdesc:a12132162a24738a1acca85c1744ed8f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a genetic algorithm with the necessary parameters.  <a href="#a12132162a24738a1acca85c1744ed8f5">More...</a><br/></td></tr>
+<tr class="separator:a12132162a24738a1acca85c1744ed8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7fe9e2656e00d74d9350d3a2297136"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgen_1_1_genetic_algo.html#a8b7fe9e2656e00d74d9350d3a2297136">getBestNeuralNetwork</a> (int numberOfGenerations, <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> modelNetwork)</td></tr>
+<tr class="memdesc:a8b7fe9e2656e00d74d9350d3a2297136"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the most fit neural network in a population that undergoes a specified number of generations.  <a href="#a8b7fe9e2656e00d74d9350d3a2297136">More...</a><br/></td></tr>
+<tr class="separator:a8b7fe9e2656e00d74d9350d3a2297136"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="abaa797a3e86916a5b5b8fd0da1e9ffd8"></a>
+<a class="anchor" id="a12132162a24738a1acca85c1744ed8f5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -146,7 +139,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; double &gt;(*)(std::vector&lt; <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> * &gt; neuralNet)&#160;</td>
+          <td class="paramtype">std::vector&lt; double &gt;(*)(const std::vector&lt; <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> &gt; &amp;neuralNet)&#160;</td>
           <td class="paramname"><em>getPopulationFitness_</em>&#160;</td>
         </tr>
         <tr>
@@ -172,12 +165,12 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a830caa746dab137f661b075437683e69"></a>
+<a class="anchor" id="a8b7fe9e2656e00d74d9350d3a2297136"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> * GeneticAlgo::getBestNeuralNetwork </td>
+          <td class="memname"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> GeneticAlgo::getBestNeuralNetwork </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>numberOfGenerations</em>, </td>
@@ -185,7 +178,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a>&#160;</td>
           <td class="paramname"><em>modelNetwork</em>&#160;</td>
         </tr>
         <tr>
@@ -207,21 +200,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a30f50198ce0e98b27fb04bebeaf8ac34"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;double&gt;(* gen::GeneticAlgo::getPopulationFitness)(std::vector&lt; <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> * &gt; neuralNet)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the fitness of every individual in the population, when given the population of neural networks. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/truell20/Documents/Fido/include/<a class="el" href="_genetic_algo_8h_source.html">GeneticAlgo.h</a></li>
 <li>/home/truell20/Documents/Fido/src/<a class="el" href="_genetic_algo_8cpp.html">GeneticAlgo.cpp</a></li>
@@ -229,7 +207,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 21 2016 10:08:43 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 21 2016 13:13:08 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

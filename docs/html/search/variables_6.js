@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['history',['history',['../structrl_1_1_model.html#a960c76c5f48749bec0af605626bc638f',1,'rl::Model']]]
+  ['interpolator',['interpolator',['../classrl_1_1_wire_fit_q_learn.html#ab029916c40c6ce916c76b6530344de54',1,'rl::WireFitQLearn']]]
 ];

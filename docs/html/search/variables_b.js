@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['pruningsamplesize',['pruningSampleSize',['../classnet_1_1_pruner.html#a633a2a95ab5b08a83bbd83a2949f0651',1,'net::Pruner']]]
+  ['reward',['reward',['../structrl_1_1_wire.html#ab8a165c515ad06cebd5f71acf1db0348',1,'rl::Wire']]],
+  ['robot',['robot',['../class_simlink.html#a54f579964d162130aaefe9aef475fdcf',1,'Simlink']]]
 ];
