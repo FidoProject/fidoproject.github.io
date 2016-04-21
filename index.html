@@ -2,60 +2,57 @@
 <html>
 
 <head>
-	<title>The Fido Project</title>
+  <title>The Fido Project</title>
 
-	<meta charset="UTF-8">
-	<meta name="description" content="An open-source machine learning library targeted towards embedded electronics and robotics.">
-	<meta name="author" content="Michael Truell and Joshua Gruenstein">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="description" content="An open-source machine learning library targeted towards embedded electronics and robotics.">
+  <meta name="author" content="Michael Truell and Joshua Gruenstein">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" href="css/skeleton.css" />
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css" />
-	<link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/skeleton.css" />
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css" />
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-	<div class="container">
-		<div class="row" id="navbar">
-			<ul>
-				<li><a data-scroll href="#about">about</a></li>
-				<li><a data-scroll href="#start">start</a></li>
-				<li><a data-scroll href="#start">examples</a></li>
-				<li><a data-scroll href="#who">who</a></li>
-				<li><a href="/research">research</a></li>
-				<li><a href="/docs/html">docs</a></li>
-				<li><a href="https://github.com/FidoProject/Fido">github</a></li>
-			</ul>
-		</div>
+  <div class="container">
+    <div class="row" id="navbar">
+      <ul>
+        <li><a data-scroll href="#about">about</a></li>
+        <li><a data-scroll href="#start">start</a></li>
+        <li><a data-scroll href="#start">examples</a></li>
+        <li><a data-scroll href="#who">who</a></li>
+        <li><a href="/research">research</a></li>
+        <li><a href="/docs/html">docs</a></li>
+        <li><a href="https://github.com/FidoProject/Fido">github</a></li>
+      </ul>
+    </div>
 
-		<h2>The Fido Project</h2>
-		<p>An open source C++ machine learning library targeted towards embedded electronics and robotics.</p>
-		<hr>
+    <h2>The Fido Project</h2>
+    <p>An open source C++ machine learning library targeted towards embedded electronics and robotics.</p>
+    <hr>
 
-		<div class="sec" id="about">
-			<h4>about fido</h4>
-			<p>Fido is an light-weight, open-source, and highly modular C++ machine learning library. The library is targeted towards embedded electronics and robotics. Fido includes implementations of <b>trainable neural networks, reinforcement learning methods, genetic algorithms, and a full-fledged robotic simulator</b>. Fido also comes packaged with a human-trainable robot control system as described in <a href="https://github.com/FidoProject/Research">Truell and Gruenstein</a>.</p>
-		</div>
+    <div class="sec" id="about">
+      <h4>about fido</h4>
+      <p>Fido is an light-weight, open-source, and highly modular C++ machine learning library. The library is targeted towards embedded electronics and robotics. Fido includes implementations of <b>trainable neural networks, reinforcement learning methods, genetic algorithms, and a full-fledged robotic simulator</b>. Fido also comes packaged with a human-trainable robot control system as described in <a href="https://github.com/FidoProject/Research">Truell and Gruenstein</a>.</p>
+    </div>
 
-		<div class="sec" id="start">
-			<h4>getting started</h4>
-			<p>First, download the latest release from <a href="https://github.com/FidoProject/Fido/releases">Github</a>. Navigate to the library's folder and build the library.</p>
+    <div class="sec" id="start">
+      <h4>getting started</h4>
+      <p>First, download the latest release from <a href="https://github.com/FidoProject/Fido/releases">Github</a>. Navigate to the library's folder and build the library.</p>
 
-			<pre>$ cd Fido && make install</pre>
+      <pre>$ cd Fido && make install</pre>
 
-			<p>And you're done! To use Fido, just include <code>Fido.h</code> in your C++ code. For more information please visit the <a href="/docs/html">docs</a>.</p>
-		</div>
+      <p>And you're done! To use Fido, just include <code>Fido.h</code> in your C++ code. For more information please visit the <a href="/docs/html">docs</a>.</p>
+    </div>
 
-		<div class="sec" id="example">
-			<h4>quick examples</h4>
+    <div class="sec" id="example">
+      <h4>quick examples</h4>
 
-			<h5>neural networks</h5>
-			<p>Here is a quick example of using the Fido library to fit a neural network on a simple linear regression problem.</p>
-			<pre><code>// Creates a neural network with
-// 1 input, 1 output, 2 hidden layers, 4 neurons per hidden layer,
-// a sigmoid activation function for hidden layers, and a linear activation function on the final layer.
-net::NeuralNet neuralNetwork = net::NeuralNet(1, 1, 2, 4, "sigmoid");
+      <h5>neural networks</h5>
+      <p>Here is a quick example of training a neural network using backpropagation. We will train the network to perform linear regression.</p>
+      <pre><code>net::NeuralNet neuralNetwork = net::NeuralNet(1, 1, 2, 4, "sigmoid");
 neuralNetwork.setOutputActivationFunction("simpleLinear");
 
 std::vector< std::vector&lt;double> > input = { {1}, {2}, {5}, {6} };
@@ -65,45 +62,65 @@ net::Backpropagation backprop = net::Backpropagation();
 backprop.trainOnData(&neuralNetwork, input, correctOutput);
 </code></pre>
 
-			<h5>reinforcement learning</h5>
-			<p>Here is a quick example of using the Fido library to train a robot in our simulator to perform line following using reinforcement learning.</p>
-			<pre><code>rl::FidoControlSystem learner = rl::FidoControlSystem(1, 2, {-1, -1}, {1, 1});
+      <h5>genetic algorithms</h5>
+      <p>Here is a quick example of generating neural networks using genetic algorithms. We will train the network to perform linear regression.</p>
+      <pre><code>#include "Fido/GeneticAlgo.h"
+#include &lt;math.h>
+
+std::vector&lt;double> getPopulationFitness(const std::vector&lt;net::NeuralNet> &population) {
+  std::vector&lt;double> fitnesses;
+
+  for(net::NeuralNet network : population) {
+    double totalError = 0;
+    for(double input = 1; input < 4; input++) {
+      totalError += pow(input*2 - network.getOutput({input})[0], 2);
+    }
+    fitnesses.push_back(1/totalError);
+  }
+
+  return fitnesses;
+}
+
+int main() {
+  srand(time(NULL));
+  gen::GeneticAlgo geneticAlgo = gen::GeneticAlgo(20, 0.4, 0.5, 10, getPopulationFitness);
+  net::NeuralNet modelNetwork = net::NeuralNet(1, 1, 1, 4, "simpleLinear");
+}
+
+</code></pre>
+
+      <h5>reinforcement learning</h5>
+      <p>Here is a quick example of using the Fido library to train a robot in our simulator to perform line following using reinforcement learning.</p>
+      <pre><code>rl::FidoControlSystem learner = rl::FidoControlSystem(1, 2, {-1, -1}, {1, 1});
 Simlink simulator;
-double maxMovement = sqrt(2*pow(20, 2));
 int goodIterations = 0;
 
-// Robot has to stay on the line for 5 reward iterations.
 while(goodIterations < 5) {
-	// Choose an action. Give the side of the line that the robot is on as the sensor value.
-	rl::Action action = learner.chooseBoltzmanAction({ simulator.isLeftOfLine() }, 0.2);
+  rl::Action action = learner.chooseBoltzmanAction({ simulator.isLeftOfLine() }, 0.2);
 
-	// Execute the action. Record change in distance from line.
-	double originalDistance = simulator.distanceFromLine();
-	sf::Vector2f displacement =  sf::Vector2f(action[0]*maxMovement, action[1]*maxMovement);
-	sf::Vector2f newPosition = simulator.robot.getPosition() + displacement;
-	simulator.robot.setPosition(newPosition);
-	double newLineDistance = simulator.distanceFromLine();
+  double originalDistance = simulator.distanceFromLine();
 
-	// Give change in displace from line as reward. Weight this by max possible movement.
-	double rewardValue = (fabs(originalDistance) - fabs(newLineDistance)) / maxMovement;
-	learner.applyReinforcementToLastAction(rewardValue, { simulator.isLeftOfLine() });
+  sf::Vector2f displacement =  sf::Vector2f(action[0], action[1]);
+  sf::Vector2f newPosition = simulator.robot.getPosition() + displacement;
+  simulator.robot.setPosition(newPosition);
 
-	std::this_thread::sleep_for(std::chrono::milliseconds(10));
+  double newDistance = simulator.distanceFromLine();
+  double rewardValue = (fabs(originalDistance) - fabs(newDistance - originalDistance)) / sqrt(2);
+  learner.applyReinforcementToLastAction(rewardValue, { simulator.isLeftOfLine() });
 
-	// The robot has stayed on the line if it is within 80 pixels of it
-	if(simulator.distanceFromLine() < 80) goodIterations++;
-	else goodIterations = 0;
+  if(simulator.distanceFromLine() < 80) goodIterations++;
+  else goodIterations = 0;
 }</code></pre>
-		</div>
+    </div>
 
-		<div class="sec" id="who">
-			<h4>who is fido</h4>
-			<p>Fido was created by programmers <span id="nameOne"><a href="https://github.com/joshuagruenstein/">Joshua Gruenstein</a></span> and <span id="nameTwo"><a href="https://github.com/truell20/">Michael Truell</a></span> from the Horace Mann School.  The project was started as a universal robot control system using limited feedback, which can be read about <a href="research">here</a>.  Fido still continues to be developed in this direction. Fido is open source licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
-		</div>
-	</div>
-	<script src="js/smooth-scroll.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
-	<script src="js/index.js"></script>
+    <div class="sec" id="who">
+      <h4>who is fido</h4>
+      <p>Fido was created by programmers <span id="nameOne"><a href="https://github.com/joshuagruenstein/">Joshua Gruenstein</a></span> and <span id="nameTwo"><a href="https://github.com/truell20/">Michael Truell</a></span> from the Horace Mann School.  The project was started as a universal robot control system using limited feedback, which can be read about <a href="research">here</a>.  Fido still continues to be developed in this direction. Fido is open source licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+    </div>
+  </div>
+  <script src="js/smooth-scroll.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="js/index.js"></script>
 </body>
 </html>
