@@ -18,6 +18,7 @@ var searchData=
   ['getmicrophone',['getMicrophone',['../class_simlink.html#a9c7ed2bd955896ac0dc0defd905d18a3',1,'Simlink']]],
   ['getoutput',['getOutput',['../classnet_1_1_neural_net.html#a8788d154fa2cd7899bdb8b12d0b3b189',1,'net::NeuralNet::getOutput()'],['../classnet_1_1_neuron.html#aa250fbfafeb1cde4706a347867d3b444',1,'net::Neuron::getOutput()']]],
   ['getoutputactivationfunctionname',['getOutputActivationFunctionName',['../classnet_1_1_neural_net.html#a68991e858588c216c9f6c451c79f0e2b',1,'net::NeuralNet']]],
+  ['getpopulationfitness',['getPopulationFitness',['../_genetic_algo_example_8cpp.html#a1dadf7cf6d52ac5822ee28ce650fc0b2',1,'getPopulationFitness(std::vector&lt; net::NeuralNet * &gt; population):&#160;GeneticAlgoExample.cpp'],['../main_8cpp.html#a1dadf7cf6d52ac5822ee28ce650fc0b2',1,'getPopulationFitness(std::vector&lt; net::NeuralNet * &gt; population):&#160;main.cpp']]],
   ['getreward',['getReward',['../classrl_1_1_interpolator.html#a21e967a7dcf3e40adea22dd5da5df03a',1,'rl::Interpolator::getReward()'],['../classrl_1_1_l_s_interpolator.html#ab63667c318d17dc7330ad579cf739e28',1,'rl::LSInterpolator::getReward()']]],
   ['getrobotdisplacementfromemitter',['getRobotDisplacementFromEmitter',['../class_simlink.html#ae0824d51ddc848bc924619ae7ad1a407',1,'Simlink']]],
   ['getrtp',['getRTP',['../struct_t_d_vect.html#a7801dc9b4a8f45e1ed5e3894c847e8fb',1,'TDVect']]],
