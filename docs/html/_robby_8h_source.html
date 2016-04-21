@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Fido: /home/truell20/Documents/Fido/Software/FidoKin/Robby.h Source File</title>
+<title>Fido: /home/truell20/Documents/Fido/include/Simulator/Robby.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_4e9c05acfa2c3671b8618fcb95d57d96.html">Software</a></li><li class="navelem"><a class="el" href="dir_a08d26e029a4eb3421096a2c50144ca8.html">FidoKin</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_33e04a8098dc3fe87f81eb223d56b845.html">Simulator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">     * and height.</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_robby.html#a9c0457df40570ea551b158cd0039f88f">Robby</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> width, <span class="keywordtype">float</span> height);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">/* Set robot motor values and return a</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">     * gyro sensor double.</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">     *</span></div>
@@ -110,36 +110,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">     * DeltaTime is in milliseconds.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_robby.html#ac3f3ceb9487adebc0a2817de48e6839b">go</a>(<span class="keywordtype">int</span> motLeft, <span class="keywordtype">int</span> motRight, <span class="keywordtype">double</span> <a class="code" href="class_robby.html#a5ac3e2d409fe8a1a492a18378cc3042a">speed</a>, <span class="keywordtype">double</span> deltaTime);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">/* In testing method which simulates</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">     * acceleration in the kinematic model.</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">     *</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">     * Usage is identical to Robby::go().</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_robby.html#ae1210ebcf996dbe223a2a6fe619c37c7">goAccel</a>(<span class="keywordtype">int</span> motLeft, <span class="keywordtype">int</span> motRight);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// Clock for velocity-&gt;distance aproximation.</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_robby.html#a51f3d2a044256b057724a55c604cea4b">   30</a></span>&#160;    sf::Clock <a class="code" href="class_robby.html#a51f3d2a044256b057724a55c604cea4b">moveClock</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_robby.html#aaa50c0695d071403efce23f0ee553dcd">   32</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_robby.html#a21249282ba72fb722b0617283ec3f2a9">m1Last</a>,<a class="code" href="class_robby.html#ac5577eb9938647220a2db0d7e6fcc2d6">m2Last</a>,<a class="code" href="class_robby.html#ad070828a7f309b64ad396639aebbc531">m1Target</a>,<a class="code" href="class_robby.html#aaa50c0695d071403efce23f0ee553dcd">m2Target</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_robby.html#a5ac3e2d409fe8a1a492a18378cc3042a">   33</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_robby.html#a5ac3e2d409fe8a1a492a18378cc3042a">speed</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_robby.html#a65d0b26a579c04b27b864ff87f874502">inverseGoKiwi</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> r, <span class="keywordtype">double</span> deltaT);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_robby.html#a1f53ef8e9e7bc941cbe678eb31f30bc5">goKiwi</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k, <span class="keywordtype">double</span> deltaT);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// Clock for velocity-&gt;distance aproximation.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_robby.html#a51f3d2a044256b057724a55c604cea4b">   34</a></span>&#160;    sf::Clock <a class="code" href="class_robby.html#a51f3d2a044256b057724a55c604cea4b">moveClock</a>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_robby.html#aaa50c0695d071403efce23f0ee553dcd">   36</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_robby.html#a21249282ba72fb722b0617283ec3f2a9">m1Last</a>,<a class="code" href="class_robby.html#ac5577eb9938647220a2db0d7e6fcc2d6">m2Last</a>,<a class="code" href="class_robby.html#ad070828a7f309b64ad396639aebbc531">m1Target</a>,<a class="code" href="class_robby.html#aaa50c0695d071403efce23f0ee553dcd">m2Target</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_robby.html#a5ac3e2d409fe8a1a492a18378cc3042a">   37</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_robby.html#a5ac3e2d409fe8a1a492a18378cc3042a">speed</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_robby.html#adee95bd32b9dfbaef5b6afba4d6e6b84">displace</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> r, <span class="keywordtype">double</span> deltaT);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_robby_html_a1f53ef8e9e7bc941cbe678eb31f30bc5"><div class="ttname"><a href="class_robby.html#a1f53ef8e9e7bc941cbe678eb31f30bc5">Robby::goKiwi</a></div><div class="ttdeci">void goKiwi(int i, int j, int k, double deltaT)</div><div class="ttdef"><b>Definition:</b> Robby.cpp:82</div></div>
 <div class="ttc" id="class_robby_html_a9c0457df40570ea551b158cd0039f88f"><div class="ttname"><a href="class_robby.html#a9c0457df40570ea551b158cd0039f88f">Robby::Robby</a></div><div class="ttdeci">Robby(float x, float y, float width, float height)</div><div class="ttdef"><b>Definition:</b> Robby.cpp:10</div></div>
-<div class="ttc" id="class_robby_html_a5ac3e2d409fe8a1a492a18378cc3042a"><div class="ttname"><a href="class_robby.html#a5ac3e2d409fe8a1a492a18378cc3042a">Robby::speed</a></div><div class="ttdeci">double speed</div><div class="ttdef"><b>Definition:</b> Robby.h:33</div></div>
+<div class="ttc" id="class_robby_html_a5ac3e2d409fe8a1a492a18378cc3042a"><div class="ttname"><a href="class_robby.html#a5ac3e2d409fe8a1a492a18378cc3042a">Robby::speed</a></div><div class="ttdeci">double speed</div><div class="ttdef"><b>Definition:</b> Robby.h:37</div></div>
+<div class="ttc" id="class_robby_html_a65d0b26a579c04b27b864ff87f874502"><div class="ttname"><a href="class_robby.html#a65d0b26a579c04b27b864ff87f874502">Robby::inverseGoKiwi</a></div><div class="ttdeci">void inverseGoKiwi(int x, int y, int r, double deltaT)</div><div class="ttdef"><b>Definition:</b> Robby.cpp:74</div></div>
 <div class="ttc" id="class_robby_html_ae1210ebcf996dbe223a2a6fe619c37c7"><div class="ttname"><a href="class_robby.html#ae1210ebcf996dbe223a2a6fe619c37c7">Robby::goAccel</a></div><div class="ttdeci">double goAccel(int motLeft, int motRight)</div><div class="ttdef"><b>Definition:</b> Robby.cpp:57</div></div>
 <div class="ttc" id="class_robby_html_ac3f3ceb9487adebc0a2817de48e6839b"><div class="ttname"><a href="class_robby.html#ac3f3ceb9487adebc0a2817de48e6839b">Robby::go</a></div><div class="ttdeci">double go(int motLeft, int motRight, double speed, double deltaTime)</div><div class="ttdoc">Creds to http://chess.eecs.berkeley.edu/eecs149/documentation/differentialDrive.pdf. </div><div class="ttdef"><b>Definition:</b> Robby.cpp:19</div></div>
-<div class="ttc" id="class_robby_html_a21249282ba72fb722b0617283ec3f2a9"><div class="ttname"><a href="class_robby.html#a21249282ba72fb722b0617283ec3f2a9">Robby::m1Last</a></div><div class="ttdeci">int m1Last</div><div class="ttdef"><b>Definition:</b> Robby.h:32</div></div>
-<div class="ttc" id="class_robby_html_a51f3d2a044256b057724a55c604cea4b"><div class="ttname"><a href="class_robby.html#a51f3d2a044256b057724a55c604cea4b">Robby::moveClock</a></div><div class="ttdeci">sf::Clock moveClock</div><div class="ttdef"><b>Definition:</b> Robby.h:30</div></div>
-<div class="ttc" id="class_robby_html_ac5577eb9938647220a2db0d7e6fcc2d6"><div class="ttname"><a href="class_robby.html#ac5577eb9938647220a2db0d7e6fcc2d6">Robby::m2Last</a></div><div class="ttdeci">int m2Last</div><div class="ttdef"><b>Definition:</b> Robby.h:32</div></div>
-<div class="ttc" id="class_robby_html_aaa50c0695d071403efce23f0ee553dcd"><div class="ttname"><a href="class_robby.html#aaa50c0695d071403efce23f0ee553dcd">Robby::m2Target</a></div><div class="ttdeci">int m2Target</div><div class="ttdef"><b>Definition:</b> Robby.h:32</div></div>
-<div class="ttc" id="class_robby_html_ad070828a7f309b64ad396639aebbc531"><div class="ttname"><a href="class_robby.html#ad070828a7f309b64ad396639aebbc531">Robby::m1Target</a></div><div class="ttdeci">int m1Target</div><div class="ttdef"><b>Definition:</b> Robby.h:32</div></div>
+<div class="ttc" id="class_robby_html_a21249282ba72fb722b0617283ec3f2a9"><div class="ttname"><a href="class_robby.html#a21249282ba72fb722b0617283ec3f2a9">Robby::m1Last</a></div><div class="ttdeci">int m1Last</div><div class="ttdef"><b>Definition:</b> Robby.h:36</div></div>
+<div class="ttc" id="class_robby_html_a51f3d2a044256b057724a55c604cea4b"><div class="ttname"><a href="class_robby.html#a51f3d2a044256b057724a55c604cea4b">Robby::moveClock</a></div><div class="ttdeci">sf::Clock moveClock</div><div class="ttdef"><b>Definition:</b> Robby.h:34</div></div>
+<div class="ttc" id="class_robby_html_ac5577eb9938647220a2db0d7e6fcc2d6"><div class="ttname"><a href="class_robby.html#ac5577eb9938647220a2db0d7e6fcc2d6">Robby::m2Last</a></div><div class="ttdeci">int m2Last</div><div class="ttdef"><b>Definition:</b> Robby.h:36</div></div>
+<div class="ttc" id="class_robby_html_aaa50c0695d071403efce23f0ee553dcd"><div class="ttname"><a href="class_robby.html#aaa50c0695d071403efce23f0ee553dcd">Robby::m2Target</a></div><div class="ttdeci">int m2Target</div><div class="ttdef"><b>Definition:</b> Robby.h:36</div></div>
+<div class="ttc" id="class_robby_html_ad070828a7f309b64ad396639aebbc531"><div class="ttname"><a href="class_robby.html#ad070828a7f309b64ad396639aebbc531">Robby::m1Target</a></div><div class="ttdeci">int m1Target</div><div class="ttdef"><b>Definition:</b> Robby.h:36</div></div>
+<div class="ttc" id="class_robby_html_adee95bd32b9dfbaef5b6afba4d6e6b84"><div class="ttname"><a href="class_robby.html#adee95bd32b9dfbaef5b6afba4d6e6b84">Robby::displace</a></div><div class="ttdeci">void displace(double x, double y, double r, double deltaT)</div><div class="ttdef"><b>Definition:</b> Robby.cpp:90</div></div>
 <div class="ttc" id="class_robby_html"><div class="ttname"><a href="class_robby.html">Robby</a></div><div class="ttdef"><b>Definition:</b> Robby.h:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 10:35:01 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 21 2016 09:48:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

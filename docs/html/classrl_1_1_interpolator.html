@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -106,12 +106,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aec80cac4897e8caebbb47ff769bf0d4c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_interpolator.html#aec80cac4897e8caebbb47ff769bf0d4c">initFromFile</a> (std::ifstream *in)=0</td></tr>
-<tr class="memdesc:aec80cac4897e8caebbb47ff769bf0d4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the parameters of an interpolator from a file.  <a href="#aec80cac4897e8caebbb47ff769bf0d4c">More...</a><br/></td></tr>
-<tr class="separator:aec80cac4897e8caebbb47ff769bf0d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a803e9360ae5b13e7b4078159890dcc6b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_interpolator.html#a803e9360ae5b13e7b4078159890dcc6b">storeInterpolator</a> (std::ofstream *out)=0</td></tr>
-<tr class="memdesc:a803e9360ae5b13e7b4078159890dcc6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the parameters of an interpolator in a file.  <a href="#a803e9360ae5b13e7b4078159890dcc6b">More...</a><br/></td></tr>
-<tr class="separator:a803e9360ae5b13e7b4078159890dcc6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8c9fa7ca8a20b50c9ea3aecaa6d2c32"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_interpolator.html#ab8c9fa7ca8a20b50c9ea3aecaa6d2c32">initFromStream</a> (std::ifstream *in)=0</td></tr>
+<tr class="memdesc:ab8c9fa7ca8a20b50c9ea3aecaa6d2c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the parameters of an interpolator from a file.  <a href="#ab8c9fa7ca8a20b50c9ea3aecaa6d2c32">More...</a><br/></td></tr>
+<tr class="separator:ab8c9fa7ca8a20b50c9ea3aecaa6d2c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1499d2368dc5e6d6d78cc434efbea460"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_interpolator.html#a1499d2368dc5e6d6d78cc434efbea460">store</a> (std::ofstream *out)=0</td></tr>
+<tr class="memdesc:a1499d2368dc5e6d6d78cc434efbea460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the parameters of an interpolator in a file.  <a href="#a1499d2368dc5e6d6d78cc434efbea460">More...</a><br/></td></tr>
+<tr class="separator:a1499d2368dc5e6d6d78cc434efbea460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21e967a7dcf3e40adea22dd5da5df03a"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_interpolator.html#a21e967a7dcf3e40adea22dd5da5df03a">getReward</a> (const std::vector&lt; <a class="el" href="structrl_1_1_wire.html">Wire</a> &gt; &amp;controlWires, const std::vector&lt; double &gt; &amp;action)=0</td></tr>
 <tr class="memdesc:a21e967a7dcf3e40adea22dd5da5df03a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses the interpolator function to compute the reward of an action vector given a set of control wires.  <a href="#a21e967a7dcf3e40adea22dd5da5df03a">More...</a><br/></td></tr>
 <tr class="separator:a21e967a7dcf3e40adea22dd5da5df03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,7 +252,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aec80cac4897e8caebbb47ff769bf0d4c"></a>
+<a class="anchor" id="ab8c9fa7ca8a20b50c9ea3aecaa6d2c32"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -260,7 +260,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool rl::Interpolator::initFromFile </td>
+          <td class="memname">virtual bool rl::Interpolator::initFromStream </td>
           <td>(</td>
           <td class="paramtype">std::ifstream *&#160;</td>
           <td class="paramname"><em>in</em></td><td>)</td>
@@ -277,7 +277,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Initializes the parameters of an interpolator from a file. </p>
 <p>Returns false if the interpolator stored in the file is not the correct type </p>
 
-<p>Implemented in <a class="el" href="classrl_1_1_l_s_interpolator.html#a70ee94fc18d05705b6357dfa4c67d42d">rl::LSInterpolator</a>.</p>
+<p>Implemented in <a class="el" href="classrl_1_1_l_s_interpolator.html#a8a518366994f5cdbaab979427d0ad59d">rl::LSInterpolator</a>.</p>
 
 </div>
 </div>
@@ -325,7 +325,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a803e9360ae5b13e7b4078159890dcc6b"></a>
+<a class="anchor" id="a1499d2368dc5e6d6d78cc434efbea460"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -333,7 +333,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void rl::Interpolator::storeInterpolator </td>
+          <td class="memname">virtual void rl::Interpolator::store </td>
           <td>(</td>
           <td class="paramtype">std::ofstream *&#160;</td>
           <td class="paramname"><em>out</em></td><td>)</td>
@@ -349,18 +349,18 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Stores the parameters of an interpolator in a file. </p>
 
-<p>Implemented in <a class="el" href="classrl_1_1_l_s_interpolator.html#a10dcfba8d08aad8d4a1649ce2b1ef915">rl::LSInterpolator</a>.</p>
+<p>Implemented in <a class="el" href="classrl_1_1_l_s_interpolator.html#acde4061a65e697dcda6ac3f55e290c12">rl::LSInterpolator</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/truell20/Documents/Fido/Software/<a class="el" href="_interpolator_8h_source.html">Interpolator.h</a></li>
-<li>/home/truell20/Documents/Fido/Software/<a class="el" href="_interpolator_8cpp.html">Interpolator.cpp</a></li>
+<li>/home/truell20/Documents/Fido/include/<a class="el" href="_interpolator_8h_source.html">Interpolator.h</a></li>
+<li>/home/truell20/Documents/Fido/src/<a class="el" href="_interpolator_8cpp.html">Interpolator.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 10:35:01 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 21 2016 09:48:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

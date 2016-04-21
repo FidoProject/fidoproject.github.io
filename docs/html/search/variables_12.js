@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['weights',['weights',['../classnet_1_1_neuron.html#aec978b00351eed6c0b290940e56ca8d8',1,'net::Neuron']]]
+  ['ycomp',['yComp',['../struct_t_d_vect.html#a821308c57345b86c513c0ad82cd48561',1,'TDVect']]]
 ];

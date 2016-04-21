@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['history',['history',['../structrl_1_1_model.html#a960c76c5f48749bec0af605626bc638f',1,'rl::Model']]]
+  ['getpopulationfitness',['getPopulationFitness',['../classgen_1_1_genetic_algo.html#a30f50198ce0e98b27fb04bebeaf8ac34',1,'gen::GeneticAlgo']]]
 ];

@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -80,29 +80,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Fido </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="image">
-<img src="https://travis-ci.org/FidoProject/Fido.svg?branch=master"  alt="build status"/>
-</div>
-<p>An open-source, highly modular C++ machine learning library for embedded electronics and robotics. Fido includes implementations of neural networks, reinforcement learning, and genetic algorithms. Fido is especially suited for robotic contexts, as it is written in C++ with minimal use of the standard library, comes packaged with a robotic simulator, and provides and easy interface in which to write robotic drivers.</p>
-<h2>Getting Started</h2>
-<p>Clone the github repository. ``` $ git clone <a href="https://github.com/FidoProject/Fido.git">https://github.com/FidoProject/Fido.git</a> ```</p>
-<h3>With Simulator</h3>
-<p>Fido's simulator requires <a href="http://www.sfml-dev.org/learn.php">SFML</a>. If you would like the simulator, install SFML.</p>
-<p>If you are on a <b>Unix</b> machine, use the install script. ``` $ cd Fido/ &amp;&amp; bash install.sh ```</p>
-<p>If you are on <b>Windows</b>, use ``` $ cd Fido/ &amp;&amp; install.bat ```</p>
-<h3>Without Simulator</h3>
-<p>If you do not want the simulator use the install script with the <code>-noSFML</code> argument ``` $ cd Fido/ &amp;&amp; bash install.sh -noSFML ```</p>
-<p>Done! To use Fido, just link the <code>fido-lib.a</code> file and include any headers from the <code>Software</code> directory.</p>
-<h2>Example Code</h2>
-<p>An example of creating and training a neural network to perform linear regression.</p>
-<p>```cpp #include "NeuralNet.h" #include "Backpropagation.h" #include &lt;iostream&gt;</p>
-<p>int <a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a> { // Creates a neural network with // 1 input, 1 output, 2 hidden layers, 4 neurons per hidden layer, // a sigmoid activation function for hidden layers, and a linear activation function on the final layer. <a class="el" href="classnet_1_1_neural_net.html" title="Class representing a neural network. ">net::NeuralNet</a> neuralNetwork = <a class="el" href="classnet_1_1_neural_net.html" title="Class representing a neural network. ">net::NeuralNet</a>(1, 1, 2, 4, "sigmoid"); neuralNetwork.setOutputActivationFunction("simpleLinear");</p>
-<p>std::vector&lt; std::vector&lt;double&gt; &gt; input = { {1}, {2}, {5}, {6} }; std::vector&lt; std::vector&lt;double&gt; &gt; correctOutput = { {2}, {4}, {10}, {12} };</p>
-<p>// Create backpropagation object with // a learning rate of 10%, a momentum term of 0.001, an acceptable error level of 0.1%, // and a maximum number of training iterations of 10000 <a class="el" href="classnet_1_1_backpropagation.html">net::Backpropagation</a> backprop = <a class="el" href="classnet_1_1_backpropagation.html">net::Backpropagation</a>(0.1, 0.001, 0.001, 10000); backprop.trainOnData(&amp;neuralNetwork, input, correctOutput);</p>
-<p>// Cycle through inputs and print the outputs for (std::vector&lt;double&gt; current: input) { std::cout &lt;&lt; "Input: " &lt;&lt; current[0] &lt;&lt; "\tNeural network's answer:" &lt;&lt; neuralNetwork.getOutput(current)[0] &lt;&lt; std::endl; } } ```</p>
+<div class="textblock"><p><a href="https://opensource.org/licenses/MIT">![MIT License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)</a> <a href="https://travis-ci.org/FidoProject/Fido/">![Build Status](https://travis-ci.org/FidoProject/Fido.svg?branch=master)</a></p>
+<p>Fido is an open-source, highly modular C++ machine learning library for embedded electronics and robotics. Fido is especially suited for robotic and embedded contexts, as it is written in C++ with minimal use of the standard library, comes packaged with a robotic simulator, and provides and easy interface in which to write robotic drivers.</p>
+<p>Check out the <a href="http://fidoproject.github.io/">project site</a> and <a href="http://fidoproject.github.io/docs/html/">documentation</a> for more information.</p>
 <h2>Contributing</h2>
-<p>Send us a pull request. If you are looking for things to do, check out the repo's open issues. We will be happy to add you as a contributor and credit you in the README.</p>
-<p>If you find a bug or have any trouble with the library, please open an issue. We are happy to help you out.</p>
+<p>Send us a pull request. If you are looking for things to do, check out the repo's open issues. If you find a bug or have any trouble with the library, please open an issue. We are happy to help you out.</p>
 <h3>Authors</h3>
 <p>Fido was created by <a href="https://github.com/truell20">Michael Truell</a> and <a href="https://github.com/joshuagruenstein">Joshua Gruenstein</a>.</p>
 <h3>Contributors</h3>
@@ -110,7 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 10:35:01 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 21 2016 09:48:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

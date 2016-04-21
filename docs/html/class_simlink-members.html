@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -91,11 +91,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="class_simlink.html">Simlink</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_simlink.html#a8df4786b85fa81f1ab5300770d4d9805">chirp</a>(int volume, int frequency)</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_simlink.html#a523cf2312c5ecec948b93e72e12777dd">closeWindow</a>()</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_simlink.html#a284f43fa0b792bc3a28045a6fab01fba">drawLine</a>(sf::Vector2f p1, sf::Vector2f p2)</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_simlink.html#aea6e4191b272e93248c896311f6f6920">emitter</a></td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_simlink.html#afa2f3b068623a080e9028424aafc088d">getAccel</a>()</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_simlink.html#a476de4f64a5daaa1158808594b1e64d6">ball</a></td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_simlink.html#a8df4786b85fa81f1ab5300770d4d9805">chirp</a>(int volume, int frequency)</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_simlink.html#a523cf2312c5ecec948b93e72e12777dd">closeWindow</a>()</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_simlink.html#a8c14e2e8a2ad4c1939e24d8fa15210e5">distanceFromLine</a>()</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_simlink.html#aea6e4191b272e93248c896311f6f6920">emitter</a></td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_simlink.html#afa2f3b068623a080e9028424aafc088d">getAccel</a>()</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_simlink.html#a7fd3c7115b3af4e6e04556a1627c02df">getBallDisplacement</a>(double *x, double *z)</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_simlink.html#a51bc1102973c8d75943eae16b8476e95">getBattery</a>()</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_simlink.html#aa2cbdd60a1dc973fbe855764d638b2d9">getCompass</a>()</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_simlink.html#a72011cd90b8174543785bc10e72822b5">getDistanceOfRobotFromEmitter</a>()</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
@@ -105,7 +107,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="class_simlink.html#ae0824d51ddc848bc924619ae7ad1a407">getRobotDisplacementFromEmitter</a>(double *x, double *y)</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_simlink.html#aaa117c72e3a1e9a1b1411266be32f82c">getTemperature</a>()</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_simlink.html#ae4e3b4ac083f4c40f5e3e1d1534c3254">getVis</a>()</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_simlink.html#ac5b750cc5e791746f003990806a970eb">placeEmitterInRandomPosition</a>()</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_simlink.html#a2553582d4e56294d4a936c8bff510d6c">isLeftOfLine</a>()</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_simlink.html#ac5b750cc5e791746f003990806a970eb">placeEmitterInRandomPosition</a>()</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_simlink.html#ab9da244b1eada0aa865b0e20131ce114">placeLine</a>(sf::Vector2f p1, sf::Vector2f p2)</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_simlink.html#a2f8b4fe04e76737de621428d1b8f2218">placeRobotInRandomPosition</a>()</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_simlink.html#a54f579964d162130aaefe9aef475fdcf">robot</a></td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_simlink.html#a7f9e75b5d58b5fce6297e2aafbb1e1f4">setLED</a>(int r, int g, int b, int i)</td><td class="entry"><a class="el" href="class_simlink.html">Simlink</a></td><td class="entry"></td></tr>
@@ -117,7 +121,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 10:35:01 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 21 2016 09:48:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

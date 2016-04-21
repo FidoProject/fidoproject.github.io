@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['e',['e',['../classrl_1_1_l_s_interpolator.html#a996cae8b8ceed8cc2fb0dc23090ca3a9',1,'rl::LSInterpolator']]],
-  ['emitter',['Emitter',['../class_emitter.html',1,'Emitter'],['../class_simlink.html#aea6e4191b272e93248c896311f6f6920',1,'Simlink::emitter()'],['../class_emitter.html#a0f825644c50fe3325024520a0de73257',1,'Emitter::Emitter()']]],
-  ['emitter_2ecpp',['Emitter.cpp',['../_emitter_8cpp.html',1,'']]],
-  ['emitter_2eh',['Emitter.h',['../_emitter_8h.html',1,'']]]
+  ['devaluationfactor',['devaluationFactor',['../classrl_1_1_wire_fit_q_learn.html#a1d02928aec56672482a11c435e4c9006',1,'rl::WireFitQLearn']]],
+  ['displace',['displace',['../class_robby.html#adee95bd32b9dfbaef5b6afba4d6e6b84',1,'Robby']]],
+  ['distance',['distance',['../class_line.html#a41c785e16bb510e09aafc994b0395640',1,'Line']]],
+  ['distancefromline',['distanceFromLine',['../class_simlink.html#a8c14e2e8a2ad4c1939e24d8fa15210e5',1,'Simlink']]],
+  ['draw',['draw',['../class_line.html#a8b7320b53387b934b53c7a993450341c',1,'Line']]]
 ];

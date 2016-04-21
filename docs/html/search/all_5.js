@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['feedforward',['feedForward',['../classnet_1_1_neural_net.html#abc3ff99e5e187145ba00816bf2080fb1',1,'net::NeuralNet']]],
-  ['fido',['Fido',['../md__home_truell20__documents__fido__r_e_a_d_m_e.html',1,'']]]
+  ['e',['e',['../classrl_1_1_l_s_interpolator.html#a996cae8b8ceed8cc2fb0dc23090ca3a9',1,'rl::LSInterpolator']]],
+  ['emitter',['Emitter',['../class_emitter.html',1,'Emitter'],['../class_emitter.html#a0f825644c50fe3325024520a0de73257',1,'Emitter::Emitter()'],['../class_simlink.html#aea6e4191b272e93248c896311f6f6920',1,'Simlink::emitter()']]],
+  ['emitter_2ecpp',['Emitter.cpp',['../_emitter_8cpp.html',1,'']]],
+  ['emitter_2eh',['Emitter.h',['../_emitter_8h.html',1,'']]]
 ];

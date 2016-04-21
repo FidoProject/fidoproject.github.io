@@ -1,12 +1,17 @@
 var searchData=
 [
+  ['geneticalgo',['GeneticAlgo',['../classgen_1_1_genetic_algo.html#abaa797a3e86916a5b5b8fd0da1e9ffd8',1,'gen::GeneticAlgo']]],
   ['getaccel',['getAccel',['../class_simlink.html#afa2f3b068623a080e9028424aafc088d',1,'Simlink']]],
-  ['getactivationfunctionname',['getActivationFunctionName',['../structnet_1_1_layer.html#a4b7641180e81075ca7aa7f582417df67',1,'net::Layer']]],
-  ['getactivationfunctionnamemap',['getActivationFunctionNameMap',['../structnet_1_1_layer.html#a4adf2f8fbe7fad75651d400a43abb1cc',1,'net::Layer']]],
+  ['getactivationfunctionname',['getActivationFunctionName',['../classnet_1_1_layer.html#a3fd5c0b73ccd39ae586ec78d716493d8',1,'net::Layer']]],
+  ['getactivationfunctionnamemap',['getActivationFunctionNameMap',['../classnet_1_1_layer.html#a8006fd714028ec1fc869095fd237e244',1,'net::Layer']]],
   ['getanyinterpolatorfromfile',['getAnyInterpolatorFromFile',['../classrl_1_1_interpolator.html#aa1a31d450a0a4824d50e897adf972bb1',1,'rl::Interpolator']]],
+  ['getballdisplacement',['getBallDisplacement',['../class_simlink.html#a7fd3c7115b3af4e6e04556a1627c02df',1,'Simlink']]],
   ['getbattery',['getBattery',['../class_simlink.html#a51bc1102973c8d75943eae16b8476e95',1,'Simlink']]],
+  ['getbestneuralnetwork',['getBestNeuralNetwork',['../classgen_1_1_genetic_algo.html#a830caa746dab137f661b075437683e69',1,'gen::GeneticAlgo']]],
   ['getcompass',['getCompass',['../class_simlink.html#aa2cbdd60a1dc973fbe855764d638b2d9',1,'Simlink']]],
+  ['getderivedactivationfunctionnames',['getDerivedActivationFunctionNames',['../classnet_1_1_layer.html#a24ef5196118d8958b048462c74889e07',1,'net::Layer']]],
   ['getdistanceofrobotfromemitter',['getDistanceOfRobotFromEmitter',['../class_simlink.html#a72011cd90b8174543785bc10e72822b5',1,'Simlink']]],
+  ['getgradients',['getGradients',['../classnet_1_1_neural_net.html#a80f0f02d3d44965265b94a2cd172e879',1,'net::NeuralNet']]],
   ['getgyro',['getGyro',['../class_simlink.html#ae00911e4fe2dff43e0917c74e536c5f2',1,'Simlink']]],
   ['gethiddenactivationfunctionname',['getHiddenActivationFunctionName',['../classnet_1_1_neural_net.html#aab751a8009efd0775284deb85f498af7',1,'net::NeuralNet']]],
   ['getir',['getIR',['../class_simlink.html#a10f543f16f6b82403db63572056bd4ed',1,'Simlink']]],
@@ -14,14 +19,14 @@ var searchData=
   ['getoutput',['getOutput',['../classnet_1_1_neural_net.html#a8788d154fa2cd7899bdb8b12d0b3b189',1,'net::NeuralNet::getOutput()'],['../classnet_1_1_neuron.html#aa250fbfafeb1cde4706a347867d3b444',1,'net::Neuron::getOutput()']]],
   ['getoutputactivationfunctionname',['getOutputActivationFunctionName',['../classnet_1_1_neural_net.html#a68991e858588c216c9f6c451c79f0e2b',1,'net::NeuralNet']]],
   ['getreward',['getReward',['../classrl_1_1_interpolator.html#a21e967a7dcf3e40adea22dd5da5df03a',1,'rl::Interpolator::getReward()'],['../classrl_1_1_l_s_interpolator.html#ab63667c318d17dc7330ad579cf739e28',1,'rl::LSInterpolator::getReward()']]],
-  ['getrewardforlaststateaction',['getRewardForLastStateAction',['../classrl_1_1_task.html#ae9640e72742f35d60e2df1fcf6fdaaeb',1,'rl::Task']]],
   ['getrobotdisplacementfromemitter',['getRobotDisplacementFromEmitter',['../class_simlink.html#ae0824d51ddc848bc924619ae7ad1a407',1,'Simlink']]],
   ['getrtp',['getRTP',['../struct_t_d_vect.html#a7801dc9b4a8f45e1ed5e3894c847e8fb',1,'TDVect']]],
-  ['getstate',['getState',['../classrl_1_1_task.html#a42e14ff19fa2ae2b79a4794716caa3c8',1,'rl::Task']]],
   ['gettemperature',['getTemperature',['../class_simlink.html#aaa117c72e3a1e9a1b1411266be32f82c',1,'Simlink']]],
+  ['getthickness',['getThickness',['../class_line.html#ac650b81861196c40a7d522a1ce975914',1,'Line']]],
   ['getvis',['getVis',['../class_simlink.html#ae4e3b4ac083f4c40f5e3e1d1534c3254',1,'Simlink']]],
   ['getweights',['getWeights',['../classnet_1_1_neural_net.html#a3cdcd419c43073094adbeccd5883e1c2',1,'net::NeuralNet']]],
   ['getweights3d',['getWeights3D',['../classnet_1_1_neural_net.html#af732e3b8f12a8a8bf383d120f21a0132',1,'net::NeuralNet']]],
   ['go',['go',['../class_robby.html#ac3f3ceb9487adebc0a2817de48e6839b',1,'Robby']]],
-  ['goaccel',['goAccel',['../class_robby.html#ae1210ebcf996dbe223a2a6fe619c37c7',1,'Robby']]]
+  ['goaccel',['goAccel',['../class_robby.html#ae1210ebcf996dbe223a2a6fe619c37c7',1,'Robby']]],
+  ['gokiwi',['goKiwi',['../class_robby.html#a1f53ef8e9e7bc941cbe678eb31f30bc5',1,'Robby']]]
 ];

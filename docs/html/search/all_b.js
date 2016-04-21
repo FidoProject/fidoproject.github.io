@@ -1,18 +1,18 @@
 var searchData=
 [
-  ['net',['net',['../namespacenet.html',1,'net'],['../classnet_1_1_neural_net.html#a32b37f5da84f5f398e816390fc96ce83',1,'net::NeuralNet::net()']]],
-  ['network',['network',['../structrl_1_1_model.html#a4bf8bd250bd6f9413e3b8476a476a95f',1,'rl::Model::network()'],['../classrl_1_1_wire_fit_q_learn.html#a1eb41faa3b53d9675abb182e7c54b18d',1,'rl::WireFitQLearn::network()']]],
-  ['neuralnet',['NeuralNet',['../classnet_1_1_neural_net.html#a66b1ddd47bc5b393cf184f02517e82d4',1,'net::NeuralNet::NeuralNet()'],['../classnet_1_1_neural_net.html#aeefb2e2afac76798532504ad6af72035',1,'net::NeuralNet::NeuralNet(int numInputs, int numOutputs, int numHiddenLayers, int numNeuronsPerHiddenLayer, std::string activationFunctionName)'],['../classnet_1_1_neural_net.html#aec0b617414857c42c29736950d0496eb',1,'net::NeuralNet::NeuralNet(NeuralNet *otherNet)'],['../classnet_1_1_neural_net.html#aeeda70338594cac52cf35efcd69a7157',1,'net::NeuralNet::NeuralNet(std::string filename)'],['../classnet_1_1_neural_net.html#ac9f4c113806d2247a2f56a7eecd792c3',1,'net::NeuralNet::NeuralNet(std::ifstream *input)']]],
-  ['neuralnet',['NeuralNet',['../classnet_1_1_neural_net.html',1,'net']]],
-  ['neuralnet_2ecpp',['NeuralNet.cpp',['../_neural_net_8cpp.html',1,'']]],
-  ['neuralnet_2eh',['NeuralNet.h',['../_neural_net_8h.html',1,'']]],
-  ['neuron',['Neuron',['../classnet_1_1_neuron.html',1,'net']]],
-  ['neuron',['Neuron',['../classnet_1_1_neuron.html#ad7f1ceca26b314e197c775d0e2ca913a',1,'net::Neuron::Neuron(int numInputs)'],['../classnet_1_1_neuron.html#abc9e03717e539e7bb416e01e8de86c1d',1,'net::Neuron::Neuron(std::vector&lt; double &gt; w)']]],
-  ['neuron_2ecpp',['Neuron.cpp',['../_neuron_8cpp.html',1,'']]],
-  ['neuron_2eh',['Neuron.h',['../_neuron_8h.html',1,'']]],
-  ['neurons',['neurons',['../structnet_1_1_layer.html#af897a7ec273133801638abf4cc4fb502',1,'net::Layer']]],
-  ['numberofhiddenlayers',['numberOfHiddenLayers',['../classnet_1_1_neural_net.html#ae2048729dafd7e1914706e20d4e67228',1,'net::NeuralNet']]],
-  ['numberofinputs',['numberOfInputs',['../classnet_1_1_neural_net.html#a1434e08f12317deca0cbe9c4e05e362d',1,'net::NeuralNet']]],
-  ['numberofoutputs',['numberOfOutputs',['../classnet_1_1_neural_net.html#a60b4fdbf50e35d8ba539079ca39f5cfe',1,'net::NeuralNet']]],
-  ['numberofwires',['numberOfWires',['../classrl_1_1_wire_fit_q_learn.html#acbff292d0f70672ba6e92ec418c7d290',1,'rl::WireFitQLearn']]]
+  ['m1last',['m1Last',['../class_robby.html#a21249282ba72fb722b0617283ec3f2a9',1,'Robby']]],
+  ['m1target',['m1Target',['../class_robby.html#ad070828a7f309b64ad396639aebbc531',1,'Robby']]],
+  ['m2last',['m2Last',['../class_robby.html#ac5577eb9938647220a2db0d7e6fcc2d6',1,'Robby']]],
+  ['m2target',['m2Target',['../class_robby.html#aaa50c0695d071403efce23f0ee553dcd',1,'Robby']]],
+  ['main',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['mainpage_2eh',['mainpage.h',['../mainpage_8h.html',1,'']]],
+  ['masterstrength',['masterStrength',['../class_emitter.html#af6bdb34fdd7ee0f5580be7cbb7dfd9d0',1,'Emitter']]],
+  ['maxaction',['maxAction',['../classrl_1_1_wire_fit_q_learn.html#a1cd65b4160d27635d227cbb204d218aa',1,'rl::WireFitQLearn']]],
+  ['maximumepochs',['maximumEpochs',['../classnet_1_1_backpropagation.html#ad89e3bffeed0eed9f53216e8310e7c1e',1,'net::Backpropagation']]],
+  ['minaction',['minAction',['../classrl_1_1_wire_fit_q_learn.html#a1c3b9d46e59cce0bf35e63d92bdbee43',1,'rl::WireFitQLearn']]],
+  ['model',['Model',['../structrl_1_1_model.html',1,'rl']]],
+  ['model',['Model',['../structrl_1_1_model.html#a236c7bc971eaf5540adbd3cfedbbde66',1,'rl::Model::Model(net::NeuralNet *network_, Action action_)'],['../structrl_1_1_model.html#a1b576656dcf2dc5bb24cf04090110f2a',1,'rl::Model::Model()']]],
+  ['momentumterm',['momentumTerm',['../classnet_1_1_backpropagation.html#ac918ac40710812169c46bcf730928e6b',1,'net::Backpropagation']]],
+  ['moveclock',['moveClock',['../class_robby.html#a51f3d2a044256b057724a55c604cea4b',1,'Robby']]]
 ];

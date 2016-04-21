@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Fido: /home/truell20/Documents/Fido/Software/Layer.h Source File</title>
+<title>Fido: /home/truell20/Documents/Fido/include/Layer.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_4e9c05acfa2c3671b8618fcb95d57d96.html">Software</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -96,101 +96,73 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_neuron_8h.html">Neuron.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_activation_functions_8h.html">ActivationFunctions.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>net {</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structnet_1_1_layer.html">   15</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structnet_1_1_layer.html">Layer</a> {</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structnet_1_1_layer.html#a6120d127d7e39c9e159e3a3e2f2bfb1a">   21</a></span>&#160;        <a class="code" href="namespacenet.html#ade738ad0124dd9da52ac56301da74b97">ActivationFunction</a> <a class="code" href="structnet_1_1_layer.html#a6120d127d7e39c9e159e3a3e2f2bfb1a">activationFunction</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structnet_1_1_layer.html#af897a7ec273133801638abf4cc4fb502">   26</a></span>&#160;        std::vector&lt;Neuron&gt; <a class="code" href="structnet_1_1_layer.html#af897a7ec273133801638abf4cc4fb502">neurons</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structnet_1_1_layer.html#a7391347edde4265980cf5d18a17bcecf">   31</a></span>&#160;        <a class="code" href="structnet_1_1_layer.html#a7391347edde4265980cf5d18a17bcecf">Layer</a>() {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <a class="code" href="structnet_1_1_layer.html#a6120d127d7e39c9e159e3a3e2f2bfb1a">activationFunction</a> = <a class="code" href="namespacenet.html#a53a47ce3f3518d73222d05a8702045df">sigmoid</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_neuron_8h.html">Neuron.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_activation_functions_8h.html">ActivationFunctions.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>net {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classnet_1_1_layer.html">   16</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classnet_1_1_layer.html">Layer</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classnet_1_1_layer.html#a6120d127d7e39c9e159e3a3e2f2bfb1a">   23</a></span>&#160;        <a class="code" href="namespacenet.html#ade738ad0124dd9da52ac56301da74b97">ActivationFunction</a> <a class="code" href="classnet_1_1_layer.html#a6120d127d7e39c9e159e3a3e2f2bfb1a">activationFunction</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classnet_1_1_layer.html#af897a7ec273133801638abf4cc4fb502">   28</a></span>&#160;        std::vector&lt;Neuron&gt; <a class="code" href="classnet_1_1_layer.html#af897a7ec273133801638abf4cc4fb502">neurons</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classnet_1_1_layer.html#a8f623c7c4737dc29ecc86978d243ac6f">Layer</a>();</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structnet_1_1_layer.html#a9abb1395d84c734c771e7e4b3ed87fb8">   43</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="structnet_1_1_layer.html#a9abb1395d84c734c771e7e4b3ed87fb8">Layer</a>(std::ifstream *input) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordtype">int</span> numNeurons, numWeights;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            std::string activationFunctionName;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            *input &gt;&gt; numNeurons &gt;&gt; numWeights;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            *input &gt;&gt; activationFunctionName;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="structnet_1_1_layer.html#a32c3ee05ce075b98110ecea826d8338f">setActivationFunctionWithName</a>(activationFunctionName);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> a = 0; a &lt; numNeurons; a++) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                std::vector&lt;double&gt; weights;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> b = 0; b &lt; numWeights; b++) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    <span class="keywordtype">double</span> weight;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    *input &gt;&gt; weight;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    weights.push_back(weight);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <a class="code" href="structnet_1_1_layer.html#af897a7ec273133801638abf4cc4fb502">neurons</a>.push_back(<a class="code" href="classnet_1_1_neuron.html">Neuron</a>(weights));</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structnet_1_1_layer.html#a4adf2f8fbe7fad75651d400a43abb1cc">   65</a></span>&#160;        std::map&lt;std::string, ActivationFunction&gt; <a class="code" href="structnet_1_1_layer.html#a4adf2f8fbe7fad75651d400a43abb1cc">getActivationFunctionNameMap</a>() {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            std::map&lt;std::string, ActivationFunction&gt; map;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            map[<span class="stringliteral">&quot;sigmoid&quot;</span>] = <a class="code" href="namespacenet.html#a53a47ce3f3518d73222d05a8702045df">sigmoid</a>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            map[<span class="stringliteral">&quot;binary&quot;</span>] = <a class="code" href="namespacenet.html#ad1443312aab902760604d9328b139eb0">binary</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            map[<span class="stringliteral">&quot;integer&quot;</span>] = <a class="code" href="namespacenet.html#a5126f887e4805fc207206511a43f5b26">integer</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            map[<span class="stringliteral">&quot;simpleLinear&quot;</span>] = <a class="code" href="namespacenet.html#a8baef1af5ab8bb67554ff99f5f012f0f">simpleLinear</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            map[<span class="stringliteral">&quot;tanSigmoid&quot;</span>] = <a class="code" href="namespacenet.html#a29b78c772ee4ee067b0b05d95e5389b3">tanSigmoid</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">return</span> map;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="structnet_1_1_layer.html#a32c3ee05ce075b98110ecea826d8338f">   81</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="structnet_1_1_layer.html#a32c3ee05ce075b98110ecea826d8338f">setActivationFunctionWithName</a>(std::string name) {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="structnet_1_1_layer.html#a6120d127d7e39c9e159e3a3e2f2bfb1a">activationFunction</a> = <a class="code" href="structnet_1_1_layer.html#a4adf2f8fbe7fad75651d400a43abb1cc">getActivationFunctionNameMap</a>()[name];</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="structnet_1_1_layer.html#a4b7641180e81075ca7aa7f582417df67">   89</a></span>&#160;        std::string <a class="code" href="structnet_1_1_layer.html#a4b7641180e81075ca7aa7f582417df67">getActivationFunctionName</a>() {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            std::map&lt;std::string, ActivationFunction&gt; nameMap = <a class="code" href="structnet_1_1_layer.html#a4adf2f8fbe7fad75651d400a43abb1cc">getActivationFunctionNameMap</a>();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">for</span> (std::map&lt;std::string, ActivationFunction&gt;::iterator a = nameMap.begin(); a != nameMap.end(); ++a) <span class="keywordflow">if</span> (a-&gt;second == <a class="code" href="structnet_1_1_layer.html#a6120d127d7e39c9e159e3a3e2f2bfb1a">activationFunction</a>) <span class="keywordflow">return</span> a-&gt;first;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classnet_1_1_layer.html#a8f623c7c4737dc29ecc86978d243ac6f">Layer</a>(std::ifstream *input);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classnet_1_1_layer.html#a621a782f6936c4f57e564ae7de0190b9">setActivationFunctionWithName</a>(std::string name);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        std::string <a class="code" href="classnet_1_1_layer.html#a3fd5c0b73ccd39ae586ec78d716493d8">getActivationFunctionName</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classnet_1_1_layer.html#ae4a5834859a4de3b63d1d2ea6c295ca6">store</a>(std::ofstream *output);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classnet_1_1_layer.html#a8006fd714028ec1fc869095fd237e244">   69</a></span>&#160;        <span class="keyword">static</span> std::map&lt;std::string, ActivationFunction&gt; <a class="code" href="classnet_1_1_layer.html#a8006fd714028ec1fc869095fd237e244">getActivationFunctionNameMap</a>() {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            std::map&lt;std::string, ActivationFunction&gt; map;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            map[<span class="stringliteral">&quot;sigmoid&quot;</span>] = <a class="code" href="namespacenet.html#a53a47ce3f3518d73222d05a8702045df">sigmoid</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            map[<span class="stringliteral">&quot;binary&quot;</span>] = <a class="code" href="namespacenet.html#ad1443312aab902760604d9328b139eb0">binary</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            map[<span class="stringliteral">&quot;integer&quot;</span>] = <a class="code" href="namespacenet.html#a5126f887e4805fc207206511a43f5b26">integer</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            map[<span class="stringliteral">&quot;simpleLinear&quot;</span>] = <a class="code" href="namespacenet.html#a8baef1af5ab8bb67554ff99f5f012f0f">simpleLinear</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            map[<span class="stringliteral">&quot;tanSigmoid&quot;</span>] = <a class="code" href="namespacenet.html#a29b78c772ee4ee067b0b05d95e5389b3">tanSigmoid</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">return</span> map;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classnet_1_1_layer.html#a24ef5196118d8958b048462c74889e07">   82</a></span>&#160;        <span class="keyword">static</span> std::map&lt;std::string, ActivationFunction&gt; <a class="code" href="classnet_1_1_layer.html#a24ef5196118d8958b048462c74889e07">getDerivedActivationFunctionNames</a>() {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            std::map&lt;std::string, ActivationFunction&gt; map;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            map[<span class="stringliteral">&quot;sigmoid&quot;</span>] = <a class="code" href="namespacenet.html#a2feb5dc8e9eb27e59f537d82264cafad">sigmoidDerivative</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            map[<span class="stringliteral">&quot;simpleLinear&quot;</span>] = <a class="code" href="namespacenet.html#a59c54b6eec7b58483beba66dcf0cdfaa">simpleLinearDerivative</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">return</span> map;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    };</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">throw</span> 1;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="structnet_1_1_layer.html#a4e4feecd5ca4c9fcd24ffd5adbe28eee">  104</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="structnet_1_1_layer.html#a4e4feecd5ca4c9fcd24ffd5adbe28eee">storeNetWithStream</a>(std::ofstream *output) {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="comment">// All the neurons in the same layer have the same number of weights </span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="comment">// so that is stored once along with the number of neurons in the layer</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="comment">// and the activation function name of the layer</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            *output &lt;&lt; <a class="code" href="structnet_1_1_layer.html#af897a7ec273133801638abf4cc4fb502">neurons</a>.size() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code" href="structnet_1_1_layer.html#af897a7ec273133801638abf4cc4fb502">neurons</a>[0].weights.size() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code" href="structnet_1_1_layer.html#a4b7641180e81075ca7aa7f582417df67">getActivationFunctionName</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> a = 0; a &lt; <a class="code" href="structnet_1_1_layer.html#af897a7ec273133801638abf4cc4fb502">neurons</a>.size(); a++) {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> b = 0; b &lt; <a class="code" href="structnet_1_1_layer.html#af897a7ec273133801638abf4cc4fb502">neurons</a>[a].weights.size(); b++) {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                    *output &lt;&lt; <a class="code" href="structnet_1_1_layer.html#af897a7ec273133801638abf4cc4fb502">neurons</a>[a].weights[b] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                *output &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    };</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="structnet_1_1_layer_html_a6120d127d7e39c9e159e3a3e2f2bfb1a"><div class="ttname"><a href="structnet_1_1_layer.html#a6120d127d7e39c9e159e3a3e2f2bfb1a">net::Layer::activationFunction</a></div><div class="ttdeci">ActivationFunction activationFunction</div><div class="ttdoc">The activation function for the neurons of this layer. </div><div class="ttdef"><b>Definition:</b> Layer.h:21</div></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classnet_1_1_layer_html_a621a782f6936c4f57e564ae7de0190b9"><div class="ttname"><a href="classnet_1_1_layer.html#a621a782f6936c4f57e564ae7de0190b9">net::Layer::setActivationFunctionWithName</a></div><div class="ttdeci">void setActivationFunctionWithName(std::string name)</div><div class="ttdoc">Sets the activation function to the given string. </div><div class="ttdef"><b>Definition:</b> Layer.cpp:28</div></div>
+<div class="ttc" id="classnet_1_1_layer_html_a6120d127d7e39c9e159e3a3e2f2bfb1a"><div class="ttname"><a href="classnet_1_1_layer.html#a6120d127d7e39c9e159e3a3e2f2bfb1a">net::Layer::activationFunction</a></div><div class="ttdeci">ActivationFunction activationFunction</div><div class="ttdoc">The activation function for the neurons of this layer. </div><div class="ttdef"><b>Definition:</b> Layer.h:23</div></div>
 <div class="ttc" id="_neuron_8h_html"><div class="ttname"><a href="_neuron_8h.html">Neuron.h</a></div></div>
 <div class="ttc" id="namespacenet_html_a29b78c772ee4ee067b0b05d95e5389b3"><div class="ttname"><a href="namespacenet.html#a29b78c772ee4ee067b0b05d95e5389b3">net::tanSigmoid</a></div><div class="ttdeci">double tanSigmoid(double initialOutput)</div><div class="ttdoc">A tangential sigmoid or a hyperbolic tangent function. </div><div class="ttdef"><b>Definition:</b> ActivationFunctions.h:58</div></div>
-<div class="ttc" id="structnet_1_1_layer_html_a32c3ee05ce075b98110ecea826d8338f"><div class="ttname"><a href="structnet_1_1_layer.html#a32c3ee05ce075b98110ecea826d8338f">net::Layer::setActivationFunctionWithName</a></div><div class="ttdeci">void setActivationFunctionWithName(std::string name)</div><div class="ttdoc">Sets the activation function to the given string. </div><div class="ttdef"><b>Definition:</b> Layer.h:81</div></div>
+<div class="ttc" id="classnet_1_1_layer_html_a3fd5c0b73ccd39ae586ec78d716493d8"><div class="ttname"><a href="classnet_1_1_layer.html#a3fd5c0b73ccd39ae586ec78d716493d8">net::Layer::getActivationFunctionName</a></div><div class="ttdeci">std::string getActivationFunctionName()</div><div class="ttdoc">Gets the name of the layer&#39;s activation function. </div><div class="ttdef"><b>Definition:</b> Layer.cpp:39</div></div>
 <div class="ttc" id="_activation_functions_8h_html"><div class="ttname"><a href="_activation_functions_8h.html">ActivationFunctions.h</a></div><div class="ttdoc">Fido&#39;s supported activation functions and their derivatives. </div></div>
 <div class="ttc" id="namespacenet_html_ade738ad0124dd9da52ac56301da74b97"><div class="ttname"><a href="namespacenet.html#ade738ad0124dd9da52ac56301da74b97">net::ActivationFunction</a></div><div class="ttdeci">double(* ActivationFunction)(double)</div><div class="ttdoc">The type of an activation function. </div><div class="ttdef"><b>Definition:</b> ActivationFunctions.h:18</div></div>
-<div class="ttc" id="structnet_1_1_layer_html"><div class="ttname"><a href="structnet_1_1_layer.html">net::Layer</a></div><div class="ttdoc">A layer in a NeuralNet. </div><div class="ttdef"><b>Definition:</b> Layer.h:15</div></div>
 <div class="ttc" id="namespacenet_html_a53a47ce3f3518d73222d05a8702045df"><div class="ttname"><a href="namespacenet.html#a53a47ce3f3518d73222d05a8702045df">net::sigmoid</a></div><div class="ttdeci">double sigmoid(double initialOutput)</div><div class="ttdoc">A sigmoid function. </div><div class="ttdef"><b>Definition:</b> ActivationFunctions.h:25</div></div>
+<div class="ttc" id="classnet_1_1_layer_html_a8006fd714028ec1fc869095fd237e244"><div class="ttname"><a href="classnet_1_1_layer.html#a8006fd714028ec1fc869095fd237e244">net::Layer::getActivationFunctionNameMap</a></div><div class="ttdeci">static std::map&lt; std::string, ActivationFunction &gt; getActivationFunctionNameMap()</div><div class="ttdoc">Gets the map of activation function name to ActivationFunction. </div><div class="ttdef"><b>Definition:</b> Layer.h:69</div></div>
+<div class="ttc" id="classnet_1_1_layer_html_a8f623c7c4737dc29ecc86978d243ac6f"><div class="ttname"><a href="classnet_1_1_layer.html#a8f623c7c4737dc29ecc86978d243ac6f">net::Layer::Layer</a></div><div class="ttdeci">Layer()</div><div class="ttdoc">Initialize a layer with the default sigmoid activation function. </div><div class="ttdef"><b>Definition:</b> Layer.cpp:5</div></div>
 <div class="ttc" id="namespacenet_html_ad1443312aab902760604d9328b139eb0"><div class="ttname"><a href="namespacenet.html#ad1443312aab902760604d9328b139eb0">net::binary</a></div><div class="ttdeci">double binary(double initialOutput)</div><div class="ttdoc">A binary function. </div><div class="ttdef"><b>Definition:</b> ActivationFunctions.h:33</div></div>
-<div class="ttc" id="structnet_1_1_layer_html_a4b7641180e81075ca7aa7f582417df67"><div class="ttname"><a href="structnet_1_1_layer.html#a4b7641180e81075ca7aa7f582417df67">net::Layer::getActivationFunctionName</a></div><div class="ttdeci">std::string getActivationFunctionName()</div><div class="ttdoc">Gets the name of the layer&#39;s activation function. </div><div class="ttdef"><b>Definition:</b> Layer.h:89</div></div>
-<div class="ttc" id="structnet_1_1_layer_html_af897a7ec273133801638abf4cc4fb502"><div class="ttname"><a href="structnet_1_1_layer.html#af897a7ec273133801638abf4cc4fb502">net::Layer::neurons</a></div><div class="ttdeci">std::vector&lt; Neuron &gt; neurons</div><div class="ttdoc">Holds the neurons of this layer. </div><div class="ttdef"><b>Definition:</b> Layer.h:26</div></div>
-<div class="ttc" id="structnet_1_1_layer_html_a9abb1395d84c734c771e7e4b3ed87fb8"><div class="ttname"><a href="structnet_1_1_layer.html#a9abb1395d84c734c771e7e4b3ed87fb8">net::Layer::Layer</a></div><div class="ttdeci">Layer(std::ifstream *input)</div><div class="ttdoc">Initialize a layer from a saved text file. </div><div class="ttdef"><b>Definition:</b> Layer.h:43</div></div>
+<div class="ttc" id="classnet_1_1_layer_html_a24ef5196118d8958b048462c74889e07"><div class="ttname"><a href="classnet_1_1_layer.html#a24ef5196118d8958b048462c74889e07">net::Layer::getDerivedActivationFunctionNames</a></div><div class="ttdeci">static std::map&lt; std::string, ActivationFunction &gt; getDerivedActivationFunctionNames()</div><div class="ttdoc">Gets the map of activation function name to a derived ActivationFunction. </div><div class="ttdef"><b>Definition:</b> Layer.h:82</div></div>
 <div class="ttc" id="namespacenet_html_a8baef1af5ab8bb67554ff99f5f012f0f"><div class="ttname"><a href="namespacenet.html#a8baef1af5ab8bb67554ff99f5f012f0f">net::simpleLinear</a></div><div class="ttdeci">double simpleLinear(double initialOutput)</div><div class="ttdoc">A linear function. </div><div class="ttdef"><b>Definition:</b> ActivationFunctions.h:49</div></div>
-<div class="ttc" id="structnet_1_1_layer_html_a7391347edde4265980cf5d18a17bcecf"><div class="ttname"><a href="structnet_1_1_layer.html#a7391347edde4265980cf5d18a17bcecf">net::Layer::Layer</a></div><div class="ttdeci">Layer()</div><div class="ttdoc">Initialize a layer with the default sigmoid activation function. </div><div class="ttdef"><b>Definition:</b> Layer.h:31</div></div>
-<div class="ttc" id="structnet_1_1_layer_html_a4e4feecd5ca4c9fcd24ffd5adbe28eee"><div class="ttname"><a href="structnet_1_1_layer.html#a4e4feecd5ca4c9fcd24ffd5adbe28eee">net::Layer::storeNetWithStream</a></div><div class="ttdeci">void storeNetWithStream(std::ofstream *output)</div><div class="ttdoc">Store the layer to a text file. </div><div class="ttdef"><b>Definition:</b> Layer.h:104</div></div>
-<div class="ttc" id="structnet_1_1_layer_html_a4adf2f8fbe7fad75651d400a43abb1cc"><div class="ttname"><a href="structnet_1_1_layer.html#a4adf2f8fbe7fad75651d400a43abb1cc">net::Layer::getActivationFunctionNameMap</a></div><div class="ttdeci">std::map&lt; std::string, ActivationFunction &gt; getActivationFunctionNameMap()</div><div class="ttdoc">Gets the map of activation function name to ActivationFunction. </div><div class="ttdef"><b>Definition:</b> Layer.h:65</div></div>
+<div class="ttc" id="namespacenet_html_a59c54b6eec7b58483beba66dcf0cdfaa"><div class="ttname"><a href="namespacenet.html#a59c54b6eec7b58483beba66dcf0cdfaa">net::simpleLinearDerivative</a></div><div class="ttdeci">double simpleLinearDerivative(double neuronOutput)</div><div class="ttdoc">Derivative of the linear activation function. </div><div class="ttdef"><b>Definition:</b> ActivationFunctions.h:71</div></div>
+<div class="ttc" id="classnet_1_1_layer_html"><div class="ttname"><a href="classnet_1_1_layer.html">net::Layer</a></div><div class="ttdoc">A layer in a NeuralNet. </div><div class="ttdef"><b>Definition:</b> Layer.h:16</div></div>
+<div class="ttc" id="classnet_1_1_layer_html_ae4a5834859a4de3b63d1d2ea6c295ca6"><div class="ttname"><a href="classnet_1_1_layer.html#ae4a5834859a4de3b63d1d2ea6c295ca6">net::Layer::store</a></div><div class="ttdeci">void store(std::ofstream *output)</div><div class="ttdoc">Store the layer to a text file. </div><div class="ttdef"><b>Definition:</b> Layer.cpp:46</div></div>
+<div class="ttc" id="namespacenet_html_a2feb5dc8e9eb27e59f537d82264cafad"><div class="ttname"><a href="namespacenet.html#a2feb5dc8e9eb27e59f537d82264cafad">net::sigmoidDerivative</a></div><div class="ttdeci">double sigmoidDerivative(double neuronOuput)</div><div class="ttdoc">Derivative of the sigmoid activation function. </div><div class="ttdef"><b>Definition:</b> ActivationFunctions.h:65</div></div>
 <div class="ttc" id="namespacenet_html_a5126f887e4805fc207206511a43f5b26"><div class="ttname"><a href="namespacenet.html#a5126f887e4805fc207206511a43f5b26">net::integer</a></div><div class="ttdeci">double integer(double initialOutput)</div><div class="ttdoc">An flooring function. </div><div class="ttdef"><b>Definition:</b> ActivationFunctions.h:41</div></div>
-<div class="ttc" id="classnet_1_1_neuron_html"><div class="ttname"><a href="classnet_1_1_neuron.html">net::Neuron</a></div><div class="ttdoc">Class representing a single neuron. </div><div class="ttdef"><b>Definition:</b> Neuron.h:18</div></div>
+<div class="ttc" id="classnet_1_1_layer_html_af897a7ec273133801638abf4cc4fb502"><div class="ttname"><a href="classnet_1_1_layer.html#af897a7ec273133801638abf4cc4fb502">net::Layer::neurons</a></div><div class="ttdeci">std::vector&lt; Neuron &gt; neurons</div><div class="ttdoc">Holds the neurons of this layer. </div><div class="ttdef"><b>Definition:</b> Layer.h:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 10:35:01 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 21 2016 09:48:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

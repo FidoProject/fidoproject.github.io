@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -91,6 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classnet_1_1_backpropagation-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">net::Backpropagation Class Reference</div>  </div>
@@ -98,33 +99,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_backpropagation_8h_source.html">Backpropagation.h</a>&gt;</code></p>
+
+<p>Inherits <a class="el" href="classnet_1_1_trainer.html">net::Trainer</a>.</p>
+
+<p>Inherited by <a class="el" href="classnet_1_1_pruner.html">net::Pruner</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1380ed2d38446fb7c6263fc694123802"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a1380ed2d38446fb7c6263fc694123802">Backpropagation</a> (double learningRate_, double momentumTerm_, double targetErrorLevel_, int maximumIterations_)</td></tr>
-<tr class="memdesc:a1380ed2d38446fb7c6263fc694123802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object with necessary constants.  <a href="#a1380ed2d38446fb7c6263fc694123802">More...</a><br/></td></tr>
-<tr class="separator:a1380ed2d38446fb7c6263fc694123802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba892aea15d404370ff96b549c71c7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a4ba892aea15d404370ff96b549c71c7d">Backpropagation</a> (double learningRate_, double momentumTerm_, double targetErrorLevel_, int maximumEpochs_)</td></tr>
+<tr class="memdesc:a4ba892aea15d404370ff96b549c71c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object with necessary constants.  <a href="#a4ba892aea15d404370ff96b549c71c7d">More...</a><br/></td></tr>
+<tr class="separator:a4ba892aea15d404370ff96b549c71c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a078f12f7065b8ea1b66bd9fa87dbb5b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a078f12f7065b8ea1b66bd9fa87dbb5b6">Backpropagation</a> ()</td></tr>
 <tr class="memdesc:a078f12f7065b8ea1b66bd9fa87dbb5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize empty <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object.  <a href="#a078f12f7065b8ea1b66bd9fa87dbb5b6">More...</a><br/></td></tr>
 <tr class="separator:a078f12f7065b8ea1b66bd9fa87dbb5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95dd6dc9c5d61a9c31018cad07b91452"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a95dd6dc9c5d61a9c31018cad07b91452">Backpropagation</a> (std::string filename)</td></tr>
-<tr class="memdesc:a95dd6dc9c5d61a9c31018cad07b91452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object from a file.  <a href="#a95dd6dc9c5d61a9c31018cad07b91452">More...</a><br/></td></tr>
-<tr class="separator:a95dd6dc9c5d61a9c31018cad07b91452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2e1099b2984436e6e110648a7b8f362"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#ac2e1099b2984436e6e110648a7b8f362">Backpropagation</a> (std::ifstream *input)</td></tr>
 <tr class="memdesc:ac2e1099b2984436e6e110648a7b8f362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object using an input stream.  <a href="#ac2e1099b2984436e6e110648a7b8f362">More...</a><br/></td></tr>
 <tr class="separator:ac2e1099b2984436e6e110648a7b8f362"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab33279948cf38660679fb3474908f2eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#ab33279948cf38660679fb3474908f2eb">storeBackpropagation</a> (std::string filename)</td></tr>
-<tr class="memdesc:ab33279948cf38660679fb3474908f2eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object in the specified file.  <a href="#ab33279948cf38660679fb3474908f2eb">More...</a><br/></td></tr>
-<tr class="separator:ab33279948cf38660679fb3474908f2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08352f1a74216240b2bd9d2531038bc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a08352f1a74216240b2bd9d2531038bc8">storeBackpropagationWithStream</a> (std::ofstream *output)</td></tr>
-<tr class="memdesc:a08352f1a74216240b2bd9d2531038bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object using specified ofstream.  <a href="#a08352f1a74216240b2bd9d2531038bc8">More...</a><br/></td></tr>
-<tr class="separator:a08352f1a74216240b2bd9d2531038bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3005bd4ba5ef48306e2b77cad3f2a22c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a3005bd4ba5ef48306e2b77cad3f2a22c">trainOnData</a> (<a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *network, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;input, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;correctOutput)</td></tr>
-<tr class="memdesc:a3005bd4ba5ef48306e2b77cad3f2a22c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trains a neural network on a training set.  <a href="#a3005bd4ba5ef48306e2b77cad3f2a22c">More...</a><br/></td></tr>
-<tr class="separator:a3005bd4ba5ef48306e2b77cad3f2a22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56d4a23f6c623f03a4a9db0773a58df8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a56d4a23f6c623f03a4a9db0773a58df8">trainOnDataPoint</a> (<a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *network, const std::vector&lt; double &gt; &amp;input, const std::vector&lt; double &gt; &amp;correctOutput)</td></tr>
-<tr class="memdesc:a56d4a23f6c623f03a4a9db0773a58df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the output of the neural network, calculates the error of each neuron, and edits the weights of the neurons to reduce error.  <a href="#a56d4a23f6c623f03a4a9db0773a58df8">More...</a><br/></td></tr>
-<tr class="separator:a56d4a23f6c623f03a4a9db0773a58df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6779f837c5e7267f55130e4dd885f033"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a6779f837c5e7267f55130e4dd885f033">store</a> (std::ofstream *output)</td></tr>
+<tr class="memdesc:a6779f837c5e7267f55130e4dd885f033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object using specified ofstream.  <a href="#a6779f837c5e7267f55130e4dd885f033">More...</a><br/></td></tr>
+<tr class="separator:a6779f837c5e7267f55130e4dd885f033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a807fdd9439d68a21755efd484e6632f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a807fdd9439d68a21755efd484e6632f7">train</a> (<a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *network, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;input, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;correctOutput)</td></tr>
+<tr class="memdesc:a807fdd9439d68a21755efd484e6632f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trains a neural network on a training set until the target error level is reached.  <a href="#a807fdd9439d68a21755efd484e6632f7">More...</a><br/></td></tr>
+<tr class="separator:a807fdd9439d68a21755efd484e6632f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e259bc4cc0c3c7e6b7a97933cc446e2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a4e259bc4cc0c3c7e6b7a97933cc446e2">trainEpocs</a> (double numberOfEpochs, <a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *network, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;input, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;correctOutput)</td></tr>
+<tr class="memdesc:a4e259bc4cc0c3c7e6b7a97933cc446e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trains a neural network on a training set for a specified number of epochs.  <a href="#a4e259bc4cc0c3c7e6b7a97933cc446e2">More...</a><br/></td></tr>
+<tr class="separator:a4e259bc4cc0c3c7e6b7a97933cc446e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -137,16 +136,25 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a4244cf1e73577909b485bcefe41ac07a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a4244cf1e73577909b485bcefe41ac07a">targetErrorLevel</a></td></tr>
 <tr class="memdesc:a4244cf1e73577909b485bcefe41ac07a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target error level, set by constructor.  <a href="#a4244cf1e73577909b485bcefe41ac07a">More...</a><br/></td></tr>
 <tr class="separator:a4244cf1e73577909b485bcefe41ac07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2880349375de621da21181bf934750b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a2880349375de621da21181bf934750b9">maximumIterations</a></td></tr>
-<tr class="memdesc:a2880349375de621da21181bf934750b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of iterations, set by constructor.  <a href="#a2880349375de621da21181bf934750b9">More...</a><br/></td></tr>
-<tr class="separator:a2880349375de621da21181bf934750b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad89e3bffeed0eed9f53216e8310e7c1e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#ad89e3bffeed0eed9f53216e8310e7c1e">maximumEpochs</a></td></tr>
+<tr class="memdesc:ad89e3bffeed0eed9f53216e8310e7c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of iterations, set by constructor.  <a href="#ad89e3bffeed0eed9f53216e8310e7c1e">More...</a><br/></td></tr>
+<tr class="separator:ad89e3bffeed0eed9f53216e8310e7c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0873c4053257eea79d1100bcecfa8703"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector<br class="typebreak"/>
 &lt; std::vector&lt; double &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a0873c4053257eea79d1100bcecfa8703">lastChangeInWeight</a></td></tr>
 <tr class="memdesc:a0873c4053257eea79d1100bcecfa8703"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last change in weights.  <a href="#a0873c4053257eea79d1100bcecfa8703">More...</a><br/></td></tr>
 <tr class="separator:a0873c4053257eea79d1100bcecfa8703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a56d4a23f6c623f03a4a9db0773a58df8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a56d4a23f6c623f03a4a9db0773a58df8">trainOnDataPoint</a> (<a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *network, const std::vector&lt; double &gt; &amp;input, const std::vector&lt; double &gt; &amp;correctOutput)</td></tr>
+<tr class="memdesc:a56d4a23f6c623f03a4a9db0773a58df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the output of the neural network, calculates the error of each neuron, and edits the weights of the neurons to reduce error.  <a href="#a56d4a23f6c623f03a4a9db0773a58df8">More...</a><br/></td></tr>
+<tr class="separator:a56d4a23f6c623f03a4a9db0773a58df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa6df66144e65dd304e2474f1ff247b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_backpropagation.html#a9aa6df66144e65dd304e2474f1ff247b">resetLastChangeInWeight</a> (<a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *network)</td></tr>
+<tr class="memdesc:a9aa6df66144e65dd304e2474f1ff247b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object's lastchanginweight instance variable using a neural network (NN is needed because the number of layers, neurons, and weights are needed).  <a href="#a9aa6df66144e65dd304e2474f1ff247b">More...</a><br/></td></tr>
+<tr class="separator:a9aa6df66144e65dd304e2474f1ff247b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a1380ed2d38446fb7c6263fc694123802"></a>
+<a class="anchor" id="a4ba892aea15d404370ff96b549c71c7d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -172,7 +180,7 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maximumIterations_</em>&#160;</td>
+          <td class="paramname"><em>maximumEpochs_</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -188,7 +196,7 @@ Public Attributes</h2></td></tr>
     <tr><td class="paramname">learningRate_</td><td>controls how much the neural network is modified each learning iteration </td></tr>
     <tr><td class="paramname">momentumTerm_</td><td>allows a network to escape a local max </td></tr>
     <tr><td class="paramname">targetErrorLevel_</td><td>at this error level, a net will be considered trained </td></tr>
-    <tr><td class="paramname">maxIterations_</td><td>after this number of training iterations, a net will stop being trained no matter what </td></tr>
+    <tr><td class="paramname">maximumEpochs_</td><td>after this number of training iterations (one pass through all of the data points), a net will stop being trained no matter what </td></tr>
   </table>
   </dd>
 </dl>
@@ -209,38 +217,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize empty <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object. </p>
-
-</div>
-</div>
-<a class="anchor" id="a95dd6dc9c5d61a9c31018cad07b91452"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Backpropagation::Backpropagation </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Loads a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object from a file. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>the filename of the file being imported </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -269,7 +245,7 @@ Public Attributes</h2></td></tr>
 <p>Loads a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object using an input stream. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">input</td><td>a pointer to the input stream that you want to form a neural network from </td></tr>
+    <tr><td class="paramname">input</td><td>a pointer to the input stream that contains a stored <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> model </td></tr>
   </table>
   </dd>
 </dl>
@@ -277,46 +253,55 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ab33279948cf38660679fb3474908f2eb"></a>
+<a class="anchor" id="a9aa6df66144e65dd304e2474f1ff247b"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Backpropagation::storeBackpropagation </td>
+          <td class="memname">void Backpropagation::resetLastChangeInWeight </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *&#160;</td>
+          <td class="paramname"><em>network</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Stores a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object in the specified file. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>the filename of the output file </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Resets the <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object's lastchanginweight instance variable using a neural network (NN is needed because the number of layers, neurons, and weights are needed). </p>
 
 </div>
 </div>
-<a class="anchor" id="a08352f1a74216240b2bd9d2531038bc8"></a>
+<a class="anchor" id="a6779f837c5e7267f55130e4dd885f033"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Backpropagation::storeBackpropagationWithStream </td>
+          <td class="memname">void Backpropagation::store </td>
           <td>(</td>
           <td class="paramtype">std::ofstream *&#160;</td>
           <td class="paramname"><em>output</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Stores a <a class="el" href="classnet_1_1_backpropagation.html">Backpropagation</a> object using specified ofstream. </p>
-<p>Useful for appending a network to the end of a file without overwriting it. WARNING: will not close ofstream.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">output</td><td>pointer to the output stream which the neural network will be written to </td></tr>
@@ -324,15 +309,80 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="classnet_1_1_trainer.html#ad13912ca76653d4698abed66b79ef78e">net::Trainer</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classnet_1_1_pruner.html#a1bb91c6f8eeab5b81e74feca6c0d3ee3">net::Pruner</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a3005bd4ba5ef48306e2b77cad3f2a22c"></a>
+<a class="anchor" id="a807fdd9439d68a21755efd484e6632f7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Backpropagation::train </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *&#160;</td>
+          <td class="paramname"><em>network</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>correctOutput</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Trains a neural network on a training set until the target error level is reached. </p>
+<p>Edits the weights of the neural network until its error in predicting the correctOutput of each input reaches the value of targetErrorLevel or the number of training cycles reaches the value of maximumIterations. NOTE: If learning rate is not low enough, the weights of the neural network may got to infinity due to the nature of backpropagation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">network</td><td>the neural network to be trained </td></tr>
+    <tr><td class="paramname">input</td><td>a vector of neural network inputs; each element in input, should have a corresponding output in correctOutput </td></tr>
+    <tr><td class="paramname">correctOutput</td><td>network is trained to output an element of correctOutput when fed a corresponding element of the input vector </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classnet_1_1_trainer.html#ac1b6e605be0b360e3804daa70ce33f95">net::Trainer</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classnet_1_1_pruner.html#acee6c8d2ef689db767b266c1affc6f7d">net::Pruner</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4e259bc4cc0c3c7e6b7a97933cc446e2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Backpropagation::trainOnData </td>
+          <td class="memname">double Backpropagation::trainEpocs </td>
           <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>numberOfEpochs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *&#160;</td>
           <td class="paramname"><em>network</em>, </td>
         </tr>
@@ -356,10 +406,11 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Trains a neural network on a training set. </p>
+<p>Trains a neural network on a training set for a specified number of epochs. </p>
 <p>Edits the weights of the neural network until its error in predicting the correctOutput of each input reaches the value of targetErrorLevel or the number of training cycles reaches the value of maximumIterations. NOTE: If learning rate is not low enough, the weights of the neural network may got to infinity due to the nature of backpropagation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">numberOfEpochs</td><td>the number of training passes that will be made through the data </td></tr>
     <tr><td class="paramname">network</td><td>the neural network to be trained </td></tr>
     <tr><td class="paramname">input</td><td>a vector of neural network inputs; each element in input, should have a corresponding output in correctOutput </td></tr>
     <tr><td class="paramname">correctOutput</td><td>network is trained to output an element of correctOutput when fed a corresponding element of the input vector </td></tr>
@@ -372,6 +423,9 @@ Public Attributes</h2></td></tr>
 <a class="anchor" id="a56d4a23f6c623f03a4a9db0773a58df8"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double Backpropagation::trainOnDataPoint </td>
@@ -397,6 +451,11 @@ Public Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Gets the output of the neural network, calculates the error of each neuron, and edits the weights of the neurons to reduce error. </p>
@@ -440,12 +499,12 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2880349375de621da21181bf934750b9"></a>
+<a class="anchor" id="ad89e3bffeed0eed9f53216e8310e7c1e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int net::Backpropagation::maximumIterations</td>
+          <td class="memname">int net::Backpropagation::maximumEpochs</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -483,13 +542,13 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/truell20/Documents/Fido/Software/<a class="el" href="_backpropagation_8h_source.html">Backpropagation.h</a></li>
-<li>/home/truell20/Documents/Fido/Software/<a class="el" href="_backpropagation_8cpp.html">Backpropagation.cpp</a></li>
+<li>/home/truell20/Documents/Fido/include/<a class="el" href="_backpropagation_8h_source.html">Backpropagation.h</a></li>
+<li>/home/truell20/Documents/Fido/src/<a class="el" href="_backpropagation_8cpp.html">Backpropagation.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 10:35:01 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 21 2016 09:48:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

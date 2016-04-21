@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['neuralnet',['NeuralNet',['../classnet_1_1_neural_net.html',1,'net']]],
-  ['neuron',['Neuron',['../classnet_1_1_neuron.html',1,'net']]]
+  ['layer',['Layer',['../classnet_1_1_layer.html',1,'net']]],
+  ['learner',['Learner',['../classrl_1_1_learner.html',1,'rl']]],
+  ['line',['Line',['../class_line.html',1,'']]],
+  ['lsinterpolator',['LSInterpolator',['../classrl_1_1_l_s_interpolator.html',1,'rl']]]
 ];

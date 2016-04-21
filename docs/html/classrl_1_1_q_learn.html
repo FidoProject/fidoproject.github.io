@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -118,7 +118,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad0617a36dab296a5d1d88fe1a4e27a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply reinforcement to the last action.  <a href="#ad0617a36dab296a5d1d88fe1a4e27a3f">More...</a><br/></td></tr>
 <tr class="separator:ad0617a36dab296a5d1d88fe1a4e27a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad66a87f3ec9c7466fc310520bcd9edfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_q_learn.html#ad66a87f3ec9c7466fc310520bcd9edfb">reset</a> ()</td></tr>
+<tr class="memdesc:ad66a87f3ec9c7466fc310520bcd9edfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Randomizes the leaner.  <a href="#ad66a87f3ec9c7466fc310520bcd9edfb">More...</a><br/></td></tr>
 <tr class="separator:ad66a87f3ec9c7466fc310520bcd9edfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae680c12076a0451bb021b101bc196a6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_q_learn.html#ae680c12076a0451bb021b101bc196a6f">store</a> (std::ofstream *output)</td></tr>
+<tr class="separator:ae680c12076a0451bb021b101bc196a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac83a21447898d1ad219a4f755e24520f"></a>
@@ -367,18 +370,36 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Randomizes the leaner. </p>
+
 <p>Implements <a class="el" href="classrl_1_1_learner.html#ad9b77c365288be0531fc7849fb3567a0">rl::Learner</a>.</p>
 
 </div>
 </div>
+<a class="anchor" id="ae680c12076a0451bb021b101bc196a6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rl::QLearn::store </td>
+          <td>(</td>
+          <td class="paramtype">std::ofstream *&#160;</td>
+          <td class="paramname"><em>output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/truell20/Documents/Fido/Software/<a class="el" href="_q_learn_8h_source.html">QLearn.h</a></li>
-<li>/home/truell20/Documents/Fido/Software/<a class="el" href="_q_learn_8cpp.html">QLearn.cpp</a></li>
+<li>/home/truell20/Documents/Fido/include/<a class="el" href="_q_learn_8h_source.html">QLearn.h</a></li>
+<li>/home/truell20/Documents/Fido/src/<a class="el" href="_q_learn_8cpp.html">QLearn.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 10:35:01 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 21 2016 09:48:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

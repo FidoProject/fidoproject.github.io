@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['simlink',['Simlink',['../class_simlink.html',1,'']]]
+  ['pruner',['Pruner',['../classnet_1_1_pruner.html',1,'net']]]
 ];

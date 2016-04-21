@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['robby',['Robby',['../class_robby.html',1,'']]],
-  ['robot',['Robot',['../classrl_1_1_robot.html',1,'rl']]]
+  ['neuralnet',['NeuralNet',['../classnet_1_1_neural_net.html',1,'net']]],
+  ['neuron',['Neuron',['../classnet_1_1_neuron.html',1,'net']]]
 ];

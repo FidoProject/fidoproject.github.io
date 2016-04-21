@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['task',['Task',['../classrl_1_1_task.html',1,'rl']]],
-  ['tdvect',['TDVect',['../struct_t_d_vect.html',1,'']]]
+  ['qlearn',['QLearn',['../classrl_1_1_q_learn.html',1,'rl']]]
 ];

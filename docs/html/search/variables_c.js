@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['targeterrorlevel',['targetErrorLevel',['../classnet_1_1_backpropagation.html#a4244cf1e73577909b485bcefe41ac07a',1,'net::Backpropagation']]]
+  ['reward',['reward',['../structrl_1_1_wire.html#ab8a165c515ad06cebd5f71acf1db0348',1,'rl::Wire']]],
+  ['robot',['robot',['../class_simlink.html#a54f579964d162130aaefe9aef475fdcf',1,'Simlink']]]
 ];

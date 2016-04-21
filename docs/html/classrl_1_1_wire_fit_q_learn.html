@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,6 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classrl_1_1_wire_fit_q_learn-members.html">List of all members</a>  </div>
@@ -100,15 +101,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p><code>#include &lt;<a class="el" href="_wire_fit_q_learn_8h_source.html">WireFitQLearn.h</a>&gt;</code></p>
 
 <p>Inherits <a class="el" href="classrl_1_1_learner.html">rl::Learner</a>.</p>
+
+<p>Inherited by <a class="el" href="classrl_1_1_fido_control_system.html">rl::FidoControlSystem</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0168bdf608bfcc29ae05fa87e68979ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a0168bdf608bfcc29ae05fa87e68979ea">WireFitQLearn</a> (<a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *modelNetwork, <a class="el" href="classrl_1_1_interpolator.html">Interpolator</a> *interpolator_, <a class="el" href="classnet_1_1_backpropagation.html">net::Backpropagation</a> backprop_, double learningRate_, double devaluationFactor_, int actionDimensions_, int numberOfWires_, <a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> minAction_, <a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> maxAction_, int baseOfDimensions_)</td></tr>
-<tr class="separator:a0168bdf608bfcc29ae05fa87e68979ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79ebd2248100a2bd48fb3db6e0d70682"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a79ebd2248100a2bd48fb3db6e0d70682">WireFitQLearn</a> (unsigned int stateDimensions, unsigned int actionDimensions_, unsigned int numHiddenLayers, unsigned int numNeuronsPerHiddenLayer, unsigned int numberOfWires_, <a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> minAction_, <a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> maxAction_, unsigned int baseOfDimensions_, <a class="el" href="classrl_1_1_interpolator.html">Interpolator</a> *interpolator_, <a class="el" href="classnet_1_1_backpropagation.html">net::Backpropagation</a> backprop_, double learningRate_, double devaluationFactor_)</td></tr>
+<tr class="separator:a79ebd2248100a2bd48fb3db6e0d70682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42a5bb69f74a4f7bfd72c5ff110471ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a42a5bb69f74a4f7bfd72c5ff110471ed">WireFitQLearn</a> ()</td></tr>
 <tr class="separator:a42a5bb69f74a4f7bfd72c5ff110471ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad93f1ca3ed47df067d913ddfd48bea3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#ad93f1ca3ed47df067d913ddfd48bea3e">WireFitQLearn</a> (std::string filename)</td></tr>
-<tr class="separator:ad93f1ca3ed47df067d913ddfd48bea3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ee45185815715c0dcb3db3dae9392d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a31ee45185815715c0dcb3db3dae9392d">WireFitQLearn</a> (std::ifstream *input)</td></tr>
+<tr class="separator:a31ee45185815715c0dcb3db3dae9392d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3959c0dfa6c0c0bb87453d938d81c01e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a3959c0dfa6c0c0bb87453d938d81c01e">chooseBestAction</a> (<a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> currentState)</td></tr>
 <tr class="memdesc:a3959c0dfa6c0c0bb87453d938d81c01e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the action that the network deems most beneficial for the currentState.  <a href="#a3959c0dfa6c0c0bb87453d938d81c01e">More...</a><br/></td></tr>
 <tr class="separator:a3959c0dfa6c0c0bb87453d938d81c01e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,9 +122,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a93ea784fbb2288aa52f2c23fa4cfd426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply reinforcement to the last action.  <a href="#a93ea784fbb2288aa52f2c23fa4cfd426">More...</a><br/></td></tr>
 <tr class="separator:a93ea784fbb2288aa52f2c23fa4cfd426"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8006340fca918b5eeba856018bde2eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#aa8006340fca918b5eeba856018bde2eb">reset</a> ()</td></tr>
+<tr class="memdesc:aa8006340fca918b5eeba856018bde2eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Randomizes the leaner.  <a href="#aa8006340fca918b5eeba856018bde2eb">More...</a><br/></td></tr>
 <tr class="separator:aa8006340fca918b5eeba856018bde2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc3aa2bca09a0060bea6b74d0ee02654"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#adc3aa2bca09a0060bea6b74d0ee02654">storeWireFitQLearn</a> (std::string filename)</td></tr>
-<tr class="separator:adc3aa2bca09a0060bea6b74d0ee02654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac93fb2fe8a6d1ce21b521e5038868ff2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#ac93fb2fe8a6d1ce21b521e5038868ff2">store</a> (std::ofstream *output)</td></tr>
+<tr class="separator:ac93fb2fe8a6d1ce21b521e5038868ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -131,24 +135,22 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab029916c40c6ce916c76b6530344de54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80c9071827bd258e18f6c2c1b1d88146"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1_backpropagation.html">net::Backpropagation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a80c9071827bd258e18f6c2c1b1d88146">backprop</a></td></tr>
 <tr class="separator:a80c9071827bd258e18f6c2c1b1d88146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbff292d0f70672ba6e92ec418c7d290"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#acbff292d0f70672ba6e92ec418c7d290">numberOfWires</a></td></tr>
-<tr class="separator:acbff292d0f70672ba6e92ec418c7d290"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b3e25b086615737b632890f5b1efcfd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a2b3e25b086615737b632890f5b1efcfd">actionDimensions</a></td></tr>
-<tr class="separator:a2b3e25b086615737b632890f5b1efcfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436d4fe91ee2cd3848a8bbaa1a48948c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a436d4fe91ee2cd3848a8bbaa1a48948c">numberOfWires</a></td></tr>
+<tr class="separator:a436d4fe91ee2cd3848a8bbaa1a48948c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d62db4143da3dcd0ff8c193b879830"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#af1d62db4143da3dcd0ff8c193b879830">actionDimensions</a></td></tr>
+<tr class="separator:af1d62db4143da3dcd0ff8c193b879830"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2db57e7ca0c7235b20c8df615fa36a3b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a2db57e7ca0c7235b20c8df615fa36a3b">learningRate</a></td></tr>
 <tr class="separator:a2db57e7ca0c7235b20c8df615fa36a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d02928aec56672482a11c435e4c9006"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a1d02928aec56672482a11c435e4c9006">devaluationFactor</a></td></tr>
 <tr class="separator:a1d02928aec56672482a11c435e4c9006"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e0bd0337539184d3db1b089c9be8abf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a4e0bd0337539184d3db1b089c9be8abf">scalingFactorToMillis</a></td></tr>
-<tr class="separator:a4e0bd0337539184d3db1b089c9be8abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d579b6d73893100924b88ad3ff62440"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a4d579b6d73893100924b88ad3ff62440">controlPointsGDErrorTarget</a></td></tr>
 <tr class="separator:a4d579b6d73893100924b88ad3ff62440"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5c6282dec4f48dc93d2535272e1b871"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#ae5c6282dec4f48dc93d2535272e1b871">controlPointsGDLearningRate</a></td></tr>
 <tr class="separator:ae5c6282dec4f48dc93d2535272e1b871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6087437727a3233474db4729d08c233b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a6087437727a3233474db4729d08c233b">controlPointsGDMaxIterations</a></td></tr>
 <tr class="separator:a6087437727a3233474db4729d08c233b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac83e41371684a945031e39af85370251"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#ac83e41371684a945031e39af85370251">baseOfDimensions</a></td></tr>
-<tr class="separator:ac83e41371684a945031e39af85370251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a957867553b071d7aa5fe330d990f9fca"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a957867553b071d7aa5fe330d990f9fca">baseOfDimensions</a></td></tr>
+<tr class="separator:a957867553b071d7aa5fe330d990f9fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ee2af8bf671ac85fd01561531af8711"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a7ee2af8bf671ac85fd01561531af8711">lastState</a></td></tr>
 <tr class="separator:a7ee2af8bf671ac85fd01561531af8711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c3b9d46e59cce0bf35e63d92bdbee43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a1c3b9d46e59cce0bf35e63d92bdbee43">minAction</a></td></tr>
@@ -159,15 +161,57 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a0093ccef823d2e9156e8e9605028cb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a0168bdf608bfcc29ae05fa87e68979ea"></a>
+<a class="anchor" id="a79ebd2248100a2bd48fb3db6e0d70682"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">WireFitQLearn::WireFitQLearn </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *&#160;</td>
-          <td class="paramname"><em>modelNetwork</em>, </td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>stateDimensions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>actionDimensions_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>numHiddenLayers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>numNeuronsPerHiddenLayer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>numberOfWires_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a>&#160;</td>
+          <td class="paramname"><em>minAction_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a>&#160;</td>
+          <td class="paramname"><em>maxAction_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>baseOfDimensions_</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -191,37 +235,7 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>devaluationFactor_</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>actionDimensions_</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>numberOfWires_</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a>&#160;</td>
-          <td class="paramname"><em>minAction_</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a>&#160;</td>
-          <td class="paramname"><em>maxAction_</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>baseOfDimensions_</em>&#160;</td>
+          <td class="paramname"><em>devaluationFactor_</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -248,15 +262,15 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad93f1ca3ed47df067d913ddfd48bea3e"></a>
+<a class="anchor" id="a31ee45185815715c0dcb3db3dae9392d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">WireFitQLearn::WireFitQLearn </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td class="paramtype">std::ifstream *&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -413,19 +427,21 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Randomizes the leaner. </p>
+
 <p>Implements <a class="el" href="classrl_1_1_learner.html#ad9b77c365288be0531fc7849fb3567a0">rl::Learner</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="adc3aa2bca09a0060bea6b74d0ee02654"></a>
+<a class="anchor" id="ac93fb2fe8a6d1ce21b521e5038868ff2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void WireFitQLearn::storeWireFitQLearn </td>
+          <td class="memname">void WireFitQLearn::store </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td class="paramtype">std::ofstream *&#160;</td>
+          <td class="paramname"><em>output</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -434,12 +450,12 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a2b3e25b086615737b632890f5b1efcfd"></a>
+<a class="anchor" id="af1d62db4143da3dcd0ff8c193b879830"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int rl::WireFitQLearn::actionDimensions</td>
+          <td class="memname">unsigned int rl::WireFitQLearn::actionDimensions</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -458,12 +474,12 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac83e41371684a945031e39af85370251"></a>
+<a class="anchor" id="a957867553b071d7aa5fe330d990f9fca"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int rl::WireFitQLearn::baseOfDimensions</td>
+          <td class="memname">unsigned int rl::WireFitQLearn::baseOfDimensions</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -602,24 +618,12 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acbff292d0f70672ba6e92ec418c7d290"></a>
+<a class="anchor" id="a436d4fe91ee2cd3848a8bbaa1a48948c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int rl::WireFitQLearn::numberOfWires</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4e0bd0337539184d3db1b089c9be8abf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double rl::WireFitQLearn::scalingFactorToMillis</td>
+          <td class="memname">unsigned int rl::WireFitQLearn::numberOfWires</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -627,13 +631,13 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/truell20/Documents/Fido/Software/<a class="el" href="_wire_fit_q_learn_8h_source.html">WireFitQLearn.h</a></li>
-<li>/home/truell20/Documents/Fido/Software/<a class="el" href="_wire_fit_q_learn_8cpp.html">WireFitQLearn.cpp</a></li>
+<li>/home/truell20/Documents/Fido/include/<a class="el" href="_wire_fit_q_learn_8h_source.html">WireFitQLearn.h</a></li>
+<li>/home/truell20/Documents/Fido/src/<a class="el" href="_wire_fit_q_learn_8cpp.html">WireFitQLearn.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 10:35:01 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 21 2016 09:48:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

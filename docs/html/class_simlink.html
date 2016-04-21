@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -126,6 +126,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa2cbdd60a1dc973fbe855764d638b2d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae00911e4fe2dff43e0917c74e536c5f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_d_vect.html">TDVect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simlink.html#ae00911e4fe2dff43e0917c74e536c5f2">getGyro</a> ()</td></tr>
 <tr class="separator:ae00911e4fe2dff43e0917c74e536c5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2553582d4e56294d4a936c8bff510d6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simlink.html#a2553582d4e56294d4a936c8bff510d6c">isLeftOfLine</a> ()</td></tr>
+<tr class="separator:a2553582d4e56294d4a936c8bff510d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd3c7115b3af4e6e04556a1627c02df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simlink.html#a7fd3c7115b3af4e6e04556a1627c02df">getBallDisplacement</a> (double *x, double *z)</td></tr>
+<tr class="separator:a7fd3c7115b3af4e6e04556a1627c02df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c14e2e8a2ad4c1939e24d8fa15210e5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simlink.html#a8c14e2e8a2ad4c1939e24d8fa15210e5">distanceFromLine</a> ()</td></tr>
+<tr class="separator:a8c14e2e8a2ad4c1939e24d8fa15210e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa117c72e3a1e9a1b1411266be32f82c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simlink.html#aaa117c72e3a1e9a1b1411266be32f82c">getTemperature</a> ()</td></tr>
 <tr class="separator:aaa117c72e3a1e9a1b1411266be32f82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f8b4fe04e76737de621428d1b8f2218"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simlink.html#a2f8b4fe04e76737de621428d1b8f2218">placeRobotInRandomPosition</a> ()</td></tr>
@@ -136,8 +142,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a72011cd90b8174543785bc10e72822b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0824d51ddc848bc924619ae7ad1a407"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simlink.html#ae0824d51ddc848bc924619ae7ad1a407">getRobotDisplacementFromEmitter</a> (double *x, double *y)</td></tr>
 <tr class="separator:ae0824d51ddc848bc924619ae7ad1a407"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a284f43fa0b792bc3a28045a6fab01fba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simlink.html#a284f43fa0b792bc3a28045a6fab01fba">drawLine</a> (sf::Vector2f p1, sf::Vector2f p2)</td></tr>
-<tr class="separator:a284f43fa0b792bc3a28045a6fab01fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9da244b1eada0aa865b0e20131ce114"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simlink.html#ab9da244b1eada0aa865b0e20131ce114">placeLine</a> (sf::Vector2f p1, sf::Vector2f p2)</td></tr>
+<tr class="separator:ab9da244b1eada0aa865b0e20131ce114"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -145,6 +151,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a54f579964d162130aaefe9aef475fdcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea6e4191b272e93248c896311f6f6920"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_emitter.html">Emitter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simlink.html#aea6e4191b272e93248c896311f6f6920">emitter</a></td></tr>
 <tr class="separator:aea6e4191b272e93248c896311f6f6920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a476de4f64a5daaa1158808594b1e64d6"><td class="memItemLeft" align="right" valign="top">sf::CircleShape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simlink.html#a476de4f64a5daaa1158808594b1e64d6">ball</a></td></tr>
+<tr class="separator:a476de4f64a5daaa1158808594b1e64d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a286de788bcb9963f0a3b1acf29c0c611"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simlink.html#a286de788bcb9963f0a3b1acf29c0c611">visVal</a></td></tr>
 <tr class="separator:a286de788bcb9963f0a3b1acf29c0c611"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -221,26 +229,15 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a284f43fa0b792bc3a28045a6fab01fba"></a>
+<a class="anchor" id="a8c14e2e8a2ad4c1939e24d8fa15210e5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Simlink::drawLine </td>
+          <td class="memname">double Simlink::distanceFromLine </td>
           <td>(</td>
-          <td class="paramtype">sf::Vector2f&#160;</td>
-          <td class="paramname"><em>p1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">sf::Vector2f&#160;</td>
-          <td class="paramname"><em>p2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -256,6 +253,32 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7fd3c7115b3af4e6e04556a1627c02df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Simlink::getBallDisplacement </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -408,6 +431,21 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a2553582d4e56294d4a936c8bff510d6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Simlink::isLeftOfLine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac5b750cc5e791746f003990806a970eb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -417,6 +455,32 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab9da244b1eada0aa865b0e20131ce114"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Simlink::placeLine </td>
+          <td>(</td>
+          <td class="paramtype">sf::Vector2f&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Vector2f&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -530,6 +594,18 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a476de4f64a5daaa1158808594b1e64d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::CircleShape Simlink::ball</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aea6e4191b272e93248c896311f6f6920"></a>
 <div class="memitem">
 <div class="memproto">
@@ -567,13 +643,13 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/truell20/Documents/Fido/Software/FidoSim/<a class="el" href="_simlink_8h_source.html">Simlink.h</a></li>
-<li>/home/truell20/Documents/Fido/Software/FidoSim/<a class="el" href="_simlink_8cpp.html">Simlink.cpp</a></li>
+<li>/home/truell20/Documents/Fido/include/Simulator/<a class="el" href="_simlink_8h_source.html">Simlink.h</a></li>
+<li>/home/truell20/Documents/Fido/src/Simulator/<a class="el" href="_simlink_8cpp.html">Simlink.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 10:35:01 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 21 2016 09:48:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

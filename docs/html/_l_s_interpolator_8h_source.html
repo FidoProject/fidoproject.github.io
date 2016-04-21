@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Fido: /home/truell20/Documents/Fido/Software/LSInterpolator.h Source File</title>
+<title>Fido: /home/truell20/Documents/Fido/include/LSInterpolator.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_4e9c05acfa2c3671b8618fcb95d57d96.html">Software</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -104,9 +104,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classrl_1_1_l_s_interpolator.html#aca950947cc011821df26f6259b001b74">LSInterpolator</a>(<span class="keywordtype">double</span> smoothingFactor_, <span class="keywordtype">double</span> e_);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classrl_1_1_l_s_interpolator.html#a70ee94fc18d05705b6357dfa4c67d42d">initFromFile</a>(std::ifstream *in);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classrl_1_1_l_s_interpolator.html#a8a518366994f5cdbaab979427d0ad59d">initFromStream</a>(std::ifstream *in);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classrl_1_1_l_s_interpolator.html#a10dcfba8d08aad8d4a1649ce2b1ef915">storeInterpolator</a>(std::ofstream *out);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classrl_1_1_l_s_interpolator.html#acde4061a65e697dcda6ac3f55e290c12">store</a>(std::ofstream *out);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classrl_1_1_l_s_interpolator.html#ab63667c318d17dc7330ad579cf739e28">getReward</a>(<span class="keyword">const</span> std::vector&lt;Wire&gt; &amp;controlWires, <span class="keyword">const</span> std::vector&lt;double&gt; &amp;action);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
@@ -128,17 +128,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classrl_1_1_l_s_interpolator_html_a151ebceb9a8674a61ad40a1e5ee561df"><div class="ttname"><a href="classrl_1_1_l_s_interpolator.html#a151ebceb9a8674a61ad40a1e5ee561df">rl::LSInterpolator::smoothingFactor</a></div><div class="ttdeci">double smoothingFactor</div><div class="ttdef"><b>Definition:</b> LSInterpolator.h:12</div></div>
 <div class="ttc" id="classrl_1_1_l_s_interpolator_html_a996cae8b8ceed8cc2fb0dc23090ca3a9"><div class="ttname"><a href="classrl_1_1_l_s_interpolator.html#a996cae8b8ceed8cc2fb0dc23090ca3a9">rl::LSInterpolator::e</a></div><div class="ttdeci">double e</div><div class="ttdef"><b>Definition:</b> LSInterpolator.h:12</div></div>
 <div class="ttc" id="_interpolator_8h_html"><div class="ttname"><a href="_interpolator_8h.html">Interpolator.h</a></div></div>
-<div class="ttc" id="classrl_1_1_l_s_interpolator_html_a70ee94fc18d05705b6357dfa4c67d42d"><div class="ttname"><a href="classrl_1_1_l_s_interpolator.html#a70ee94fc18d05705b6357dfa4c67d42d">rl::LSInterpolator::initFromFile</a></div><div class="ttdeci">bool initFromFile(std::ifstream *in)</div><div class="ttdoc">Initializes a LSInterpolator using the information from a file. </div><div class="ttdef"><b>Definition:</b> LSInterpolator.cpp:21</div></div>
 <div class="ttc" id="classrl_1_1_l_s_interpolator_html_aca950947cc011821df26f6259b001b74"><div class="ttname"><a href="classrl_1_1_l_s_interpolator.html#aca950947cc011821df26f6259b001b74">rl::LSInterpolator::LSInterpolator</a></div><div class="ttdeci">LSInterpolator()</div><div class="ttdoc">Initializes a LSInterpolator with default parameters. </div><div class="ttdef"><b>Definition:</b> LSInterpolator.cpp:11</div></div>
-<div class="ttc" id="classrl_1_1_l_s_interpolator_html_a10dcfba8d08aad8d4a1649ce2b1ef915"><div class="ttname"><a href="classrl_1_1_l_s_interpolator.html#a10dcfba8d08aad8d4a1649ce2b1ef915">rl::LSInterpolator::storeInterpolator</a></div><div class="ttdeci">void storeInterpolator(std::ofstream *out)</div><div class="ttdoc">Stores the interpolator object in a file. </div><div class="ttdef"><b>Definition:</b> LSInterpolator.cpp:36</div></div>
 <div class="ttc" id="classrl_1_1_l_s_interpolator_html_ab63667c318d17dc7330ad579cf739e28"><div class="ttname"><a href="classrl_1_1_l_s_interpolator.html#ab63667c318d17dc7330ad579cf739e28">rl::LSInterpolator::getReward</a></div><div class="ttdeci">double getReward(const std::vector&lt; Wire &gt; &amp;controlWires, const std::vector&lt; double &gt; &amp;action)</div><div class="ttdoc">Uses the interpolator function to compute the reward of an action vector given a set of control wires...</div><div class="ttdef"><b>Definition:</b> LSInterpolator.cpp:40</div></div>
+<div class="ttc" id="classrl_1_1_l_s_interpolator_html_acde4061a65e697dcda6ac3f55e290c12"><div class="ttname"><a href="classrl_1_1_l_s_interpolator.html#acde4061a65e697dcda6ac3f55e290c12">rl::LSInterpolator::store</a></div><div class="ttdeci">void store(std::ofstream *out)</div><div class="ttdoc">Stores the interpolator object in a file. </div><div class="ttdef"><b>Definition:</b> LSInterpolator.cpp:36</div></div>
 <div class="ttc" id="classrl_1_1_l_s_interpolator_html"><div class="ttname"><a href="classrl_1_1_l_s_interpolator.html">rl::LSInterpolator</a></div><div class="ttdoc">A least squares wire fitted Interpolator. </div><div class="ttdef"><b>Definition:</b> LSInterpolator.h:10</div></div>
 <div class="ttc" id="structrl_1_1_wire_html"><div class="ttname"><a href="structrl_1_1_wire.html">rl::Wire</a></div><div class="ttdoc">A data point to be interpolated. </div><div class="ttdef"><b>Definition:</b> Interpolator.h:9</div></div>
 <div class="ttc" id="classrl_1_1_l_s_interpolator_html_a14d2d8a7860083930c2c7916d106fe3e"><div class="ttname"><a href="classrl_1_1_l_s_interpolator.html#a14d2d8a7860083930c2c7916d106fe3e">rl::LSInterpolator::rewardDerivative</a></div><div class="ttdeci">double rewardDerivative(const std::vector&lt; double &gt; &amp;action, const Wire &amp;wire, const std::vector&lt; Wire &gt; &amp;controlWires)</div><div class="ttdoc">Computes the partial derivative of the interpolator function with respect to the reward of a control ...</div><div class="ttdef"><b>Definition:</b> LSInterpolator.cpp:47</div></div>
+<div class="ttc" id="classrl_1_1_l_s_interpolator_html_a8a518366994f5cdbaab979427d0ad59d"><div class="ttname"><a href="classrl_1_1_l_s_interpolator.html#a8a518366994f5cdbaab979427d0ad59d">rl::LSInterpolator::initFromStream</a></div><div class="ttdeci">bool initFromStream(std::ifstream *in)</div><div class="ttdoc">Initializes a LSInterpolator using the information from a file. </div><div class="ttdef"><b>Definition:</b> LSInterpolator.cpp:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 10:35:01 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 21 2016 09:48:07 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
