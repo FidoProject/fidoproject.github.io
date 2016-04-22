@@ -85,6 +85,7 @@ int main() {
   srand(time(NULL));
   gen::GeneticAlgo geneticAlgo = gen::GeneticAlgo(20, 0.4, 0.5, 10, getPopulationFitness);
   net::NeuralNet modelNetwork = net::NeuralNet(1, 1, 1, 4, "simpleLinear");
+  net::NeuralNet bestNetwork = geneticAlgo.getBestNeuralNetwork(600, modelNetwork);
 }
 
 </code></pre>
