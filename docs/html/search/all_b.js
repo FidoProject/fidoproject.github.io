@@ -9,7 +9,7 @@ var searchData=
   ['mainpage_2eh',['mainpage.h',['../mainpage_8h.html',1,'']]],
   ['masterstrength',['masterStrength',['../class_emitter.html#af6bdb34fdd7ee0f5580be7cbb7dfd9d0',1,'Emitter']]],
   ['maxaction',['maxAction',['../classrl_1_1_wire_fit_q_learn.html#a1cd65b4160d27635d227cbb204d218aa',1,'rl::WireFitQLearn']]],
-  ['maximumepochs',['maximumEpochs',['../classnet_1_1_backpropagation.html#ad89e3bffeed0eed9f53216e8310e7c1e',1,'net::Backpropagation']]],
+  ['maximumepochs',['maximumEpochs',['../classnet_1_1_adadelta.html#aadaabbe5147981f9dbe29e2ccbdfbee8',1,'net::Adadelta::maximumEpochs()'],['../classnet_1_1_backpropagation.html#ad89e3bffeed0eed9f53216e8310e7c1e',1,'net::Backpropagation::maximumEpochs()']]],
   ['minaction',['minAction',['../classrl_1_1_wire_fit_q_learn.html#a1c3b9d46e59cce0bf35e63d92bdbee43',1,'rl::WireFitQLearn']]],
   ['model',['Model',['../structrl_1_1_model.html',1,'rl']]],
   ['model',['Model',['../structrl_1_1_model.html#a236c7bc971eaf5540adbd3cfedbbde66',1,'rl::Model::Model(net::NeuralNet *network_, Action action_)'],['../structrl_1_1_model.html#a1b576656dcf2dc5bb24cf04090110f2a',1,'rl::Model::Model()']]],

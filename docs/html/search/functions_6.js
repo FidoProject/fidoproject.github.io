@@ -11,7 +11,7 @@ var searchData=
   ['getcompass',['getCompass',['../class_simlink.html#aa2cbdd60a1dc973fbe855764d638b2d9',1,'Simlink']]],
   ['getderivedactivationfunctionnames',['getDerivedActivationFunctionNames',['../classnet_1_1_layer.html#a24ef5196118d8958b048462c74889e07',1,'net::Layer']]],
   ['getdistanceofrobotfromemitter',['getDistanceOfRobotFromEmitter',['../class_simlink.html#a72011cd90b8174543785bc10e72822b5',1,'Simlink']]],
-  ['getgradients',['getGradients',['../classnet_1_1_neural_net.html#a80f0f02d3d44965265b94a2cd172e879',1,'net::NeuralNet']]],
+  ['getgradients',['getGradients',['../classnet_1_1_neural_net.html#a35df224f994c011f9a6797d810da2f4f',1,'net::NeuralNet']]],
   ['getgyro',['getGyro',['../class_simlink.html#ae00911e4fe2dff43e0917c74e536c5f2',1,'Simlink']]],
   ['gethiddenactivationfunctionname',['getHiddenActivationFunctionName',['../classnet_1_1_neural_net.html#aab751a8009efd0775284deb85f498af7',1,'net::NeuralNet']]],
   ['getir',['getIR',['../class_simlink.html#a10f543f16f6b82403db63572056bd4ed',1,'Simlink']]],

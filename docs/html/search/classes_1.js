@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['emitter',['Emitter',['../class_emitter.html',1,'']]]
+  ['backpropagation',['Backpropagation',['../classnet_1_1_backpropagation.html',1,'net']]]
 ];

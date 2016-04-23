@@ -106,9 +106,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa2b9c4aa621981b42e4af1aa39c91d79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_fido_control_system.html#aa2b9c4aa621981b42e4af1aa39c91d79">FidoControlSystem</a> (int stateDimensions, <a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a1c3b9d46e59cce0bf35e63d92bdbee43">minAction</a>, <a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a1cd65b4160d27635d227cbb204d218aa">maxAction</a>)</td></tr>
-<tr class="memdesc:aa2b9c4aa621981b42e4af1aa39c91d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="classrl_1_1_fido_control_system.html" title="A highly effective reinforcement learning control system (Truell and Gruenstein) ">FidoControlSystem</a>.  <a href="#aa2b9c4aa621981b42e4af1aa39c91d79">More...</a><br/></td></tr>
-<tr class="separator:aa2b9c4aa621981b42e4af1aa39c91d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb3c59929216aec8684bbe9b5bc3b2de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_fido_control_system.html#adb3c59929216aec8684bbe9b5bc3b2de">FidoControlSystem</a> (int stateDimensions, <a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a1c3b9d46e59cce0bf35e63d92bdbee43">minAction</a>, <a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a1cd65b4160d27635d227cbb204d218aa">maxAction</a>, int <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a957867553b071d7aa5fe330d990f9fca">baseOfDimensions</a>)</td></tr>
+<tr class="memdesc:adb3c59929216aec8684bbe9b5bc3b2de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="classrl_1_1_fido_control_system.html" title="A highly effective reinforcement learning control system (Truell and Gruenstein) ">FidoControlSystem</a>.  <a href="#adb3c59929216aec8684bbe9b5bc3b2de">More...</a><br/></td></tr>
+<tr class="separator:adb3c59929216aec8684bbe9b5bc3b2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a700a501816961d475649b9099d00953f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_fido_control_system.html#a700a501816961d475649b9099d00953f">applyReinforcementToLastAction</a> (double reward, <a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> newState)</td></tr>
 <tr class="memdesc:a700a501816961d475649b9099d00953f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the control system's model, by giving it reward for its last action.  <a href="#a700a501816961d475649b9099d00953f">More...</a><br/></td></tr>
 <tr class="separator:a700a501816961d475649b9099d00953f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,7 +193,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A highly effective reinforcement learning control system (Truell and Gruenstein) </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aa2b9c4aa621981b42e4af1aa39c91d79"></a>
+<a class="anchor" id="adb3c59929216aec8684bbe9b5bc3b2de"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -213,7 +213,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a>&#160;</td>
-          <td class="paramname"><em>maxAction</em>&#160;</td>
+          <td class="paramname"><em>maxAction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>baseOfDimensions</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -229,6 +235,7 @@ Additional Inherited Members</h2></td></tr>
     <tr><td class="paramname">stateDimensions</td><td>the number of dimensions of the state being fed to the control system (aka. number of elements in the state vector) </td></tr>
     <tr><td class="paramname">minAction</td><td>the minimum possible action (e.g. a vector of doubles) that the control system may output </td></tr>
     <tr><td class="paramname">maxAction</td><td>the maximum possible action (e.g. a vector of doubles) that the control system may output </td></tr>
+    <tr><td class="paramname">baseOfDimensions</td><td>the number of possible descrete values in each dimension. Ex. if baseOfDimensions=2, minAction={0, 0}, maxAction={1, 1}, possibleActions={{0, 0}, {0, 1}, {1, 0}, {1, 1}}. </td></tr>
   </table>
   </dd>
 </dl>
@@ -316,7 +323,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 23 2016 10:04:57 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 23 2016 15:30:41 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

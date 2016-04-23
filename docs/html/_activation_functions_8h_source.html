@@ -117,7 +117,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="namespacenet.html#a29b78c772ee4ee067b0b05d95e5389b3">   58</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code" href="namespacenet.html#a29b78c772ee4ee067b0b05d95e5389b3">tanSigmoid</a>(<span class="keywordtype">double</span> initialOutput) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> (1 - exp(-2*initialOutput)) / (1 + exp(-2*initialOutput));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> (exp(2*initialOutput)-1) / (exp(2*initialOutput)+1);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">//--------------------- DERIVATIVES OF ACTIVATION FUNCTIONS ----------------</span></div>
@@ -128,10 +128,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="namespacenet.html#a59c54b6eec7b58483beba66dcf0cdfaa">   71</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code" href="namespacenet.html#a59c54b6eec7b58483beba66dcf0cdfaa">simpleLinearDerivative</a>(<span class="keywordtype">double</span> neuronOutput) {</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="namespacenet.html#aec647b7380116bdc5ed1fe1fa918a03a">   75</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code" href="namespacenet.html#aec647b7380116bdc5ed1fe1fa918a03a">tanSigmoidDerivative</a>(<span class="keywordtype">double</span> neuronOutput) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> 1 - pow(<a class="code" href="namespacenet.html#a29b78c772ee4ee067b0b05d95e5389b3">tanSigmoid</a>(neuronOutput), 2);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="namespacenet_html_a29b78c772ee4ee067b0b05d95e5389b3"><div class="ttname"><a href="namespacenet.html#a29b78c772ee4ee067b0b05d95e5389b3">net::tanSigmoid</a></div><div class="ttdeci">double tanSigmoid(double initialOutput)</div><div class="ttdoc">A tangential sigmoid or a hyperbolic tangent function. </div><div class="ttdef"><b>Definition:</b> ActivationFunctions.h:58</div></div>
+<div class="ttc" id="namespacenet_html_aec647b7380116bdc5ed1fe1fa918a03a"><div class="ttname"><a href="namespacenet.html#aec647b7380116bdc5ed1fe1fa918a03a">net::tanSigmoidDerivative</a></div><div class="ttdeci">double tanSigmoidDerivative(double neuronOutput)</div><div class="ttdef"><b>Definition:</b> ActivationFunctions.h:75</div></div>
 <div class="ttc" id="namespacenet_html_ade738ad0124dd9da52ac56301da74b97"><div class="ttname"><a href="namespacenet.html#ade738ad0124dd9da52ac56301da74b97">net::ActivationFunction</a></div><div class="ttdeci">double(* ActivationFunction)(double)</div><div class="ttdoc">The type of an activation function. </div><div class="ttdef"><b>Definition:</b> ActivationFunctions.h:18</div></div>
 <div class="ttc" id="namespacenet_html_a53a47ce3f3518d73222d05a8702045df"><div class="ttname"><a href="namespacenet.html#a53a47ce3f3518d73222d05a8702045df">net::sigmoid</a></div><div class="ttdeci">double sigmoid(double initialOutput)</div><div class="ttdoc">A sigmoid function. </div><div class="ttdef"><b>Definition:</b> ActivationFunctions.h:25</div></div>
 <div class="ttc" id="namespacenet_html_ad1443312aab902760604d9328b139eb0"><div class="ttname"><a href="namespacenet.html#ad1443312aab902760604d9328b139eb0">net::binary</a></div><div class="ttdeci">double binary(double initialOutput)</div><div class="ttdoc">A binary function. </div><div class="ttdef"><b>Definition:</b> ActivationFunctions.h:33</div></div>
@@ -142,7 +147,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 23 2016 10:04:56 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 23 2016 15:30:41 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -8,6 +8,7 @@ var searchData=
   ['resetlastchangeinweight',['resetLastChangeInWeight',['../classnet_1_1_backpropagation.html#a9aa6df66144e65dd304e2474f1ff247b',1,'net::Backpropagation']]],
   ['reward',['reward',['../structrl_1_1_wire.html#ab8a165c515ad06cebd5f71acf1db0348',1,'rl::Wire']]],
   ['rewardderivative',['rewardDerivative',['../classrl_1_1_interpolator.html#aaa863e8e5be5d62cd355cbb6f61350a0',1,'rl::Interpolator::rewardDerivative()'],['../classrl_1_1_l_s_interpolator.html#a14d2d8a7860083930c2c7916d106fe3e',1,'rl::LSInterpolator::rewardDerivative()']]],
+  ['rho',['rho',['../classnet_1_1_adadelta.html#acbe2d9d1307cfcea742e7a79e195f88c',1,'net::Adadelta']]],
   ['rl',['rl',['../namespacerl.html',1,'']]],
   ['robby',['Robby',['../class_robby.html',1,'Robby'],['../class_robby.html#a9c0457df40570ea551b158cd0039f88f',1,'Robby::Robby()']]],
   ['robby_2ecpp',['Robby.cpp',['../_robby_8cpp.html',1,'']]],

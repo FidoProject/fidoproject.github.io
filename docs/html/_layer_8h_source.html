@@ -132,20 +132,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            std::map&lt;std::string, ActivationFunction&gt; map;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            map[<span class="stringliteral">&quot;sigmoid&quot;</span>] = <a class="code" href="namespacenet.html#a2feb5dc8e9eb27e59f537d82264cafad">sigmoidDerivative</a>;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            map[<span class="stringliteral">&quot;simpleLinear&quot;</span>] = <a class="code" href="namespacenet.html#a59c54b6eec7b58483beba66dcf0cdfaa">simpleLinearDerivative</a>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">return</span> map;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    };</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            map[<span class="stringliteral">&quot;tanSigmoid&quot;</span>] = <a class="code" href="namespacenet.html#aec647b7380116bdc5ed1fe1fa918a03a">tanSigmoidDerivative</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">return</span> map;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    };</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classnet_1_1_layer_html_a621a782f6936c4f57e564ae7de0190b9"><div class="ttname"><a href="classnet_1_1_layer.html#a621a782f6936c4f57e564ae7de0190b9">net::Layer::setActivationFunctionWithName</a></div><div class="ttdeci">void setActivationFunctionWithName(std::string name)</div><div class="ttdoc">Sets the activation function to the given string. </div><div class="ttdef"><b>Definition:</b> Layer.cpp:28</div></div>
 <div class="ttc" id="classnet_1_1_layer_html_a6120d127d7e39c9e159e3a3e2f2bfb1a"><div class="ttname"><a href="classnet_1_1_layer.html#a6120d127d7e39c9e159e3a3e2f2bfb1a">net::Layer::activationFunction</a></div><div class="ttdeci">ActivationFunction activationFunction</div><div class="ttdoc">The activation function for the neurons of this layer. </div><div class="ttdef"><b>Definition:</b> Layer.h:23</div></div>
 <div class="ttc" id="_neuron_8h_html"><div class="ttname"><a href="_neuron_8h.html">Neuron.h</a></div></div>
 <div class="ttc" id="namespacenet_html_a29b78c772ee4ee067b0b05d95e5389b3"><div class="ttname"><a href="namespacenet.html#a29b78c772ee4ee067b0b05d95e5389b3">net::tanSigmoid</a></div><div class="ttdeci">double tanSigmoid(double initialOutput)</div><div class="ttdoc">A tangential sigmoid or a hyperbolic tangent function. </div><div class="ttdef"><b>Definition:</b> ActivationFunctions.h:58</div></div>
 <div class="ttc" id="classnet_1_1_layer_html_a3fd5c0b73ccd39ae586ec78d716493d8"><div class="ttname"><a href="classnet_1_1_layer.html#a3fd5c0b73ccd39ae586ec78d716493d8">net::Layer::getActivationFunctionName</a></div><div class="ttdeci">std::string getActivationFunctionName()</div><div class="ttdoc">Gets the name of the layer&#39;s activation function. </div><div class="ttdef"><b>Definition:</b> Layer.cpp:39</div></div>
 <div class="ttc" id="_activation_functions_8h_html"><div class="ttname"><a href="_activation_functions_8h.html">ActivationFunctions.h</a></div><div class="ttdoc">Fido&#39;s supported activation functions and their derivatives. </div></div>
+<div class="ttc" id="namespacenet_html_aec647b7380116bdc5ed1fe1fa918a03a"><div class="ttname"><a href="namespacenet.html#aec647b7380116bdc5ed1fe1fa918a03a">net::tanSigmoidDerivative</a></div><div class="ttdeci">double tanSigmoidDerivative(double neuronOutput)</div><div class="ttdef"><b>Definition:</b> ActivationFunctions.h:75</div></div>
 <div class="ttc" id="namespacenet_html_ade738ad0124dd9da52ac56301da74b97"><div class="ttname"><a href="namespacenet.html#ade738ad0124dd9da52ac56301da74b97">net::ActivationFunction</a></div><div class="ttdeci">double(* ActivationFunction)(double)</div><div class="ttdoc">The type of an activation function. </div><div class="ttdef"><b>Definition:</b> ActivationFunctions.h:18</div></div>
 <div class="ttc" id="namespacenet_html_a53a47ce3f3518d73222d05a8702045df"><div class="ttname"><a href="namespacenet.html#a53a47ce3f3518d73222d05a8702045df">net::sigmoid</a></div><div class="ttdeci">double sigmoid(double initialOutput)</div><div class="ttdoc">A sigmoid function. </div><div class="ttdef"><b>Definition:</b> ActivationFunctions.h:25</div></div>
 <div class="ttc" id="classnet_1_1_layer_html_a8006fd714028ec1fc869095fd237e244"><div class="ttname"><a href="classnet_1_1_layer.html#a8006fd714028ec1fc869095fd237e244">net::Layer::getActivationFunctionNameMap</a></div><div class="ttdeci">static std::map&lt; std::string, ActivationFunction &gt; getActivationFunctionNameMap()</div><div class="ttdoc">Gets the map of activation function name to ActivationFunction. </div><div class="ttdef"><b>Definition:</b> Layer.h:69</div></div>
@@ -162,7 +164,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 23 2016 10:04:56 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 23 2016 15:30:41 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

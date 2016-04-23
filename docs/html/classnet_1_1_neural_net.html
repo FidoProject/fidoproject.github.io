@@ -142,10 +142,10 @@ Public Member Functions</h2></td></tr>
 &lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#abc3ff99e5e187145ba00816bf2080fb1">feedForward</a> (std::vector&lt; double &gt; input)</td></tr>
 <tr class="memdesc:abc3ff99e5e187145ba00816bf2080fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the output of each layer of neurons as an input is fed for just as it is fed forward in getOutput.  <a href="#abc3ff99e5e187145ba00816bf2080fb1">More...</a><br/></td></tr>
 <tr class="separator:abc3ff99e5e187145ba00816bf2080fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80f0f02d3d44965265b94a2cd172e879"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector<br class="typebreak"/>
-&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#a80f0f02d3d44965265b94a2cd172e879">getGradients</a> (const std::vector&lt; double &gt; &amp;input, const std::vector&lt; double &gt; &amp;correctOutput)</td></tr>
-<tr class="memdesc:a80f0f02d3d44965265b94a2cd172e879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the error gradients of each layer in the <a class="el" href="classnet_1_1_neural_net.html" title="A neural network. ">NeuralNet</a>.  <a href="#a80f0f02d3d44965265b94a2cd172e879">More...</a><br/></td></tr>
-<tr class="separator:a80f0f02d3d44965265b94a2cd172e879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35df224f994c011f9a6797d810da2f4f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector<br class="typebreak"/>
+&lt; std::vector&lt; double &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#a35df224f994c011f9a6797d810da2f4f">getGradients</a> (const std::vector&lt; double &gt; &amp;input, const std::vector&lt; double &gt; &amp;correctOutput)</td></tr>
+<tr class="memdesc:a35df224f994c011f9a6797d810da2f4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the error gradients of each layer in the <a class="el" href="classnet_1_1_neural_net.html" title="A neural network. ">NeuralNet</a>.  <a href="#a35df224f994c011f9a6797d810da2f4f">More...</a><br/></td></tr>
+<tr class="separator:a35df224f994c011f9a6797d810da2f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b2ca3ea7afde8023721b1e036698711"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_neural_net.html#a2b2ca3ea7afde8023721b1e036698711">printWeights</a> ()</td></tr>
 <tr class="memdesc:a2b2ca3ea7afde8023721b1e036698711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the weights of the neurons of the layers of the net.  <a href="#a2b2ca3ea7afde8023721b1e036698711">More...</a><br/></td></tr>
 <tr class="separator:a2b2ca3ea7afde8023721b1e036698711"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -348,12 +348,12 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a80f0f02d3d44965265b94a2cd172e879"></a>
+<a class="anchor" id="a35df224f994c011f9a6797d810da2f4f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::vector&lt; double &gt; &gt; NeuralNet::getGradients </td>
+          <td class="memname">std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt; NeuralNet::getGradients </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>input</em>, </td>
@@ -739,7 +739,7 @@ neuronIndex the index of the neuron; same as the neuron's index in the neurons v
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 23 2016 10:04:57 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 23 2016 15:30:41 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
