@@ -11,6 +11,7 @@ var searchData=
   ['neuron_2ecpp',['Neuron.cpp',['../_neuron_8cpp.html',1,'']]],
   ['neuron_2eh',['Neuron.h',['../_neuron_8h.html',1,'']]],
   ['neurons',['neurons',['../classnet_1_1_layer.html#af897a7ec273133801638abf4cc4fb502',1,'net::Layer']]],
+  ['newcontrolwires',['newControlWires',['../classrl_1_1_wire_fit_q_learn.html#a8d7448a913d977c862ed874f037dbf1b',1,'rl::WireFitQLearn']]],
   ['numberofhiddenlayers',['numberOfHiddenLayers',['../classnet_1_1_neural_net.html#a5e7da11257d633f5a6d079db5be5424f',1,'net::NeuralNet']]],
   ['numberofhiddenneurons',['numberOfHiddenNeurons',['../classnet_1_1_neural_net.html#aeef8e80be4a9832d01bec7dd68cd2950',1,'net::NeuralNet']]],
   ['numberofinputs',['numberOfInputs',['../classnet_1_1_neural_net.html#a05b1bbe0d10d13d5227dcb8ee9274088',1,'net::NeuralNet']]],

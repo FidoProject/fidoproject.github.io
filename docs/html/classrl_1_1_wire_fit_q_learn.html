@@ -89,14 +89,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classrl_1_1_wire_fit_q_learn-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">rl::WireFitQLearn Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A <a class="el" href="classrl_1_1_learner.html" title="A reinforcement learning system. ">Learner</a> using Q-learning that works with continous state action spaces (Gaskett et al.).  
+ <a href="classrl_1_1_wire_fit_q_learn.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_wire_fit_q_learn_8h_source.html">WireFitQLearn.h</a>&gt;</code></p>
 
@@ -106,25 +109,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a79ebd2248100a2bd48fb3db6e0d70682"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a79ebd2248100a2bd48fb3db6e0d70682">WireFitQLearn</a> (unsigned int stateDimensions, unsigned int actionDimensions_, unsigned int numHiddenLayers, unsigned int numNeuronsPerHiddenLayer, unsigned int numberOfWires_, <a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> minAction_, <a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> maxAction_, unsigned int baseOfDimensions_, <a class="el" href="classrl_1_1_interpolator.html">Interpolator</a> *interpolator_, <a class="el" href="classnet_1_1_backpropagation.html">net::Backpropagation</a> backprop_, double learningRate_, double devaluationFactor_)</td></tr>
-<tr class="separator:a79ebd2248100a2bd48fb3db6e0d70682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f8904d45a85f3207604510fd6f163db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a4f8904d45a85f3207604510fd6f163db">WireFitQLearn</a> (unsigned int stateDimensions, unsigned int actionDimensions_, unsigned int numHiddenLayers, unsigned int numNeuronsPerHiddenLayer, unsigned int numberOfWires_, <a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> minAction_, <a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> maxAction_, unsigned int baseOfDimensions_, <a class="el" href="classrl_1_1_interpolator.html">Interpolator</a> *interpolator_, <a class="el" href="classnet_1_1_trainer.html">net::Trainer</a> *trainer_, double learningRate_, double devaluationFactor_)</td></tr>
+<tr class="memdesc:a4f8904d45a85f3207604510fd6f163db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a completely new <a class="el" href="classrl_1_1_wire_fit_q_learn.html" title="A Learner using Q-learning that works with continous state action spaces (Gaskett et al...">WireFitQLearn</a> object with all necesary values.  <a href="#a4f8904d45a85f3207604510fd6f163db">More...</a><br/></td></tr>
+<tr class="separator:a4f8904d45a85f3207604510fd6f163db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42a5bb69f74a4f7bfd72c5ff110471ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a42a5bb69f74a4f7bfd72c5ff110471ed">WireFitQLearn</a> ()</td></tr>
+<tr class="memdesc:a42a5bb69f74a4f7bfd72c5ff110471ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an empty, non-valid <a class="el" href="classrl_1_1_wire_fit_q_learn.html" title="A Learner using Q-learning that works with continous state action spaces (Gaskett et al...">WireFitQLearn</a> object.  <a href="#a42a5bb69f74a4f7bfd72c5ff110471ed">More...</a><br/></td></tr>
 <tr class="separator:a42a5bb69f74a4f7bfd72c5ff110471ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31ee45185815715c0dcb3db3dae9392d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a31ee45185815715c0dcb3db3dae9392d">WireFitQLearn</a> (std::ifstream *input)</td></tr>
+<tr class="memdesc:a31ee45185815715c0dcb3db3dae9392d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="classrl_1_1_wire_fit_q_learn.html" title="A Learner using Q-learning that works with continous state action spaces (Gaskett et al...">WireFitQLearn</a> object from a stream.  <a href="#a31ee45185815715c0dcb3db3dae9392d">More...</a><br/></td></tr>
 <tr class="separator:a31ee45185815715c0dcb3db3dae9392d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3959c0dfa6c0c0bb87453d938d81c01e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a3959c0dfa6c0c0bb87453d938d81c01e">chooseBestAction</a> (<a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> currentState)</td></tr>
-<tr class="memdesc:a3959c0dfa6c0c0bb87453d938d81c01e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the action that the network deems most beneficial for the currentState.  <a href="#a3959c0dfa6c0c0bb87453d938d81c01e">More...</a><br/></td></tr>
+<tr class="memdesc:a3959c0dfa6c0c0bb87453d938d81c01e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the action that the network deems most benificial for the current state.  <a href="#a3959c0dfa6c0c0bb87453d938d81c01e">More...</a><br/></td></tr>
 <tr class="separator:a3959c0dfa6c0c0bb87453d938d81c01e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9243e7e84bf3a9e295291ae8c50c2971"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a9243e7e84bf3a9e295291ae8c50c2971">chooseBoltzmanAction</a> (<a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> currentState, double explorationConstant)</td></tr>
 <tr class="memdesc:a9243e7e84bf3a9e295291ae8c50c2971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an action using the Boltzman softmax probability distribution.  <a href="#a9243e7e84bf3a9e295291ae8c50c2971">More...</a><br/></td></tr>
 <tr class="separator:a9243e7e84bf3a9e295291ae8c50c2971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93ea784fbb2288aa52f2c23fa4cfd426"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a93ea784fbb2288aa52f2c23fa4cfd426">applyReinforcementToLastAction</a> (double reward, <a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> newState)</td></tr>
-<tr class="memdesc:a93ea784fbb2288aa52f2c23fa4cfd426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply reinforcement to the last action.  <a href="#a93ea784fbb2288aa52f2c23fa4cfd426">More...</a><br/></td></tr>
+<tr class="memdesc:a93ea784fbb2288aa52f2c23fa4cfd426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates expected reward values.  <a href="#a93ea784fbb2288aa52f2c23fa4cfd426">More...</a><br/></td></tr>
 <tr class="separator:a93ea784fbb2288aa52f2c23fa4cfd426"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8006340fca918b5eeba856018bde2eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#aa8006340fca918b5eeba856018bde2eb">reset</a> ()</td></tr>
-<tr class="memdesc:aa8006340fca918b5eeba856018bde2eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Randomizes the leaner.  <a href="#aa8006340fca918b5eeba856018bde2eb">More...</a><br/></td></tr>
+<tr class="memdesc:aa8006340fca918b5eeba856018bde2eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the system's model so that to a newely initialized state.  <a href="#aa8006340fca918b5eeba856018bde2eb">More...</a><br/></td></tr>
 <tr class="separator:aa8006340fca918b5eeba856018bde2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac93fb2fe8a6d1ce21b521e5038868ff2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#ac93fb2fe8a6d1ce21b521e5038868ff2">store</a> (std::ofstream *output)</td></tr>
+<tr class="memdesc:ac93fb2fe8a6d1ce21b521e5038868ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores this model in a stream.  <a href="#ac93fb2fe8a6d1ce21b521e5038868ff2">More...</a><br/></td></tr>
 <tr class="separator:ac93fb2fe8a6d1ce21b521e5038868ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -133,8 +140,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a1eb41faa3b53d9675abb182e7c54b18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab029916c40c6ce916c76b6530344de54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrl_1_1_interpolator.html">Interpolator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#ab029916c40c6ce916c76b6530344de54">interpolator</a></td></tr>
 <tr class="separator:ab029916c40c6ce916c76b6530344de54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80c9071827bd258e18f6c2c1b1d88146"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1_backpropagation.html">net::Backpropagation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a80c9071827bd258e18f6c2c1b1d88146">backprop</a></td></tr>
-<tr class="separator:a80c9071827bd258e18f6c2c1b1d88146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ca110ca4df276f1d8f0be21e0dcd52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1_trainer.html">net::Trainer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#aa8ca110ca4df276f1d8f0be21e0dcd52">trainer</a></td></tr>
+<tr class="separator:aa8ca110ca4df276f1d8f0be21e0dcd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a436d4fe91ee2cd3848a8bbaa1a48948c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a436d4fe91ee2cd3848a8bbaa1a48948c">numberOfWires</a></td></tr>
 <tr class="separator:a436d4fe91ee2cd3848a8bbaa1a48948c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1d62db4143da3dcd0ff8c193b879830"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#af1d62db4143da3dcd0ff8c193b879830">actionDimensions</a></td></tr>
@@ -159,9 +166,29 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a1cd65b4160d27635d227cbb204d218aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0093ccef823d2e9156e8e9605028cb35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a0093ccef823d2e9156e8e9605028cb35">lastAction</a></td></tr>
 <tr class="separator:a0093ccef823d2e9156e8e9605028cb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a6a90f11703400cecaf0d89cf09cc0e80"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structrl_1_1_wire.html">Wire</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a6a90f11703400cecaf0d89cf09cc0e80">getWires</a> (<a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> state)</td></tr>
+<tr class="separator:a6a90f11703400cecaf0d89cf09cc0e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb1bd3bbb97fc1514242f2888f4dcdd6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structrl_1_1_wire.html">Wire</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#acb1bd3bbb97fc1514242f2888f4dcdd6">getSetOfWires</a> (const <a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> &amp;state, int <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a957867553b071d7aa5fe330d990f9fca">baseOfDimensions</a>)</td></tr>
+<tr class="separator:acb1bd3bbb97fc1514242f2888f4dcdd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a504196c3139a384defd97e8ce0933990"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a504196c3139a384defd97e8ce0933990">getRawOutput</a> (std::vector&lt; <a class="el" href="structrl_1_1_wire.html">Wire</a> &gt; wires)</td></tr>
+<tr class="separator:a504196c3139a384defd97e8ce0933990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a912bf7c1b61fc8372c035ef004f73748"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a912bf7c1b61fc8372c035ef004f73748">highestReward</a> (<a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> state)</td></tr>
+<tr class="separator:a912bf7c1b61fc8372c035ef004f73748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7095b0c5e515fa6fed76500743e46278"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a7095b0c5e515fa6fed76500743e46278">bestAction</a> (<a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> state)</td></tr>
+<tr class="separator:a7095b0c5e515fa6fed76500743e46278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a590e1e963d4384d2bbc1c86d68ee76a2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a590e1e963d4384d2bbc1c86d68ee76a2">getQValue</a> (double reward, const <a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> &amp;oldState, const <a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> &amp;newState, const <a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> &amp;action, const std::vector&lt; <a class="el" href="structrl_1_1_wire.html">Wire</a> &gt; &amp;controlWires)</td></tr>
+<tr class="separator:a590e1e963d4384d2bbc1c86d68ee76a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d7448a913d977c862ed874f037dbf1b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structrl_1_1_wire.html">Wire</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a8d7448a913d977c862ed874f037dbf1b">newControlWires</a> (const <a class="el" href="structrl_1_1_wire.html">Wire</a> &amp;correctWire, std::vector&lt; <a class="el" href="structrl_1_1_wire.html">Wire</a> &gt; controlWires)</td></tr>
+<tr class="separator:a8d7448a913d977c862ed874f037dbf1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a79ebd2248100a2bd48fb3db6e0d70682"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A <a class="el" href="classrl_1_1_learner.html" title="A reinforcement learning system. ">Learner</a> using Q-learning that works with continous state action spaces (Gaskett et al.). </p>
+<p>A wire fitted interpolator function is used in conjunction with a neural network to extend Q-Learning to continuous actions and state vectors. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a4f8904d45a85f3207604510fd6f163db"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -222,8 +249,8 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classnet_1_1_backpropagation.html">net::Backpropagation</a>&#160;</td>
-          <td class="paramname"><em>backprop_</em>, </td>
+          <td class="paramtype"><a class="el" href="classnet_1_1_trainer.html">net::Trainer</a> *&#160;</td>
+          <td class="paramname"><em>trainer_</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -245,6 +272,25 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Initializes a completely new <a class="el" href="classrl_1_1_wire_fit_q_learn.html" title="A Learner using Q-learning that works with continous state action spaces (Gaskett et al...">WireFitQLearn</a> object with all necesary values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stateDimensions</td><td>the dimensions of the state vector being fed to the system </td></tr>
+    <tr><td class="paramname">actionDimensions_</td><td>the dimensions of the action vector that will be outputted by the system </td></tr>
+    <tr><td class="paramname">numHiddenLayers</td><td>the number of hidden layers of the neural network that will be approximating the reward values of each action </td></tr>
+    <tr><td class="paramname">numNeuronsPerHiddenLayer</td><td>the number of neurons per hidden layer of the neural network that will be approximating the reward values of each action </td></tr>
+    <tr><td class="paramname">numberOfWires_</td><td>the number of multi-dimensional data-points or "wires" that will be outputted by the neural network. Wires are interpolated so that a continuous function of action versus expected reward may be generated by the system. The more complex the task, the more wires are needed. </td></tr>
+    <tr><td class="paramname">minAction_</td><td>the minimum action vector that the system may output </td></tr>
+    <tr><td class="paramname">maxAction_</td><td>the maximum action vector that the system may output </td></tr>
+    <tr><td class="paramname">baseOfDimensions_</td><td>the number of possible descrete values in each dimension. Ex. if baseOfDimensions=2, minAction={0, 0}, maxAction={1, 1}, possibleActions={{0, 0}, {0, 1}, {1, 0}, {1, 1}}. </td></tr>
+    <tr><td class="paramname">interpolator_</td><td>the object that will interpolate the data-points or "wires" of action versus reward that the neural network will output </td></tr>
+    <tr><td class="paramname">trainer_</td><td>the model that will train the neural network which is fed the state and outputs data-points or "wires" of action versus reward </td></tr>
+    <tr><td class="paramname">learningRate_</td><td>a constant between 0 and 1 that dictates how fast the robot learns from reinforcement. </td></tr>
+    <tr><td class="paramname">devaluationFactor_</td><td>a constant between 0 and 1 that weighs future reward vs immediate reward. A value of 0 will make the network only value immediate reward, while a value of 1 will make it consider future reward with the same weight as immediate reward. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a42a5bb69f74a4f7bfd72c5ff110471ed"></a>
@@ -259,6 +305,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initializes an empty, non-valid <a class="el" href="classrl_1_1_wire_fit_q_learn.html" title="A Learner using Q-learning that works with continous state action spaces (Gaskett et al...">WireFitQLearn</a> object. </p>
 
 </div>
 </div>
@@ -275,6 +323,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initializes a <a class="el" href="classrl_1_1_wire_fit_q_learn.html" title="A Learner using Q-learning that works with continous state action spaces (Gaskett et al...">WireFitQLearn</a> object from a stream. </p>
 
 </div>
 </div>
@@ -311,17 +361,41 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Apply reinforcement to the last action. </p>
-<p>Given the immediate reward from the last action taken and the new state, this function updates the correct value for the longterm reward of the lastAction and trains the network in charge of the lastAction to output the correct reward value</p>
+<p>Updates expected reward values. </p>
+<p>Given the immediate reward from the last action taken and the new state, this function updates the correct value for the longterm reward of the lastAction and trains the network in charge of the lastAction to output the corect reward value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">reward</td><td>the reward given for the last action taken </td></tr>
-    <tr><td class="paramname">newState</td><td>the new state </td></tr>
+    <tr><td class="paramname">reward</td><td>the reward value from the last action </td></tr>
+    <tr><td class="paramname">newState</td><td>the new state (aka. inputs) to the system </td></tr>
   </table>
   </dd>
 </dl>
 
 <p>Implements <a class="el" href="classrl_1_1_learner.html#ac69ffdd45bfe4ceee924d490c6a7693f">rl::Learner</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7095b0c5e515fa6fed76500743e46278"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> WireFitQLearn::bestAction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a>&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -347,10 +421,10 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the action that the network deems most beneficial for the currentState. </p>
+<p>Gets the action that the network deems most benificial for the current state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">currentState</td><td>the state for which to choose the action </td></tr>
+    <tr><td class="paramname">currentState</td><td>a vector of doubles representing the "inputs" or sensor values of the system </td></tr>
   </table>
   </dd>
 </dl>
@@ -392,17 +466,211 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets an action using the Boltzman softmax probability distribution. </p>
-<p>A non-random search heuristic is used such that the neural network explores actions despite their reward value. The lower the exploration constant, the more likely it is to pick the best action for the current state.</p>
+<p>Non-random search heuristic used so that the neural network explores actions despite their reward value. The lower the exploration constanstant, the more likely it is to pick the best action for the current state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">currentState</td><td>the state for which to choose the action </td></tr>
-    <tr><td class="paramname">explorationConstant</td><td>the Boltzmann temperature constant, determining "exploration" </td></tr>
+    <tr><td class="paramname">currentState</td><td>a vector of doubles representing the "inputs" or sensor values of the system </td></tr>
+    <tr><td class="paramname">explorationConstant</td><td>a positive floating point number representing the exploration level of the system. Common values range from 0.01 to 1. The higher this number is, the more likely it is that the system will pick worse actions. </td></tr>
   </table>
   </dd>
 </dl>
 <p>Incase a floating point error resulted in no wire being chosen </p>
 
 <p>Implements <a class="el" href="classrl_1_1_learner.html#a626cd6c6a05357ccb3d392f34688629c">rl::Learner</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a590e1e963d4384d2bbc1c86d68ee76a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double WireFitQLearn::getQValue </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>reward</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> &amp;&#160;</td>
+          <td class="paramname"><em>oldState</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> &amp;&#160;</td>
+          <td class="paramname"><em>newState</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> &amp;&#160;</td>
+          <td class="paramname"><em>action</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structrl_1_1_wire.html">Wire</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>controlWires</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Update Q value according to adaptive learning </p>
+
+</div>
+</div>
+<a class="anchor" id="a504196c3139a384defd97e8ce0933990"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; double &gt; WireFitQLearn::getRawOutput </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structrl_1_1_wire.html">Wire</a> &gt;&#160;</td>
+          <td class="paramname"><em>wires</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acb1bd3bbb97fc1514242f2888f4dcdd6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structrl_1_1_wire.html">Wire</a> &gt; WireFitQLearn::getSetOfWires </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>baseOfDimensions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Increment iterator vector </p>
+
+</div>
+</div>
+<a class="anchor" id="a6a90f11703400cecaf0d89cf09cc0e80"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structrl_1_1_wire.html">Wire</a> &gt; WireFitQLearn::getWires </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a>&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a912bf7c1b61fc8372c035ef004f73748"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double WireFitQLearn::highestReward </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a>&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8d7448a913d977c862ed874f037dbf1b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structrl_1_1_wire.html">Wire</a> &gt; WireFitQLearn::newControlWires </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structrl_1_1_wire.html">Wire</a> &amp;&#160;</td>
+          <td class="paramname"><em>correctWire</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structrl_1_1_wire.html">Wire</a> &gt;&#160;</td>
+          <td class="paramname"><em>controlWires</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -427,7 +695,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Randomizes the leaner. </p>
+<p>Resets the system's model so that to a newely initialized state. </p>
 
 <p>Implements <a class="el" href="classrl_1_1_learner.html#ad9b77c365288be0531fc7849fb3567a0">rl::Learner</a>.</p>
 
@@ -447,6 +715,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Stores this model in a stream. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -456,18 +726,6 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">unsigned int rl::WireFitQLearn::actionDimensions</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a80c9071827bd258e18f6c2c1b1d88146"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classnet_1_1_backpropagation.html">net::Backpropagation</a> rl::WireFitQLearn::backprop</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -630,6 +888,18 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa8ca110ca4df276f1d8f0be21e0dcd52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnet_1_1_trainer.html">net::Trainer</a>* rl::WireFitQLearn::trainer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/truell20/Documents/Fido/include/<a class="el" href="_wire_fit_q_learn_8h_source.html">WireFitQLearn.h</a></li>
 <li>/home/truell20/Documents/Fido/src/<a class="el" href="_wire_fit_q_learn_8cpp.html">WireFitQLearn.cpp</a></li>
@@ -637,7 +907,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 21 2016 13:13:08 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 23 2016 10:04:57 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

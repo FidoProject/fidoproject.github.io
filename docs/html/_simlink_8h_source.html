@@ -114,136 +114,136 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_simlink.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_simlink.html">Simlink</a> {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// Initializes the simulator</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_simlink.html#a0d35f7dc0aba2652bc29bd00f538e026">Simlink</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// Deinitializes the simulator</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_simlink.html#a0514e317d6284c885922e6f360c112bd">~Simlink</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// Closes the window of the simulator</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simlink.html#a523cf2312c5ecec948b93e72e12777dd">closeWindow</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">/* Set the RGB LED to a certain color and intensity.</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     * Integers r, g, and b are from 0-255, and the intensity is from 0-100.</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simlink.html#a7f9e75b5d58b5fce6297e2aafbb1e1f4">setLED</a>(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> g, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// Return sound pressure from 0-100.</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_simlink.html#a9c7ed2bd955896ac0dc0defd905d18a3">getMicrophone</a>();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// Return IR intensity from 0-100.</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_simlink.html#a10f543f16f6b82403db63572056bd4ed">getIR</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// Return visible light intensity from 0-100.</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_simlink.html#ae4e3b4ac083f4c40f5e3e1d1534c3254">getVis</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">/* Buzz at a volume and frequency from 0-100 for an abritrary duration.</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">     * The frequency is mapped where 0=261Hz (middle C)</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">     * and 100 is an octave higher at 523Hz. The duration</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">     * is currently 200ms.</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simlink.html#a8df4786b85fa81f1ab5300770d4d9805">chirp</a>(<span class="keywordtype">int</span> volume, <span class="keywordtype">int</span> frequency);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">/* Set motor values from -100 to 100</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">     * Positive is forwards, negative is reverse,</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">     * zero is stopped.</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simlink.html#a8650e3647b863e7a559fab15db7294c8">setMotors</a>(<span class="keywordtype">int</span> motorOne, <span class="keywordtype">int</span> motorTwo, <span class="keywordtype">double</span> speed, <span class="keywordtype">double</span> deltaTime);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// Stop the motors.</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simlink.html#a078f133ddadc6e8784537fc7901023c7">stop</a>();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// Get the current battery level (0-100).</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_simlink.html#a51bc1102973c8d75943eae16b8476e95">getBattery</a>();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// Returns the 3D acceleration vector in m/s^2.</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="struct_t_d_vect.html">TDVect</a> <a class="code" href="class_simlink.html#afa2f3b068623a080e9028424aafc088d">getAccel</a>();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// Returns the 3D magnetic field vector.</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="struct_t_d_vect.html">TDVect</a> <a class="code" href="class_simlink.html#aa2cbdd60a1dc973fbe855764d638b2d9">getCompass</a>();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">/* Returns the 3D rotational velocity vector.</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">     * The TDVect math here is a little sketchy, but</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">     * I trust you&#39;ll understand what&#39;s going on. The</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">     * components of TDVect are xyz rad/s.</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="struct_t_d_vect.html">TDVect</a> <a class="code" href="class_simlink.html#ae00911e4fe2dff43e0917c74e536c5f2">getGyro</a>();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_simlink.html#a2553582d4e56294d4a936c8bff510d6c">isLeftOfLine</a>();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simlink.html#a7fd3c7115b3af4e6e04556a1627c02df">getBallDisplacement</a>(<span class="keywordtype">double</span> *x, <span class="keywordtype">double</span> *z);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_simlink.html#a8c14e2e8a2ad4c1939e24d8fa15210e5">distanceFromLine</a>();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// Gets the current temperature value from 0-100</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_simlink.html#aaa117c72e3a1e9a1b1411266be32f82c">getTemperature</a>();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// Places the robot in a random position</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simlink.html#a2f8b4fe04e76737de621428d1b8f2218">placeRobotInRandomPosition</a>();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// Places the emitter in a random position</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simlink.html#ac5b750cc5e791746f003990806a970eb">placeEmitterInRandomPosition</a>();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// Gets the distance of the robot from the emitter</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_simlink.html#a72011cd90b8174543785bc10e72822b5">getDistanceOfRobotFromEmitter</a>();</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">// Gets the displacement of the robot from the emitter in terms of x and y components</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simlink.html#ae0824d51ddc848bc924619ae7ad1a407">getRobotDisplacementFromEmitter</a>(<span class="keywordtype">double</span> *x, <span class="keywordtype">double</span> *y);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">// Places a line on the simulator. Can be detected by getLineVal()</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simlink.html#ab9da244b1eada0aa865b0e20131ce114">placeLine</a>(sf::Vector2f p1, sf::Vector2f p2);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="class_simlink.html#a54f579964d162130aaefe9aef475fdcf">  110</a></span>&#160;    <a class="code" href="class_robby.html">Robby</a> <a class="code" href="class_simlink.html#a54f579964d162130aaefe9aef475fdcf">robot</a>;</div>
-<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="class_simlink.html#aea6e4191b272e93248c896311f6f6920">  111</a></span>&#160;    <a class="code" href="class_emitter.html">Emitter</a> <a class="code" href="class_simlink.html#aea6e4191b272e93248c896311f6f6920">emitter</a>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="class_simlink.html#a476de4f64a5daaa1158808594b1e64d6">  112</a></span>&#160;    sf::CircleShape <a class="code" href="class_simlink.html#a476de4f64a5daaa1158808594b1e64d6">ball</a>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="class_simlink.html#a286de788bcb9963f0a3b1acf29c0c611">  113</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_simlink.html#a286de788bcb9963f0a3b1acf29c0c611">visVal</a>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> mainWindowHandler();</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">// Updates the main simulator window</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> updateMainWindow();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">// Main window.</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    sf::RenderWindow mainWindow;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="comment">// Background of main window</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    sf::Sprite background;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// Window thread</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    std::thread mainWindowThread;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="comment">// LED with values r, g, and b from 0-255.</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">struct </span>LED { <span class="keywordtype">int</span> r,g,b; };</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">// IMU with 3D vectors for accel, gyro, and compass.</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keyword">struct </span>IMU { <a class="code" href="struct_t_d_vect.html">TDVect</a> accel; <a class="code" href="struct_t_d_vect.html">TDVect</a> gyro; <a class="code" href="struct_t_d_vect.html">TDVect</a> compass; };</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="comment">// Motor container with two motor values from -255 to +255.</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keyword">struct </span>Motors { <span class="keywordtype">int</span> motorOne, motorTwo; };</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">struct </span>Piezo { <span class="keywordtype">int</span> volume, frequency; };</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="comment">// Sensor values, all ranging from 0-100.</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordtype">int</span> irVal, micVal, batVal, tempVal;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">bool</span> click;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">int</span> cx,cy;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    LED led;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    Motors motors;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    IMU imu;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    Piezo piezo;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <a class="code" href="class_line.html">Line</a> line;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">bool</span> keepWindowsOpen;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;};</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(__Simulator__Simlink__) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_simlink.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_simlink.html">Simlink</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// Initializes the simulator</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_simlink.html#a0d35f7dc0aba2652bc29bd00f538e026">Simlink</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// Deinitializes the simulator</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_simlink.html#a0514e317d6284c885922e6f360c112bd">~Simlink</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// Closes the window of the simulator</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simlink.html#a523cf2312c5ecec948b93e72e12777dd">closeWindow</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">/* Set the RGB LED to a certain color and intensity.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">     * Integers r, g, and b are from 0-255, and the intensity is from 0-100.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simlink.html#a7f9e75b5d58b5fce6297e2aafbb1e1f4">setLED</a>(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> g, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// Return sound pressure from 0-100.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_simlink.html#a9c7ed2bd955896ac0dc0defd905d18a3">getMicrophone</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// Return IR intensity from 0-100.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_simlink.html#a10f543f16f6b82403db63572056bd4ed">getIR</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// Return visible light intensity from 0-100.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_simlink.html#ae4e3b4ac083f4c40f5e3e1d1534c3254">getVis</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">/* Buzz at a volume and frequency from 0-100 for an abritrary duration.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">     * The frequency is mapped where 0=261Hz (middle C)</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">     * and 100 is an octave higher at 523Hz. The duration</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">     * is currently 200ms.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simlink.html#a8df4786b85fa81f1ab5300770d4d9805">chirp</a>(<span class="keywordtype">int</span> volume, <span class="keywordtype">int</span> frequency);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">/* Set motor values from -100 to 100</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">     * Positive is forwards, negative is reverse,</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">     * zero is stopped.</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simlink.html#a8650e3647b863e7a559fab15db7294c8">setMotors</a>(<span class="keywordtype">int</span> motorOne, <span class="keywordtype">int</span> motorTwo, <span class="keywordtype">double</span> speed, <span class="keywordtype">double</span> deltaTime);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// Stop the motors.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simlink.html#a078f133ddadc6e8784537fc7901023c7">stop</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// Get the current battery level (0-100).</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_simlink.html#a51bc1102973c8d75943eae16b8476e95">getBattery</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// Returns the 3D acceleration vector in m/s^2.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="struct_t_d_vect.html">TDVect</a> <a class="code" href="class_simlink.html#afa2f3b068623a080e9028424aafc088d">getAccel</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// Returns the 3D magnetic field vector.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="struct_t_d_vect.html">TDVect</a> <a class="code" href="class_simlink.html#aa2cbdd60a1dc973fbe855764d638b2d9">getCompass</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">/* Returns the 3D rotational velocity vector.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">     * The TDVect math here is a little sketchy, but</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">     * I trust you&#39;ll understand what&#39;s going on. The</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">     * components of TDVect are xyz rad/s.</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="struct_t_d_vect.html">TDVect</a> <a class="code" href="class_simlink.html#ae00911e4fe2dff43e0917c74e536c5f2">getGyro</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_simlink.html#a2553582d4e56294d4a936c8bff510d6c">isLeftOfLine</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simlink.html#a7fd3c7115b3af4e6e04556a1627c02df">getBallDisplacement</a>(<span class="keywordtype">double</span> *x, <span class="keywordtype">double</span> *z);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_simlink.html#a8c14e2e8a2ad4c1939e24d8fa15210e5">distanceFromLine</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// Gets the current temperature value from 0-100</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_simlink.html#aaa117c72e3a1e9a1b1411266be32f82c">getTemperature</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// Places the robot in a random position</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simlink.html#a2f8b4fe04e76737de621428d1b8f2218">placeRobotInRandomPosition</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// Places the emitter in a random position</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simlink.html#ac5b750cc5e791746f003990806a970eb">placeEmitterInRandomPosition</a>();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// Gets the distance of the robot from the emitter</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_simlink.html#a72011cd90b8174543785bc10e72822b5">getDistanceOfRobotFromEmitter</a>();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">// Gets the displacement of the robot from the emitter in terms of x and y components</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simlink.html#ae0824d51ddc848bc924619ae7ad1a407">getRobotDisplacementFromEmitter</a>(<span class="keywordtype">double</span> *x, <span class="keywordtype">double</span> *y);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// Places a line on the simulator. Can be detected by getLineVal()</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simlink.html#ab9da244b1eada0aa865b0e20131ce114">placeLine</a>(sf::Vector2f p1, sf::Vector2f p2);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="class_simlink.html#a54f579964d162130aaefe9aef475fdcf">  111</a></span>&#160;    <a class="code" href="class_robby.html">Robby</a> <a class="code" href="class_simlink.html#a54f579964d162130aaefe9aef475fdcf">robot</a>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="class_simlink.html#aea6e4191b272e93248c896311f6f6920">  112</a></span>&#160;    <a class="code" href="class_emitter.html">Emitter</a> <a class="code" href="class_simlink.html#aea6e4191b272e93248c896311f6f6920">emitter</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="class_simlink.html#a476de4f64a5daaa1158808594b1e64d6">  113</a></span>&#160;    sf::CircleShape <a class="code" href="class_simlink.html#a476de4f64a5daaa1158808594b1e64d6">ball</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="class_simlink.html#a286de788bcb9963f0a3b1acf29c0c611">  114</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_simlink.html#a286de788bcb9963f0a3b1acf29c0c611">visVal</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> mainWindowHandler();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">// Updates the main simulator window</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">void</span> updateMainWindow();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">// Main window.</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    sf::RenderWindow mainWindow;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="comment">// Background of main window</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    sf::Sprite background;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">// Window thread</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    std::thread mainWindowThread;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">// LED with values r, g, and b from 0-255.</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">struct </span>LED { <span class="keywordtype">int</span> r,g,b; };</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">// IMU with 3D vectors for accel, gyro, and compass.</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keyword">struct </span>IMU { <a class="code" href="struct_t_d_vect.html">TDVect</a> accel; <a class="code" href="struct_t_d_vect.html">TDVect</a> gyro; <a class="code" href="struct_t_d_vect.html">TDVect</a> compass; };</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="comment">// Motor container with two motor values from -255 to +255.</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">struct </span>Motors { <span class="keywordtype">int</span> motorOne, motorTwo; };</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keyword">struct </span>Piezo { <span class="keywordtype">int</span> volume, frequency; };</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="comment">// Sensor values, all ranging from 0-100.</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">int</span> irVal, micVal, batVal, tempVal;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">bool</span> click;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordtype">int</span> cx,cy;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    LED led;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    Motors motors;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    IMU imu;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    Piezo piezo;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <a class="code" href="class_line.html">Line</a> line;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">bool</span> keepWindowsOpen;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;};</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(__Simulator__Simlink__) */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_simlink_html_a8df4786b85fa81f1ab5300770d4d9805"><div class="ttname"><a href="class_simlink.html#a8df4786b85fa81f1ab5300770d4d9805">Simlink::chirp</a></div><div class="ttdeci">void chirp(int volume, int frequency)</div><div class="ttdef"><b>Definition:</b> Simlink.cpp:283</div></div>
 <div class="ttc" id="class_simlink_html_ae4e3b4ac083f4c40f5e3e1d1534c3254"><div class="ttname"><a href="class_simlink.html#ae4e3b4ac083f4c40f5e3e1d1534c3254">Simlink::getVis</a></div><div class="ttdeci">int getVis()</div><div class="ttdef"><b>Definition:</b> Simlink.cpp:252</div></div>
 <div class="ttc" id="class_simlink_html_aaa117c72e3a1e9a1b1411266be32f82c"><div class="ttname"><a href="class_simlink.html#aaa117c72e3a1e9a1b1411266be32f82c">Simlink::getTemperature</a></div><div class="ttdeci">int getTemperature()</div><div class="ttdef"><b>Definition:</b> Simlink.cpp:291</div></div>
@@ -251,7 +251,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="struct_t_d_vect_html_a7801dc9b4a8f45e1ed5e3894c847e8fb"><div class="ttname"><a href="struct_t_d_vect.html#a7801dc9b4a8f45e1ed5e3894c847e8fb">TDVect::getRTP</a></div><div class="ttdeci">void getRTP(double *r, double *xy, double *z)</div><div class="ttdef"><b>Definition:</b> Simlink.h:18</div></div>
 <div class="ttc" id="class_simlink_html_a51bc1102973c8d75943eae16b8476e95"><div class="ttname"><a href="class_simlink.html#a51bc1102973c8d75943eae16b8476e95">Simlink::getBattery</a></div><div class="ttdeci">int getBattery()</div><div class="ttdef"><b>Definition:</b> Simlink.cpp:256</div></div>
 <div class="ttc" id="class_simlink_html_ab9da244b1eada0aa865b0e20131ce114"><div class="ttname"><a href="class_simlink.html#ab9da244b1eada0aa865b0e20131ce114">Simlink::placeLine</a></div><div class="ttdeci">void placeLine(sf::Vector2f p1, sf::Vector2f p2)</div><div class="ttdef"><b>Definition:</b> Simlink.cpp:321</div></div>
-<div class="ttc" id="class_simlink_html"><div class="ttname"><a href="class_simlink.html">Simlink</a></div><div class="ttdef"><b>Definition:</b> Simlink.h:25</div></div>
+<div class="ttc" id="class_simlink_html"><div class="ttname"><a href="class_simlink.html">Simlink</a></div><div class="ttdoc">A robotic simulator. </div><div class="ttdef"><b>Definition:</b> Simlink.h:26</div></div>
 <div class="ttc" id="class_simlink_html_ac5b750cc5e791746f003990806a970eb"><div class="ttname"><a href="class_simlink.html#ac5b750cc5e791746f003990806a970eb">Simlink::placeEmitterInRandomPosition</a></div><div class="ttdeci">void placeEmitterInRandomPosition()</div><div class="ttdef"><b>Definition:</b> Simlink.cpp:302</div></div>
 <div class="ttc" id="class_simlink_html_a2553582d4e56294d4a936c8bff510d6c"><div class="ttname"><a href="class_simlink.html#a2553582d4e56294d4a936c8bff510d6c">Simlink::isLeftOfLine</a></div><div class="ttdeci">bool isLeftOfLine()</div><div class="ttdef"><b>Definition:</b> Simlink.cpp:222</div></div>
 <div class="ttc" id="class_simlink_html_aa2cbdd60a1dc973fbe855764d638b2d9"><div class="ttname"><a href="class_simlink.html#aa2cbdd60a1dc973fbe855764d638b2d9">Simlink::getCompass</a></div><div class="ttdeci">TDVect getCompass()</div><div class="ttdef"><b>Definition:</b> Simlink.cpp:216</div></div>
@@ -259,7 +259,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="struct_t_d_vect_html"><div class="ttname"><a href="struct_t_d_vect.html">TDVect</a></div><div class="ttdef"><b>Definition:</b> Simlink.h:13</div></div>
 <div class="ttc" id="class_simlink_html_a72011cd90b8174543785bc10e72822b5"><div class="ttname"><a href="class_simlink.html#a72011cd90b8174543785bc10e72822b5">Simlink::getDistanceOfRobotFromEmitter</a></div><div class="ttdeci">double getDistanceOfRobotFromEmitter()</div><div class="ttdef"><b>Definition:</b> Simlink.cpp:309</div></div>
 <div class="ttc" id="struct_t_d_vect_html_a870ab1c318912426716a894fe00671c3"><div class="ttname"><a href="struct_t_d_vect.html#a870ab1c318912426716a894fe00671c3">TDVect::xComp</a></div><div class="ttdeci">double xComp</div><div class="ttdef"><b>Definition:</b> Simlink.h:15</div></div>
-<div class="ttc" id="class_simlink_html_aea6e4191b272e93248c896311f6f6920"><div class="ttname"><a href="class_simlink.html#aea6e4191b272e93248c896311f6f6920">Simlink::emitter</a></div><div class="ttdeci">Emitter emitter</div><div class="ttdef"><b>Definition:</b> Simlink.h:111</div></div>
+<div class="ttc" id="class_simlink_html_aea6e4191b272e93248c896311f6f6920"><div class="ttname"><a href="class_simlink.html#aea6e4191b272e93248c896311f6f6920">Simlink::emitter</a></div><div class="ttdeci">Emitter emitter</div><div class="ttdef"><b>Definition:</b> Simlink.h:112</div></div>
 <div class="ttc" id="class_simlink_html_a0514e317d6284c885922e6f360c112bd"><div class="ttname"><a href="class_simlink.html#a0514e317d6284c885922e6f360c112bd">Simlink::~Simlink</a></div><div class="ttdeci">~Simlink()</div><div class="ttdef"><b>Definition:</b> Simlink.cpp:37</div></div>
 <div class="ttc" id="class_line_html"><div class="ttname"><a href="class_line.html">Line</a></div><div class="ttdef"><b>Definition:</b> Line.h:11</div></div>
 <div class="ttc" id="class_simlink_html_a9c7ed2bd955896ac0dc0defd905d18a3"><div class="ttname"><a href="class_simlink.html#a9c7ed2bd955896ac0dc0defd905d18a3">Simlink::getMicrophone</a></div><div class="ttdeci">int getMicrophone()</div><div class="ttdef"><b>Definition:</b> Simlink.cpp:244</div></div>
@@ -268,14 +268,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="class_simlink_html_a0d35f7dc0aba2652bc29bd00f538e026"><div class="ttname"><a href="class_simlink.html#a0d35f7dc0aba2652bc29bd00f538e026">Simlink::Simlink</a></div><div class="ttdeci">Simlink()</div><div class="ttdef"><b>Definition:</b> Simlink.cpp:15</div></div>
 <div class="ttc" id="class_simlink_html_a7fd3c7115b3af4e6e04556a1627c02df"><div class="ttname"><a href="class_simlink.html#a7fd3c7115b3af4e6e04556a1627c02df">Simlink::getBallDisplacement</a></div><div class="ttdeci">void getBallDisplacement(double *x, double *z)</div><div class="ttdef"><b>Definition:</b> Simlink.cpp:230</div></div>
 <div class="ttc" id="class_simlink_html_afa2f3b068623a080e9028424aafc088d"><div class="ttname"><a href="class_simlink.html#afa2f3b068623a080e9028424aafc088d">Simlink::getAccel</a></div><div class="ttdeci">TDVect getAccel()</div><div class="ttdef"><b>Definition:</b> Simlink.cpp:208</div></div>
-<div class="ttc" id="class_simlink_html_a54f579964d162130aaefe9aef475fdcf"><div class="ttname"><a href="class_simlink.html#a54f579964d162130aaefe9aef475fdcf">Simlink::robot</a></div><div class="ttdeci">Robby robot</div><div class="ttdef"><b>Definition:</b> Simlink.h:110</div></div>
+<div class="ttc" id="class_simlink_html_a54f579964d162130aaefe9aef475fdcf"><div class="ttname"><a href="class_simlink.html#a54f579964d162130aaefe9aef475fdcf">Simlink::robot</a></div><div class="ttdeci">Robby robot</div><div class="ttdef"><b>Definition:</b> Simlink.h:111</div></div>
 <div class="ttc" id="class_simlink_html_a8650e3647b863e7a559fab15db7294c8"><div class="ttname"><a href="class_simlink.html#a8650e3647b863e7a559fab15db7294c8">Simlink::setMotors</a></div><div class="ttdeci">void setMotors(int motorOne, int motorTwo, double speed, double deltaTime)</div><div class="ttdef"><b>Definition:</b> Simlink.cpp:266</div></div>
-<div class="ttc" id="class_simlink_html_a476de4f64a5daaa1158808594b1e64d6"><div class="ttname"><a href="class_simlink.html#a476de4f64a5daaa1158808594b1e64d6">Simlink::ball</a></div><div class="ttdeci">sf::CircleShape ball</div><div class="ttdef"><b>Definition:</b> Simlink.h:112</div></div>
+<div class="ttc" id="class_simlink_html_a476de4f64a5daaa1158808594b1e64d6"><div class="ttname"><a href="class_simlink.html#a476de4f64a5daaa1158808594b1e64d6">Simlink::ball</a></div><div class="ttdeci">sf::CircleShape ball</div><div class="ttdef"><b>Definition:</b> Simlink.h:113</div></div>
 <div class="ttc" id="class_simlink_html_ae00911e4fe2dff43e0917c74e536c5f2"><div class="ttname"><a href="class_simlink.html#ae00911e4fe2dff43e0917c74e536c5f2">Simlink::getGyro</a></div><div class="ttdeci">TDVect getGyro()</div><div class="ttdef"><b>Definition:</b> Simlink.cpp:212</div></div>
 <div class="ttc" id="struct_t_d_vect_html_a821308c57345b86c513c0ad82cd48561"><div class="ttname"><a href="struct_t_d_vect.html#a821308c57345b86c513c0ad82cd48561">TDVect::yComp</a></div><div class="ttdeci">double yComp</div><div class="ttdef"><b>Definition:</b> Simlink.h:15</div></div>
 <div class="ttc" id="class_simlink_html_a8c14e2e8a2ad4c1939e24d8fa15210e5"><div class="ttname"><a href="class_simlink.html#a8c14e2e8a2ad4c1939e24d8fa15210e5">Simlink::distanceFromLine</a></div><div class="ttdeci">double distanceFromLine()</div><div class="ttdef"><b>Definition:</b> Simlink.cpp:226</div></div>
 <div class="ttc" id="class_simlink_html_a078f133ddadc6e8784537fc7901023c7"><div class="ttname"><a href="class_simlink.html#a078f133ddadc6e8784537fc7901023c7">Simlink::stop</a></div><div class="ttdeci">void stop()</div></div>
-<div class="ttc" id="class_simlink_html_a286de788bcb9963f0a3b1acf29c0c611"><div class="ttname"><a href="class_simlink.html#a286de788bcb9963f0a3b1acf29c0c611">Simlink::visVal</a></div><div class="ttdeci">int visVal</div><div class="ttdef"><b>Definition:</b> Simlink.h:113</div></div>
+<div class="ttc" id="class_simlink_html_a286de788bcb9963f0a3b1acf29c0c611"><div class="ttname"><a href="class_simlink.html#a286de788bcb9963f0a3b1acf29c0c611">Simlink::visVal</a></div><div class="ttdeci">int visVal</div><div class="ttdef"><b>Definition:</b> Simlink.h:114</div></div>
 <div class="ttc" id="class_simlink_html_a7f9e75b5d58b5fce6297e2aafbb1e1f4"><div class="ttname"><a href="class_simlink.html#a7f9e75b5d58b5fce6297e2aafbb1e1f4">Simlink::setLED</a></div><div class="ttdeci">void setLED(int r, int g, int b, int i)</div><div class="ttdef"><b>Definition:</b> Simlink.cpp:260</div></div>
 <div class="ttc" id="class_simlink_html_ae0824d51ddc848bc924619ae7ad1a407"><div class="ttname"><a href="class_simlink.html#ae0824d51ddc848bc924619ae7ad1a407">Simlink::getRobotDisplacementFromEmitter</a></div><div class="ttdeci">void getRobotDisplacementFromEmitter(double *x, double *y)</div><div class="ttdef"><b>Definition:</b> Simlink.cpp:316</div></div>
 <div class="ttc" id="class_robby_html"><div class="ttname"><a href="class_robby.html">Robby</a></div><div class="ttdef"><b>Definition:</b> Robby.h:6</div></div>
@@ -283,7 +283,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 21 2016 13:13:08 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 23 2016 10:04:57 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

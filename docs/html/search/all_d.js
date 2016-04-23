@@ -5,7 +5,7 @@ var searchData=
   ['placerobotinrandomposition',['placeRobotInRandomPosition',['../class_simlink.html#a2f8b4fe04e76737de621428d1b8f2218',1,'Simlink']]],
   ['printweights',['printWeights',['../classnet_1_1_neural_net.html#a2b2ca3ea7afde8023721b1e036698711',1,'net::NeuralNet']]],
   ['prune',['prune',['../classnet_1_1_pruner.html#a69dff16ce2ead4487e2181a08c18dedf',1,'net::Pruner']]],
-  ['pruner',['Pruner',['../classnet_1_1_pruner.html#a7adc9d8f2f587728e4266e6d584e57d3',1,'net::Pruner::Pruner()'],['../classnet_1_1_pruner.html#a3599f49879dfcbad7560e772ffce703c',1,'net::Pruner::Pruner(double learningRate_, double momentumTerm_, double targetErrorLevel_, int maximumEpochs_, int pruningSampleSize_)'],['../classnet_1_1_pruner.html#a34930db7401f17efd728a556055f1a3f',1,'net::Pruner::Pruner(std::ifstream *input)']]],
+  ['pruner',['Pruner',['../classnet_1_1_pruner.html#a7adc9d8f2f587728e4266e6d584e57d3',1,'net::Pruner::Pruner()'],['../classnet_1_1_pruner.html#ab77ca3c63c4df8f9d67e67100f47bf09',1,'net::Pruner::Pruner(double learningRate_, double momentumTerm_, double targetErrorLevel_, unsigned int maximumEpochs_, unsigned int pruningSampleSize_)'],['../classnet_1_1_pruner.html#a34930db7401f17efd728a556055f1a3f',1,'net::Pruner::Pruner(std::ifstream *input)']]],
   ['pruner',['Pruner',['../classnet_1_1_pruner.html',1,'net']]],
   ['pruner_2ecpp',['Pruner.cpp',['../_pruner_8cpp.html',1,'']]],
   ['pruner_2eh',['Pruner.h',['../_pruner_8h.html',1,'']]],

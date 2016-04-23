@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['wirefitqlearn',['WireFitQLearn',['../classrl_1_1_wire_fit_q_learn.html#a79ebd2248100a2bd48fb3db6e0d70682',1,'rl::WireFitQLearn::WireFitQLearn(unsigned int stateDimensions, unsigned int actionDimensions_, unsigned int numHiddenLayers, unsigned int numNeuronsPerHiddenLayer, unsigned int numberOfWires_, Action minAction_, Action maxAction_, unsigned int baseOfDimensions_, Interpolator *interpolator_, net::Backpropagation backprop_, double learningRate_, double devaluationFactor_)'],['../classrl_1_1_wire_fit_q_learn.html#a42a5bb69f74a4f7bfd72c5ff110471ed',1,'rl::WireFitQLearn::WireFitQLearn()'],['../classrl_1_1_wire_fit_q_learn.html#a31ee45185815715c0dcb3db3dae9392d',1,'rl::WireFitQLearn::WireFitQLearn(std::ifstream *input)']]]
+  ['tansigmoid',['tanSigmoid',['../namespacenet.html#a29b78c772ee4ee067b0b05d95e5389b3',1,'net']]],
+  ['train',['train',['../classnet_1_1_backpropagation.html#a807fdd9439d68a21755efd484e6632f7',1,'net::Backpropagation::train()'],['../classnet_1_1_pruner.html#acee6c8d2ef689db767b266c1affc6f7d',1,'net::Pruner::train()'],['../classnet_1_1_trainer.html#ac1b6e605be0b360e3804daa70ce33f95',1,'net::Trainer::train()']]],
+  ['trainepocs',['trainEpocs',['../classnet_1_1_backpropagation.html#a4e259bc4cc0c3c7e6b7a97933cc446e2',1,'net::Backpropagation']]],
+  ['trainondatapoint',['trainOnDataPoint',['../classnet_1_1_backpropagation.html#a56d4a23f6c623f03a4a9db0773a58df8',1,'net::Backpropagation']]]
 ];

@@ -96,6 +96,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>A <a class="el" href="classrl_1_1_learner.html" title="A reinforcement learning system. ">Learner</a> that follows the Q-Learning algorithm.  
+ <a href="classrl_1_1_q_learn.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_q_learn_8h_source.html">QLearn.h</a>&gt;</code></p>
 
 <p>Inherits <a class="el" href="classrl_1_1_learner.html">rl::Learner</a>.</p>
@@ -103,27 +106,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac83a21447898d1ad219a4f755e24520f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_q_learn.html#ac83a21447898d1ad219a4f755e24520f">QLearn</a> (<a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *modelNetwork, <a class="el" href="classnet_1_1_backpropagation.html">net::Backpropagation</a> backprop_, double learningRate_, double devaluationFactor_, std::vector&lt; <a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> &gt; possibleActions_)</td></tr>
+<tr class="memdesc:ac83a21447898d1ad219a4f755e24520f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="classrl_1_1_q_learn.html" title="A Learner that follows the Q-Learning algorithm. ">QLearn</a> object with a model network and the values of learning rate and devaluationFactor.  <a href="#ac83a21447898d1ad219a4f755e24520f">More...</a><br/></td></tr>
 <tr class="separator:ac83a21447898d1ad219a4f755e24520f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae82bcbe67c7055209a88b6f911af1f47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_q_learn.html#ae82bcbe67c7055209a88b6f911af1f47">QLearn</a> (std::vector&lt; <a class="el" href="structrl_1_1_model.html">Model</a> &gt; models_, <a class="el" href="classnet_1_1_backpropagation.html">net::Backpropagation</a> backprop_, double learningRate_, double devaluationFactor_)</td></tr>
+<tr class="memdesc:ae82bcbe67c7055209a88b6f911af1f47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="classrl_1_1_q_learn.html" title="A Learner that follows the Q-Learning algorithm. ">QLearn</a> object with an vector of networks and the values of learning rate and devaluationFactor.  <a href="#ae82bcbe67c7055209a88b6f911af1f47">More...</a><br/></td></tr>
 <tr class="separator:ae82bcbe67c7055209a88b6f911af1f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecf618f5980d399fd60e935658035c81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_q_learn.html#aecf618f5980d399fd60e935658035c81">QLearn</a> ()</td></tr>
+<tr class="memdesc:aecf618f5980d399fd60e935658035c81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an empty, non-valid Q-learning object.  <a href="#aecf618f5980d399fd60e935658035c81">More...</a><br/></td></tr>
 <tr class="separator:aecf618f5980d399fd60e935658035c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a209db7840a51554c937dbce73d4b79d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_q_learn.html#a209db7840a51554c937dbce73d4b79d9">chooseBestAction</a> (<a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> currentState)</td></tr>
-<tr class="memdesc:a209db7840a51554c937dbce73d4b79d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the action that the network deems most beneficial for the currentState.  <a href="#a209db7840a51554c937dbce73d4b79d9">More...</a><br/></td></tr>
+<tr class="memdesc:a209db7840a51554c937dbce73d4b79d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the action that the network deems most benificial for the current state.  <a href="#a209db7840a51554c937dbce73d4b79d9">More...</a><br/></td></tr>
 <tr class="separator:a209db7840a51554c937dbce73d4b79d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7507815f38b376e53fa28802b0bfe1dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_q_learn.html#a7507815f38b376e53fa28802b0bfe1dd">chooseBoltzmanAction</a> (<a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> currentState, double explorationConstant)</td></tr>
 <tr class="memdesc:a7507815f38b376e53fa28802b0bfe1dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an action using the Boltzman softmax probability distribution.  <a href="#a7507815f38b376e53fa28802b0bfe1dd">More...</a><br/></td></tr>
 <tr class="separator:a7507815f38b376e53fa28802b0bfe1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0617a36dab296a5d1d88fe1a4e27a3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_q_learn.html#ad0617a36dab296a5d1d88fe1a4e27a3f">applyReinforcementToLastAction</a> (double reward, <a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> newState)</td></tr>
-<tr class="memdesc:ad0617a36dab296a5d1d88fe1a4e27a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply reinforcement to the last action.  <a href="#ad0617a36dab296a5d1d88fe1a4e27a3f">More...</a><br/></td></tr>
+<tr class="memdesc:ad0617a36dab296a5d1d88fe1a4e27a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates expected reward values.  <a href="#ad0617a36dab296a5d1d88fe1a4e27a3f">More...</a><br/></td></tr>
 <tr class="separator:ad0617a36dab296a5d1d88fe1a4e27a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad66a87f3ec9c7466fc310520bcd9edfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_q_learn.html#ad66a87f3ec9c7466fc310520bcd9edfb">reset</a> ()</td></tr>
-<tr class="memdesc:ad66a87f3ec9c7466fc310520bcd9edfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Randomizes the leaner.  <a href="#ad66a87f3ec9c7466fc310520bcd9edfb">More...</a><br/></td></tr>
+<tr class="memdesc:ad66a87f3ec9c7466fc310520bcd9edfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverts the system to a newely initialized state.  <a href="#ad66a87f3ec9c7466fc310520bcd9edfb">More...</a><br/></td></tr>
 <tr class="separator:ad66a87f3ec9c7466fc310520bcd9edfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae680c12076a0451bb021b101bc196a6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_q_learn.html#ae680c12076a0451bb021b101bc196a6f">store</a> (std::ofstream *output)</td></tr>
+<tr class="memdesc:ae680c12076a0451bb021b101bc196a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores this model in a stream.  <a href="#ae680c12076a0451bb021b101bc196a6f">More...</a><br/></td></tr>
 <tr class="separator:ae680c12076a0451bb021b101bc196a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A <a class="el" href="classrl_1_1_learner.html" title="A reinforcement learning system. ">Learner</a> that follows the Q-Learning algorithm. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac83a21447898d1ad219a4f755e24520f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -166,6 +175,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Initializes a <a class="el" href="classrl_1_1_q_learn.html" title="A Learner that follows the Q-Learning algorithm. ">QLearn</a> object with a model network and the values of learning rate and devaluationFactor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">modelNetwork</td><td>a neural network that is used as a model architecture for the networks that will rate the reward of each action. </td></tr>
+    <tr><td class="paramname">backprop_</td><td>the model that will train the neural networks that will rate the reward of each action </td></tr>
+    <tr><td class="paramname">learningRate_</td><td>a constant between 0 and 1 that dictates how fast the robot learns from reinforcement. </td></tr>
+    <tr><td class="paramname">devaluationFactor_</td><td>a constant between 0 and 1 that weighs future reward vs immediate reward. A value of 0 will make the network only value immediate reward, while a value of 1 will make it consider future reward with the same weight as immediate reward. </td></tr>
+    <tr><td class="paramname">possibleActions_</td><td>all of the actions that this object could possibly choose </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="ae82bcbe67c7055209a88b6f911af1f47"></a>
@@ -204,6 +225,17 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Initializes a <a class="el" href="classrl_1_1_q_learn.html" title="A Learner that follows the Q-Learning algorithm. ">QLearn</a> object with an vector of networks and the values of learning rate and devaluationFactor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">models_</td><td>he vector of networks contains the networks that will rate the reward of each action </td></tr>
+    <tr><td class="paramname">backprop_</td><td>the model that will train the neural networks that will rate the reward of each action </td></tr>
+    <tr><td class="paramname">learningRate_</td><td>a constant between 0 and 1 that dictates how fast the robot learns from reinforcement. </td></tr>
+    <tr><td class="paramname">devaluationFactor_</td><td>a constant between 0 and 1 that weighs future reward vs immediate reward. A value of 0 will make the network only value immediate reward, while a value of 1 will make it consider future reward with the same weight as immediate reward. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="aecf618f5980d399fd60e935658035c81"></a>
@@ -218,6 +250,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initializes an empty, non-valid Q-learning object. </p>
 
 </div>
 </div>
@@ -254,12 +288,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Apply reinforcement to the last action. </p>
-<p>Given the immediate reward from the last action taken and the new state, this function updates the correct value for the longterm reward of the lastAction and trains the network in charge of the lastAction to output the correct reward value</p>
+<p>Updates expected reward values. </p>
+<p>Given the immediate reward from the last action taken and the new state, this function updates the correct value for the longterm reward of the lastAction and trains the network in charge of the lastAction to output the corect reward value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">reward</td><td>the reward given for the last action taken </td></tr>
-    <tr><td class="paramname">newState</td><td>the new state </td></tr>
+    <tr><td class="paramname">reward</td><td>the reward value from the last action </td></tr>
+    <tr><td class="paramname">newState</td><td>the new state (aka. inputs) to the system </td></tr>
   </table>
   </dd>
 </dl>
@@ -290,10 +324,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the action that the network deems most beneficial for the currentState. </p>
+<p>Gets the action that the network deems most benificial for the current state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">currentState</td><td>the state for which to choose the action </td></tr>
+    <tr><td class="paramname">currentState</td><td>a vector of doubles representing the "inputs" or sensor values of the system </td></tr>
   </table>
   </dd>
 </dl>
@@ -335,11 +369,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets an action using the Boltzman softmax probability distribution. </p>
-<p>A non-random search heuristic is used such that the neural network explores actions despite their reward value. The lower the exploration constant, the more likely it is to pick the best action for the current state.</p>
+<p>Non-random search heuristic used so that the neural network explores actions despite their reward value. The lower the exploration constanstant, the more likely it is to pick the best action for the current state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">currentState</td><td>the state for which to choose the action </td></tr>
-    <tr><td class="paramname">explorationConstant</td><td>the Boltzmann temperature constant, determining "exploration" </td></tr>
+    <tr><td class="paramname">currentState</td><td>a vector of doubles representing the "inputs" or sensor values of the system </td></tr>
+    <tr><td class="paramname">explorationConstant</td><td>a positive floating point number representing the exploration level of the system. Common values range from 0.01 to 1. The higher this number is, the more likely it is that the system will pick worse actions. </td></tr>
   </table>
   </dd>
 </dl>
@@ -370,7 +404,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Randomizes the leaner. </p>
+<p>Reverts the system to a newely initialized state. </p>
+<p>Reset's the system's model and wipes the system's memory of past actions, states, and rewards. </p>
 
 <p>Implements <a class="el" href="classrl_1_1_learner.html#ad9b77c365288be0531fc7849fb3567a0">rl::Learner</a>.</p>
 
@@ -390,6 +425,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Stores this model in a stream. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -399,7 +436,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 21 2016 13:13:08 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 23 2016 10:04:57 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['main',['main',['../_genetic_algo_example_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;GeneticAlgoExample.cpp'],['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp']]],
-  ['model',['Model',['../structrl_1_1_model.html#a236c7bc971eaf5540adbd3cfedbbde66',1,'rl::Model::Model(net::NeuralNet *network_, Action action_)'],['../structrl_1_1_model.html#a1b576656dcf2dc5bb24cf04090110f2a',1,'rl::Model::Model()']]]
+  ['layer',['Layer',['../classnet_1_1_layer.html#a8f623c7c4737dc29ecc86978d243ac6f',1,'net::Layer::Layer()'],['../classnet_1_1_layer.html#aaba1f7b5fc6574119e62530417026e11',1,'net::Layer::Layer(std::ifstream *input)']]],
+  ['line',['Line',['../class_line.html#aaf3160084dbcc14277a10becb8ed0a42',1,'Line']]],
+  ['lsinterpolator',['LSInterpolator',['../classrl_1_1_l_s_interpolator.html#aca950947cc011821df26f6259b001b74',1,'rl::LSInterpolator::LSInterpolator()'],['../classrl_1_1_l_s_interpolator.html#a69c5f93983cc3f76b791a1750f70d907',1,'rl::LSInterpolator::LSInterpolator(double smoothingFactor_, double e_)']]]
 ];
