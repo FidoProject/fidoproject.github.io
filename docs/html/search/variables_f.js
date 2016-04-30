@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['weights',['weights',['../classnet_1_1_neuron.html#aec978b00351eed6c0b290940e56ca8d8',1,'net::Neuron']]]
+  ['visval',['visVal',['../class_simlink.html#a286de788bcb9963f0a3b1acf29c0c611',1,'Simlink']]]
 ];

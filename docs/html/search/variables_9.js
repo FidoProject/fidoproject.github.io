@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['net',['net',['../classnet_1_1_neural_net.html#a32b37f5da84f5f398e816390fc96ce83',1,'net::NeuralNet']]],
-  ['network',['network',['../structrl_1_1_model.html#a4bf8bd250bd6f9413e3b8476a476a95f',1,'rl::Model::network()'],['../classrl_1_1_wire_fit_q_learn.html#a1eb41faa3b53d9675abb182e7c54b18d',1,'rl::WireFitQLearn::network()']]],
-  ['neurons',['neurons',['../classnet_1_1_layer.html#af897a7ec273133801638abf4cc4fb502',1,'net::Layer']]],
-  ['numberofwires',['numberOfWires',['../classrl_1_1_wire_fit_q_learn.html#a436d4fe91ee2cd3848a8bbaa1a48948c',1,'rl::WireFitQLearn']]]
+  ['lastaction',['lastAction',['../classrl_1_1_wire_fit_q_learn.html#a0093ccef823d2e9156e8e9605028cb35',1,'rl::WireFitQLearn']]],
+  ['laststate',['lastState',['../classrl_1_1_wire_fit_q_learn.html#a7ee2af8bf671ac85fd01561531af8711',1,'rl::WireFitQLearn']]],
+  ['lastuncertainty',['lastUncertainty',['../classrl_1_1_fido_control_system.html#a54a5e5b4a12a70f6f9076950658b625b',1,'rl::FidoControlSystem']]],
+  ['learningrate',['learningRate',['../classnet_1_1_backpropagation.html#a9d8a5f299a8dbbd6f74ff4669e6bd50a',1,'net::Backpropagation::learningRate()'],['../classrl_1_1_wire_fit_q_learn.html#a2db57e7ca0c7235b20c8df615fa36a3b',1,'rl::WireFitQLearn::learningRate()']]]
 ];

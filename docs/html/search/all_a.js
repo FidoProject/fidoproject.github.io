@@ -1,8 +1,8 @@
 var searchData=
 [
   ['lastaction',['lastAction',['../classrl_1_1_wire_fit_q_learn.html#a0093ccef823d2e9156e8e9605028cb35',1,'rl::WireFitQLearn']]],
-  ['lastchangeinweight',['lastChangeInWeight',['../classnet_1_1_backpropagation.html#a0873c4053257eea79d1100bcecfa8703',1,'net::Backpropagation']]],
   ['laststate',['lastState',['../classrl_1_1_wire_fit_q_learn.html#a7ee2af8bf671ac85fd01561531af8711',1,'rl::WireFitQLearn']]],
+  ['lastuncertainty',['lastUncertainty',['../classrl_1_1_fido_control_system.html#a54a5e5b4a12a70f6f9076950658b625b',1,'rl::FidoControlSystem']]],
   ['layer',['Layer',['../classnet_1_1_layer.html',1,'net']]],
   ['layer',['Layer',['../classnet_1_1_layer.html#a8f623c7c4737dc29ecc86978d243ac6f',1,'net::Layer::Layer()'],['../classnet_1_1_layer.html#aaba1f7b5fc6574119e62530417026e11',1,'net::Layer::Layer(std::ifstream *input)']]],
   ['layer_2ecpp',['Layer.cpp',['../_layer_8cpp.html',1,'']]],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['qlearn',['QLearn',['../classrl_1_1_q_learn.html',1,'rl']]]
+  ['pruner',['Pruner',['../classnet_1_1_pruner.html',1,'net']]]
 ];

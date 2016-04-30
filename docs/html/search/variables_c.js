@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['smoothingfactor',['smoothingFactor',['../classrl_1_1_l_s_interpolator.html#a151ebceb9a8674a61ad40a1e5ee561df',1,'rl::LSInterpolator']]],
-  ['speed',['speed',['../class_robby.html#a5ac3e2d409fe8a1a492a18378cc3042a',1,'Robby']]],
-  ['strength',['strength',['../class_emitter.html#ab2d0781c27e76df5ab0370b3cd751260',1,'Emitter']]]
+  ['reward',['reward',['../structrl_1_1_fido_control_system_1_1_history.html#a24073ac53ca02f1d72dbc30cc73b4e1a',1,'rl::FidoControlSystem::History::reward()'],['../structrl_1_1_wire.html#ab8a165c515ad06cebd5f71acf1db0348',1,'rl::Wire::reward()']]],
+  ['rho',['rho',['../classnet_1_1_adadelta.html#acbe2d9d1307cfcea742e7a79e195f88c',1,'net::Adadelta']]],
+  ['robot',['robot',['../class_simlink.html#a54f579964d162130aaefe9aef475fdcf',1,'Simlink']]]
 ];

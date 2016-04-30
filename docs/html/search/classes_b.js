@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['robby',['Robby',['../class_robby.html',1,'']]]
+  ['qlearn',['QLearn',['../classrl_1_1_q_learn.html',1,'rl']]]
 ];

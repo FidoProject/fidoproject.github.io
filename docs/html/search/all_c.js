@@ -12,6 +12,8 @@ var searchData=
   ['neuron_2eh',['Neuron.h',['../_neuron_8h.html',1,'']]],
   ['neurons',['neurons',['../classnet_1_1_layer.html#af897a7ec273133801638abf4cc4fb502',1,'net::Layer']]],
   ['newcontrolwires',['newControlWires',['../classrl_1_1_wire_fit_q_learn.html#a8d7448a913d977c862ed874f037dbf1b',1,'rl::WireFitQLearn']]],
+  ['newcontrolwiresforhistory',['newControlWiresForHistory',['../classrl_1_1_fido_control_system.html#af5d226fc24ff9af3abc532c98b78fe69',1,'rl::FidoControlSystem']]],
+  ['newstate',['newState',['../structrl_1_1_fido_control_system_1_1_history.html#a076e9b7de89e3b7eaaebc35ff569138d',1,'rl::FidoControlSystem::History']]],
   ['numberofhiddenlayers',['numberOfHiddenLayers',['../classnet_1_1_neural_net.html#a5e7da11257d633f5a6d079db5be5424f',1,'net::NeuralNet']]],
   ['numberofhiddenneurons',['numberOfHiddenNeurons',['../classnet_1_1_neural_net.html#aeef8e80be4a9832d01bec7dd68cd2950',1,'net::NeuralNet']]],
   ['numberofinputs',['numberOfInputs',['../classnet_1_1_neural_net.html#a05b1bbe0d10d13d5227dcb8ee9274088',1,'net::NeuralNet']]],

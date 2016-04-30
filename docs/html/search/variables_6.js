@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['interpolator',['interpolator',['../classrl_1_1_wire_fit_q_learn.html#ab029916c40c6ce916c76b6530344de54',1,'rl::WireFitQLearn']]]
+  ['gradients',['gradients',['../classnet_1_1_trainer.html#aef2cc2931964f9f0be9c785e7a7a7b65',1,'net::Trainer']]]
 ];

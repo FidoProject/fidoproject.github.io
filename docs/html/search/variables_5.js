@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['history',['history',['../structrl_1_1_model.html#a960c76c5f48749bec0af605626bc638f',1,'rl::Model']]]
+  ['finalweights',['finalWeights',['../classnet_1_1_trainer.html#a3976629d9f3af6dcf92f9cd969771f03',1,'net::Trainer']]]
 ];

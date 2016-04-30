@@ -127,6 +127,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>addToHistory()
 : <a class="el" href="structrl_1_1_model.html#a93865ef6199fe0f10c1d2f3fc0766963">rl::Model</a>
 </li>
+<li>adjustExploration()
+: <a class="el" href="classrl_1_1_fido_control_system.html#ad487d06ae29b970f7d54ea38b86a0ea3">rl::FidoControlSystem</a>
+</li>
 <li>applyReinforcementToLastAction()
 : <a class="el" href="classrl_1_1_fido_control_system.html#a700a501816961d475649b9099d00953f">rl::FidoControlSystem</a>
 , <a class="el" href="classrl_1_1_learner.html#ac69ffdd45bfe4ceee924d490c6a7693f">rl::Learner</a>
@@ -162,6 +165,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classrl_1_1_learner.html#a626cd6c6a05357ccb3d392f34688629c">rl::Learner</a>
 , <a class="el" href="classrl_1_1_q_learn.html#a7507815f38b376e53fa28802b0bfe1dd">rl::QLearn</a>
 , <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a9243e7e84bf3a9e295291ae8c50c2971">rl::WireFitQLearn</a>
+</li>
+<li>chooseBoltzmanActionDynamic()
+: <a class="el" href="classrl_1_1_fido_control_system.html#a2f9e337b59117c62a358b50362bb8ef3">rl::FidoControlSystem</a>
 </li>
 <li>closeWindow()
 : <a class="el" href="class_simlink.html#a523cf2312c5ecec948b93e72e12777dd">Simlink</a>
@@ -227,6 +233,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getBestNeuralNetwork()
 : <a class="el" href="classgen_1_1_genetic_algo.html#a8b7fe9e2656e00d74d9350d3a2297136">gen::GeneticAlgo</a>
 </li>
+<li>getChangeInWeight()
+: <a class="el" href="classnet_1_1_adadelta.html#a270c5946ea51d65be9c8fa56201145b8">net::Adadelta</a>
+, <a class="el" href="classnet_1_1_backpropagation.html#a11f1574250544a1a22d14d5b7f5928d8">net::Backpropagation</a>
+, <a class="el" href="classnet_1_1_s_g_d_trainer.html#a182c4bd85c795a6b04e2d142245daa09">net::SGDTrainer</a>
+</li>
 <li>getCompass()
 : <a class="el" href="class_simlink.html#aa2cbdd60a1dc973fbe855764d638b2d9">Simlink</a>
 </li>
@@ -236,14 +247,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getDistanceOfRobotFromEmitter()
 : <a class="el" href="class_simlink.html#a72011cd90b8174543785bc10e72822b5">Simlink</a>
 </li>
+<li>getError()
+: <a class="el" href="classrl_1_1_fido_control_system.html#a1604a06f4d0785a8be005e348e2b3f79">rl::FidoControlSystem</a>
+</li>
+<li>getFinalWeights()
+: <a class="el" href="classnet_1_1_trainer.html#a665f7bcb33ae8a273a1231d104ac5214">net::Trainer</a>
+</li>
 <li>getGradients()
 : <a class="el" href="classnet_1_1_neural_net.html#a35df224f994c011f9a6797d810da2f4f">net::NeuralNet</a>
+, <a class="el" href="classnet_1_1_trainer.html#aa3bd0b95301bd599d00d78d6497ec927">net::Trainer</a>
 </li>
 <li>getGyro()
 : <a class="el" href="class_simlink.html#ae00911e4fe2dff43e0917c74e536c5f2">Simlink</a>
 </li>
 <li>getHiddenActivationFunctionName()
 : <a class="el" href="classnet_1_1_neural_net.html#aab751a8009efd0775284deb85f498af7">net::NeuralNet</a>
+</li>
+<li>getInitialWeights()
+: <a class="el" href="classnet_1_1_trainer.html#a8960a6282639735e6d196a03ac020597">net::Trainer</a>
 </li>
 <li>getIR()
 : <a class="el" href="class_simlink.html#a10f543f16f6b82403db63572056bd4ed">Simlink</a>
@@ -286,6 +307,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getVis()
 : <a class="el" href="class_simlink.html#ae4e3b4ac083f4c40f5e3e1d1534c3254">Simlink</a>
 </li>
+<li>getWeightChanges()
+: <a class="el" href="classnet_1_1_trainer.html#a1e7004ec736025f66dfc134dd3ee7355">net::Trainer</a>
+</li>
 <li>getWeights()
 : <a class="el" href="classnet_1_1_neural_net.html#a3cdcd419c43073094adbeccd5883e1c2">net::NeuralNet</a>
 </li>
@@ -311,12 +335,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>highestReward()
 : <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a912bf7c1b61fc8372c035ef004f73748">rl::WireFitQLearn</a>
 </li>
+<li>History()
+: <a class="el" href="structrl_1_1_fido_control_system_1_1_history.html#afc5570264cd9fc2099066969625c8667">rl::FidoControlSystem::History</a>
+</li>
 </ul>
 
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>initFromStream()
-: <a class="el" href="classrl_1_1_interpolator.html#ab8c9fa7ca8a20b50c9ea3aecaa6d2c32">rl::Interpolator</a>
+: <a class="el" href="classnet_1_1_adadelta.html#aa826f94f8a89e2d63252b3c5db7e83dd">net::Adadelta</a>
+, <a class="el" href="classnet_1_1_backpropagation.html#ac9db86e8a6369b82944ed65ae463ff46">net::Backpropagation</a>
+, <a class="el" href="classnet_1_1_s_g_d_trainer.html#a2b55418472afb760d99b0fa8102ef923">net::SGDTrainer</a>
+, <a class="el" href="classrl_1_1_interpolator.html#ab8c9fa7ca8a20b50c9ea3aecaa6d2c32">rl::Interpolator</a>
 , <a class="el" href="classrl_1_1_l_s_interpolator.html#a8a518366994f5cdbaab979427d0ad59d">rl::LSInterpolator</a>
 </li>
 <li>inverseGoKiwi()
@@ -361,6 +391,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>newControlWires()
 : <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a8d7448a913d977c862ed874f037dbf1b">rl::WireFitQLearn</a>
 </li>
+<li>newControlWiresForHistory()
+: <a class="el" href="classrl_1_1_fido_control_system.html#af5d226fc24ff9af3abc532c98b78fe69">rl::FidoControlSystem</a>
+</li>
 <li>numberOfHiddenLayers()
 : <a class="el" href="classnet_1_1_neural_net.html#a5e7da11257d633f5a6d079db5be5424f">net::NeuralNet</a>
 </li>
@@ -390,17 +423,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classnet_1_1_neural_net.html#a2b2ca3ea7afde8023721b1e036698711">net::NeuralNet</a>
 </li>
 <li>prune()
-: <a class="el" href="classnet_1_1_pruner.html#a69dff16ce2ead4487e2181a08c18dedf">net::Pruner</a>
+: <a class="el" href="classnet_1_1_pruner.html#ae012b3e08eb40f6508215f70f1069470">net::Pruner</a>
 </li>
 <li>Pruner()
-: <a class="el" href="classnet_1_1_pruner.html#a34930db7401f17efd728a556055f1a3f">net::Pruner</a>
+: <a class="el" href="classnet_1_1_pruner.html#a7adc9d8f2f587728e4266e6d584e57d3">net::Pruner</a>
+</li>
+<li>pruneRandomnly()
+: <a class="el" href="classnet_1_1_pruner.html#a0dc4ea41c87c0d2824f1c1ff48327fec">net::Pruner</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
 <li>QLearn()
-: <a class="el" href="classrl_1_1_q_learn.html#ac83a21447898d1ad219a4f755e24520f">rl::QLearn</a>
+: <a class="el" href="classrl_1_1_q_learn.html#adeecec0b64e592e3151bed7fb5935e1c">rl::QLearn</a>
 </li>
 </ul>
 
@@ -422,8 +458,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classrl_1_1_q_learn.html#ad66a87f3ec9c7466fc310520bcd9edfb">rl::QLearn</a>
 , <a class="el" href="classrl_1_1_wire_fit_q_learn.html#aa8006340fca918b5eeba856018bde2eb">rl::WireFitQLearn</a>
 </li>
-<li>resetLastChangeInWeight()
-: <a class="el" href="classnet_1_1_backpropagation.html#a9aa6df66144e65dd304e2474f1ff247b">net::Backpropagation</a>
+<li>resetNetworkVectors()
+: <a class="el" href="classnet_1_1_adadelta.html#afc394d3124505c56975ff1e10409015a">net::Adadelta</a>
+, <a class="el" href="classnet_1_1_s_g_d_trainer.html#a50da5ba9ef3c225c997eb0805f39e149">net::SGDTrainer</a>
 </li>
 <li>rewardDerivative()
 : <a class="el" href="classrl_1_1_interpolator.html#aaa863e8e5be5d62cd355cbb6f61350a0">rl::Interpolator</a>
@@ -436,6 +473,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>selectHistories()
+: <a class="el" href="classrl_1_1_fido_control_system.html#a1de1a63874a769690f019981fbc8bc9b">rl::FidoControlSystem</a>
+</li>
 <li>sense()
 : <a class="el" href="class_emitter.html#a6004a0ece71ccb93a5a7bc53b044288a">Emitter</a>
 </li>
@@ -460,6 +500,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>setWeights3D()
 : <a class="el" href="classnet_1_1_neural_net.html#a7e31985917afc5c735aa11af85085a40">net::NeuralNet</a>
 </li>
+<li>SGDTrainer()
+: <a class="el" href="classnet_1_1_s_g_d_trainer.html#aec846ec610b9db36ca22febca2fedb58">net::SGDTrainer</a>
+</li>
 <li>Simlink()
 : <a class="el" href="class_simlink.html#a0d35f7dc0aba2652bc29bd00f538e026">Simlink</a>
 </li>
@@ -471,7 +514,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classnet_1_1_backpropagation.html#a6779f837c5e7267f55130e4dd885f033">net::Backpropagation</a>
 , <a class="el" href="classnet_1_1_layer.html#ae4a5834859a4de3b63d1d2ea6c295ca6">net::Layer</a>
 , <a class="el" href="classnet_1_1_neural_net.html#ad3c65011434749c779897f9dce34ec83">net::NeuralNet</a>
-, <a class="el" href="classnet_1_1_pruner.html#a1bb91c6f8eeab5b81e74feca6c0d3ee3">net::Pruner</a>
+, <a class="el" href="classnet_1_1_s_g_d_trainer.html#af616fc28546bd6eb6c8a1cb555b45a74">net::SGDTrainer</a>
 , <a class="el" href="classnet_1_1_trainer.html#ad13912ca76653d4698abed66b79ef78e">net::Trainer</a>
 , <a class="el" href="classrl_1_1_interpolator.html#a1499d2368dc5e6d6d78cc434efbea460">rl::Interpolator</a>
 , <a class="el" href="classrl_1_1_l_s_interpolator.html#acde4061a65e697dcda6ac3f55e290c12">rl::LSInterpolator</a>
@@ -483,16 +526,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
 <li>train()
-: <a class="el" href="classnet_1_1_adadelta.html#a408d3578ebd618c36bb8d125fcd0fa98">net::Adadelta</a>
-, <a class="el" href="classnet_1_1_backpropagation.html#a807fdd9439d68a21755efd484e6632f7">net::Backpropagation</a>
-, <a class="el" href="classnet_1_1_pruner.html#acee6c8d2ef689db767b266c1affc6f7d">net::Pruner</a>
-, <a class="el" href="classnet_1_1_trainer.html#ac1b6e605be0b360e3804daa70ce33f95">net::Trainer</a>
+: <a class="el" href="classnet_1_1_s_g_d_trainer.html#aed55a24f31c541fc801771f21e68ce57">net::SGDTrainer</a>
+, <a class="el" href="classnet_1_1_trainer.html#a8287969834db3dc7a507e4aa7cd00743">net::Trainer</a>
 </li>
 <li>trainEpocs()
-: <a class="el" href="classnet_1_1_backpropagation.html#a4e259bc4cc0c3c7e6b7a97933cc446e2">net::Backpropagation</a>
+: <a class="el" href="classnet_1_1_s_g_d_trainer.html#a39adae3896d16f83d33bc37599f1eed4">net::SGDTrainer</a>
 </li>
 <li>trainOnDataPoint()
-: <a class="el" href="classnet_1_1_backpropagation.html#a56d4a23f6c623f03a4a9db0773a58df8">net::Backpropagation</a>
+: <a class="el" href="classnet_1_1_s_g_d_trainer.html#aac49c52fbc19fafb647db66268bbe5a0">net::SGDTrainer</a>
+</li>
+<li>trainOnHistories()
+: <a class="el" href="classrl_1_1_fido_control_system.html#af0dde4bde2b6e8efd08c1995954e89c9">rl::FidoControlSystem</a>
 </li>
 </ul>
 
@@ -512,7 +556,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 23 2016 15:38:44 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 30 2016 12:20:52 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

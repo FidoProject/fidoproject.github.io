@@ -91,6 +91,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classrl_1_1_fido_control_system-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">rl::FidoControlSystem Class Reference</div>  </div>
@@ -104,11 +107,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>Inherits <a class="el" href="classrl_1_1_wire_fit_q_learn.html">rl::WireFitQLearn</a>.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrl_1_1_fido_control_system_1_1_history.html">History</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adb3c59929216aec8684bbe9b5bc3b2de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_fido_control_system.html#adb3c59929216aec8684bbe9b5bc3b2de">FidoControlSystem</a> (int stateDimensions, <a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a1c3b9d46e59cce0bf35e63d92bdbee43">minAction</a>, <a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a> <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a1cd65b4160d27635d227cbb204d218aa">maxAction</a>, int <a class="el" href="classrl_1_1_wire_fit_q_learn.html#a957867553b071d7aa5fe330d990f9fca">baseOfDimensions</a>)</td></tr>
 <tr class="memdesc:adb3c59929216aec8684bbe9b5bc3b2de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="classrl_1_1_fido_control_system.html" title="A highly effective reinforcement learning control system (Truell and Gruenstein) ">FidoControlSystem</a>.  <a href="#adb3c59929216aec8684bbe9b5bc3b2de">More...</a><br/></td></tr>
 <tr class="separator:adb3c59929216aec8684bbe9b5bc3b2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f9e337b59117c62a358b50362bb8ef3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_fido_control_system.html#a2f9e337b59117c62a358b50362bb8ef3">chooseBoltzmanActionDynamic</a> (<a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> state)</td></tr>
+<tr class="separator:a2f9e337b59117c62a358b50362bb8ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a700a501816961d475649b9099d00953f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_fido_control_system.html#a700a501816961d475649b9099d00953f">applyReinforcementToLastAction</a> (double reward, <a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> newState)</td></tr>
 <tr class="memdesc:a700a501816961d475649b9099d00953f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the control system's model, by giving it reward for its last action.  <a href="#a700a501816961d475649b9099d00953f">More...</a><br/></td></tr>
 <tr class="separator:a700a501816961d475649b9099d00953f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,8 +151,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac93fb2fe8a6d1ce21b521e5038868ff2 inherit pub_methods_classrl_1_1_wire_fit_q_learn"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores this model in a stream.  <a href="#ac93fb2fe8a6d1ce21b521e5038868ff2">More...</a><br/></td></tr>
 <tr class="separator:ac93fb2fe8a6d1ce21b521e5038868ff2 inherit pub_methods_classrl_1_1_wire_fit_q_learn"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a94db12c11c0e0e306e56381168f450c0"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_fido_control_system.html#a94db12c11c0e0e306e56381168f450c0">initialExploration</a> = 1</td></tr>
+<tr class="separator:a94db12c11c0e0e306e56381168f450c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0def2857df552d0e44f11090e25068f2"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_fido_control_system.html#a0def2857df552d0e44f11090e25068f2">samplesOfHistory</a> = 10</td></tr>
+<tr class="separator:a0def2857df552d0e44f11090e25068f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65c8676ffc84dee172e27a332eccbaff"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_fido_control_system.html#a65c8676ffc84dee172e27a332eccbaff">explorationLevel</a></td></tr>
+<tr class="separator:a65c8676ffc84dee172e27a332eccbaff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54a5e5b4a12a70f6f9076950658b625b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_fido_control_system.html#a54a5e5b4a12a70f6f9076950658b625b">lastUncertainty</a></td></tr>
+<tr class="separator:a54a5e5b4a12a70f6f9076950658b625b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classrl_1_1_wire_fit_q_learn"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classrl_1_1_wire_fit_q_learn')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classrl_1_1_wire_fit_q_learn.html">rl::WireFitQLearn</a></td></tr>
 <tr class="memitem:a1eb41faa3b53d9675abb182e7c54b18d inherit pub_attribs_classrl_1_1_wire_fit_q_learn"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a1eb41faa3b53d9675abb182e7c54b18d">network</a></td></tr>
 <tr class="separator:a1eb41faa3b53d9675abb182e7c54b18d inherit pub_attribs_classrl_1_1_wire_fit_q_learn"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,6 +192,22 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a1cd65b4160d27635d227cbb204d218aa inherit pub_attribs_classrl_1_1_wire_fit_q_learn"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0093ccef823d2e9156e8e9605028cb35 inherit pub_attribs_classrl_1_1_wire_fit_q_learn"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacerl.html#a3da872aded4c87056d470bd2916618a1">Action</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a0093ccef823d2e9156e8e9605028cb35">lastAction</a></td></tr>
 <tr class="separator:a0093ccef823d2e9156e8e9605028cb35 inherit pub_attribs_classrl_1_1_wire_fit_q_learn"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c2b6c34acf1c609c4d74206bd171def inherit pub_attribs_classrl_1_1_wire_fit_q_learn"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1_neural_net.html">net::NeuralNet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a3c2b6c34acf1c609c4d74206bd171def">modelNet</a></td></tr>
+<tr class="separator:a3c2b6c34acf1c609c4d74206bd171def inherit pub_attribs_classrl_1_1_wire_fit_q_learn"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a1de1a63874a769690f019981fbc8bc9b"><td class="memItemLeft" align="right" valign="top">std::vector<br class="typebreak"/>
+&lt; <a class="el" href="structrl_1_1_fido_control_system_1_1_history.html">FidoControlSystem::History</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_fido_control_system.html#a1de1a63874a769690f019981fbc8bc9b">selectHistories</a> ()</td></tr>
+<tr class="separator:a1de1a63874a769690f019981fbc8bc9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0dde4bde2b6e8efd08c1995954e89c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_fido_control_system.html#af0dde4bde2b6e8efd08c1995954e89c9">trainOnHistories</a> (std::vector&lt; <a class="el" href="structrl_1_1_fido_control_system_1_1_history.html">FidoControlSystem::History</a> &gt; selectedHistories)</td></tr>
+<tr class="separator:af0dde4bde2b6e8efd08c1995954e89c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad487d06ae29b970f7d54ea38b86a0ea3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_fido_control_system.html#ad487d06ae29b970f7d54ea38b86a0ea3">adjustExploration</a> (double uncertainty)</td></tr>
+<tr class="separator:ad487d06ae29b970f7d54ea38b86a0ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1604a06f4d0785a8be005e348e2b3f79"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_fido_control_system.html#a1604a06f4d0785a8be005e348e2b3f79">getError</a> (std::vector&lt; double &gt; input, std::vector&lt; double &gt; correctOutput)</td></tr>
+<tr class="separator:a1604a06f4d0785a8be005e348e2b3f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d226fc24ff9af3abc532c98b78fe69"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structrl_1_1_wire.html">Wire</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_fido_control_system.html#af5d226fc24ff9af3abc532c98b78fe69">newControlWiresForHistory</a> (<a class="el" href="structrl_1_1_fido_control_system_1_1_history.html">History</a> history)</td></tr>
+<tr class="separator:af5d226fc24ff9af3abc532c98b78fe69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classrl_1_1_wire_fit_q_learn"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classrl_1_1_wire_fit_q_learn')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classrl_1_1_wire_fit_q_learn.html">rl::WireFitQLearn</a></td></tr>
 <tr class="memitem:a6a90f11703400cecaf0d89cf09cc0e80 inherit pro_methods_classrl_1_1_wire_fit_q_learn"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structrl_1_1_wire.html">Wire</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a6a90f11703400cecaf0d89cf09cc0e80">getWires</a> (<a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a> state)</td></tr>
 <tr class="separator:a6a90f11703400cecaf0d89cf09cc0e80 inherit pro_methods_classrl_1_1_wire_fit_q_learn"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,6 +223,11 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a590e1e963d4384d2bbc1c86d68ee76a2 inherit pro_methods_classrl_1_1_wire_fit_q_learn"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d7448a913d977c862ed874f037dbf1b inherit pro_methods_classrl_1_1_wire_fit_q_learn"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structrl_1_1_wire.html">Wire</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_wire_fit_q_learn.html#a8d7448a913d977c862ed874f037dbf1b">newControlWires</a> (const <a class="el" href="structrl_1_1_wire.html">Wire</a> &amp;correctWire, std::vector&lt; <a class="el" href="structrl_1_1_wire.html">Wire</a> &gt; controlWires)</td></tr>
 <tr class="separator:a8d7448a913d977c862ed874f037dbf1b inherit pro_methods_classrl_1_1_wire_fit_q_learn"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a0dabaad220318848af3f81fbb3fb7894"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structrl_1_1_fido_control_system_1_1_history.html">History</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrl_1_1_fido_control_system.html#a0dabaad220318848af3f81fbb3fb7894">histories</a></td></tr>
+<tr class="separator:a0dabaad220318848af3f81fbb3fb7894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A highly effective reinforcement learning control system (Truell and Gruenstein) </p>
@@ -243,6 +282,30 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad487d06ae29b970f7d54ea38b86a0ea3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FidoControlSystem::adjustExploration </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>uncertainty</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a700a501816961d475649b9099d00953f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -288,6 +351,80 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a2f9e337b59117c62a358b50362bb8ef3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; double &gt; FidoControlSystem::chooseBoltzmanActionDynamic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacerl.html#ab1b0f25d5634995bd741401cdf7677d3">State</a>&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1604a06f4d0785a8be005e348e2b3f79"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FidoControlSystem::getError </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>correctOutput</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af5d226fc24ff9af3abc532c98b78fe69"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structrl_1_1_wire.html">Wire</a> &gt; FidoControlSystem::newControlWiresForHistory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrl_1_1_fido_control_system_1_1_history.html">History</a>&#160;</td>
+          <td class="paramname"><em>history</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a41a3589420b1860767e3ff728804de0f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -316,14 +453,130 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a1de1a63874a769690f019981fbc8bc9b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structrl_1_1_fido_control_system_1_1_history.html">FidoControlSystem::History</a> &gt; FidoControlSystem::selectHistories </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af0dde4bde2b6e8efd08c1995954e89c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FidoControlSystem::trainOnHistories </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structrl_1_1_fido_control_system_1_1_history.html">FidoControlSystem::History</a> &gt;&#160;</td>
+          <td class="paramname"><em>selectedHistories</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a65c8676ffc84dee172e27a332eccbaff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double rl::FidoControlSystem::explorationLevel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0dabaad220318848af3f81fbb3fb7894"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structrl_1_1_fido_control_system_1_1_history.html">History</a>&gt; rl::FidoControlSystem::histories</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a94db12c11c0e0e306e56381168f450c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double rl::FidoControlSystem::initialExploration = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a54a5e5b4a12a70f6f9076950658b625b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double rl::FidoControlSystem::lastUncertainty</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0def2857df552d0e44f11090e25068f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int rl::FidoControlSystem::samplesOfHistory = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/truell20/Documents/Fido/include/<a class="el" href="_fido_control_system_8h_source.html">FidoControlSystem.h</a></li>
-<li>/home/truell20/Documents/Fido/src/<a class="el" href="_fido_control_system_8cpp.html">FidoControlSystem.cpp</a></li>
+<li>/home/truell20/Documents/Fido/Fido/include/<a class="el" href="_fido_control_system_8h_source.html">FidoControlSystem.h</a></li>
+<li>/home/truell20/Documents/Fido/Fido/src/<a class="el" href="_fido_control_system_8cpp.html">FidoControlSystem.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 23 2016 15:38:44 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 30 2016 12:20:52 for Fido by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
