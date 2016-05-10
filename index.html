@@ -99,6 +99,8 @@ while(true) {
   std::this_thread::sleep_for(std::chrono::milliseconds(10));
 }</code></pre>
 
+    <p>While the simulator is not in the most recent release (as it is currently undocumented), it can be found for experimentation on the simulator branch.</p>
+
       <h5>reinforcement learning</h5>
       <p>Here is a quick example of using the Fido library to train a robot in our simulator to perform line following using reinforcement learning.</p>
       <pre><code>rl::FidoControlSystem learner = rl::FidoControlSystem(1, 2, {-1, -1}, {1, 1}, 3);
